@@ -1,0 +1,7 @@
+09/27/2025 08:56:34 AM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+09/27/2025 08:56:34 AM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+09/27/2025 08:56:36 AM: [ KG constructed ]
+09/27/2025 08:56:38 AM: [ KG constructed ]
+09/27/2025 08:56:40 AM: [ KG constructed ]
+09/27/2025 08:56:40 AM: [ Creating TF graph... ]
+09/27/2025 08:56:52 AM: [ TF Graph creation done.. ]

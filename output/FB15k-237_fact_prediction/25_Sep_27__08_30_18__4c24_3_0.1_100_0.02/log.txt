@@ -1,0 +1,13 @@
+09/27/2025 08:30:19 AM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+09/27/2025 08:30:19 AM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+09/27/2025 08:30:20 AM: [ KG constructed ]
+09/27/2025 08:30:22 AM: [ KG constructed ]
+09/27/2025 08:30:24 AM: [ KG constructed ]
+09/27/2025 08:30:24 AM: [ Creating TF graph... ]
+09/27/2025 08:30:24 AM: [ From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:760: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor ]
+09/27/2025 08:30:24 AM: [ From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/util/dispatch.py:1264: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.random.categorical` instead. ]
+09/27/2025 08:30:29 AM: [ TF Graph creation done.. ]
