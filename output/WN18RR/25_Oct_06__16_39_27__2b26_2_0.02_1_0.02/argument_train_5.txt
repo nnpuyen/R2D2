@@ -1,0 +1,4224 @@
+---- DEBATE 0 ----
+	 Query: 02025530	member_meronym	02027209
+	 Query is True
+	 Final logit: [0.09941893070936203]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 02029571  -> NO_OP  -> 02029571 
+			Confidence: [0.5671572089195251]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02031752  -> member_meronym  -> 02032480 
+			Confidence: [0.5250813961029053]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 02028556  -> member_meronym  -> 02028900 
+			Confidence: [0.5501970648765564]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02031752  -> NO_OP  -> 02031752 
+			Confidence: [0.44130533933639526]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 02026059  -> _hypernym  -> 02029706 
+			Confidence: [0.433258980512619]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 01504437  -> _hypernym  -> 02018638 
+			Confidence: [0.5826014876365662]
+---- DEBATE 1 ----
+	 Query: 02025530	member_meronym	12792638
+	 Query is False
+	 Final logit: [0.04845566675066948]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 02026498  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.5638027787208557]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02030442  -> NO_OP  -> 02030442 
+			Confidence: [0.48799434304237366]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 02026498  -> hypernym  -> 01507175 
+			Confidence: [0.5056205987930298]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02031752  -> NO_OP  -> 02031752 
+			Confidence: [0.43951448798179626]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 02030442  -> hypernym  -> 01507175 
+			Confidence: [0.44112515449523926]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02032646  -> NO_OP  -> 02032646 
+			Confidence: [0.5537526607513428]
+---- DEBATE 2 ----
+	 Query: 02454657	hypernym	01864707
+	 Query is True
+	 Final logit: [-0.005113082472234964]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> member_meronym  -> 02454794 
+			Confidence: [0.5565446615219116]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02454794  -> hypernym  -> 02454379 
+			Confidence: [0.5476731657981873]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5222547054290771]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02454794  -> hypernym  -> 02454379 
+			Confidence: [0.4719499945640564]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.454303115606308]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02454794  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.5841003060340881]
+---- DEBATE 3 ----
+	 Query: 02454657	hypernym	00122661
+	 Query is False
+	 Final logit: [-0.0028837178833782673]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5562111139297485]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02454794  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.49934977293014526]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5222492814064026]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02454794  -> hypernym  -> 02454379 
+			Confidence: [0.47142142057418823]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 02454794  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.4040282964706421]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.545932948589325]
+---- DEBATE 4 ----
+	 Query: 07291794	derivationally_related_form	02735418
+	 Query is True
+	 Final logit: [0.04288048297166824]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 07291312 
+			Confidence: [0.5041752457618713]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01620854  -> derivationally_related_form  -> 06398401 
+			Confidence: [0.5107651352882385]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 00352826 
+			Confidence: [0.4843130111694336]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02735418  -> derivationally_related_form  -> 07291312 
+			Confidence: [0.5246434807777405]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01620854  -> _derivationally_related_form  -> 15266911 
+			Confidence: [0.47336626052856445]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00352826  -> _derivationally_related_form  -> 05868477 
+			Confidence: [0.5765740871429443]
+---- DEBATE 5 ----
+	 Query: 07291794	derivationally_related_form	05683582
+	 Query is False
+	 Final logit: [0.06112125143408775]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 01620854 
+			Confidence: [0.5400210022926331]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00352826  -> _hypernym  -> 00698855 
+			Confidence: [0.49870020151138306]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 07292577  -> _derivationally_related_form  -> 00421691 
+			Confidence: [0.4987984299659729]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01620854  -> _derivationally_related_form  -> 15266911 
+			Confidence: [0.5193551778793335]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00352826  -> derivationally_related_form  -> 15266911 
+			Confidence: [0.48107609152793884]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 07292577  -> hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.6026970744132996]
+---- DEBATE 6 ----
+	 Query: 10526300	hypernym	10034201
+	 Query is True
+	 Final logit: [-0.05039329081773758]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5581061244010925]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5376936793327332]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5227005481719971]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.48210129141807556]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.45438992977142334]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5466667413711548]
+---- DEBATE 7 ----
+	 Query: 10526300	hypernym	04857083
+	 Query is False
+	 Final logit: [-0.05265255272388458]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5568088293075562]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5372663736343384]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5223861336708069]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4798501133918762]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.45421677827835083]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5478213429450989]
+---- DEBATE 8 ----
+	 Query: 08505573	hypernym	08673395
+	 Query is True
+	 Final logit: [-0.029816286638379097]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _instance_hypernym  -> 09170788  -> _has_part  -> 09029457 
+			Confidence: [0.5283752083778381]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _instance_hypernym  -> 09168592 
+			Confidence: [0.5325462818145752]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _instance_hypernym  -> 09171560  -> instance_hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.5321064591407776]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _instance_hypernym  -> 09168020  -> instance_hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.4811074137687683]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _instance_hypernym  -> 09173023 
+			Confidence: [0.4681760370731354]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _instance_hypernym  -> 09169038  -> _has_part  -> 08910668 
+			Confidence: [0.5579332113265991]
+---- DEBATE 9 ----
+	 Query: 08505573	hypernym	13616054
+	 Query is False
+	 Final logit: [0.06781584769487381]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _instance_hypernym  -> 09169038  -> instance_hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.5625525712966919]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _instance_hypernym  -> 09171560  -> NO_OP  -> 09171560 
+			Confidence: [0.5128280520439148]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _instance_hypernym  -> 09167767  -> NO_OP  -> 09167767 
+			Confidence: [0.531458854675293]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _instance_hypernym  -> 09168020  -> _has_part  -> 08897065 
+			Confidence: [0.4881666600704193]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _instance_hypernym  -> 09172751  -> instance_hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.43335142731666565]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _instance_hypernym  -> 09171674  -> _has_part  -> 09167767 
+			Confidence: [0.5586746335029602]
+---- DEBATE 10 ----
+	 Query: 11841529	member_meronym	11846582
+	 Query is True
+	 Final logit: [0.09116099774837494]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 11847841  -> hypernym  -> 11573660 
+			Confidence: [0.5461741089820862]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 11846970  -> NO_OP  -> 11846970 
+			Confidence: [0.48747125267982483]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 11841368  -> NO_OP  -> 11841368 
+			Confidence: [0.5578767657279968]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 11843709  -> NO_OP  -> 11843709 
+			Confidence: [0.4438914954662323]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 11842204  -> hypernym  -> 13084184 
+			Confidence: [0.4365931749343872]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 11849017  -> member_meronym  -> 11849271 
+			Confidence: [0.5393275022506714]
+---- DEBATE 11 ----
+	 Query: 11841529	member_meronym	12254168
+	 Query is False
+	 Final logit: [0.01012306846678257]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 11843285  -> hypernym  -> 11573660 
+			Confidence: [0.5482460260391235]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 11565040  -> _hypernym  -> 11827169 
+			Confidence: [0.5012660622596741]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 11848610  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.49297288060188293]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 11841368  -> _member_meronym  -> 11803475 
+			Confidence: [0.4866156578063965]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 11854232  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.4447961449623108]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 11848253  -> NO_OP  -> 11848253 
+			Confidence: [0.5505445599555969]
+---- DEBATE 12 ----
+	 Query: 09094381	instance_hypernym	08524735
+	 Query is True
+	 Final logit: [-0.008923312649130821]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _has_part  -> 09093608  -> has_part  -> 09452017 
+			Confidence: [0.5167434215545654]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> instance_hypernym  -> 08633957 
+			Confidence: [0.5097613334655762]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> instance_hypernym  -> 08633957 
+			Confidence: [0.5321011543273926]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> instance_hypernym  -> 08633957  -> _instance_hypernym  -> 08889657 
+			Confidence: [0.5004320740699768]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _has_part  -> 09093608  -> has_part  -> 09094217 
+			Confidence: [0.45173633098602295]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> instance_hypernym  -> 08633957  -> _instance_hypernym  -> 08745901 
+			Confidence: [0.5297162532806396]
+---- DEBATE 13 ----
+	 Query: 09094381	instance_hypernym	09044862
+	 Query is False
+	 Final logit: [-0.005196528974920511]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> instance_hypernym  -> 08633957  -> _instance_hypernym  -> 08850741 
+			Confidence: [0.5065124034881592]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> instance_hypernym  -> 08633957  -> _instance_hypernym  -> 08856630 
+			Confidence: [0.5235434174537659]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> instance_hypernym  -> 08524735 
+			Confidence: [0.5327942967414856]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _has_part  -> 09093608  -> has_part  -> QUERY_SUBJECT 
+			Confidence: [0.4956929087638855]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _has_part  -> 09093608  -> _has_part  -> 09044862 
+			Confidence: [0.40208348631858826]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> instance_hypernym  -> 08633957 
+			Confidence: [0.5441005229949951]
+---- DEBATE 14 ----
+	 Query: 00657550	derivationally_related_form	01003729
+	 Query is True
+	 Final logit: [0.06846112757921219]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00874977  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5126223564147949]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 01003729 
+			Confidence: [0.4878776967525482]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00874977  -> NO_OP  -> 00874977 
+			Confidence: [0.5313167572021484]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00874977  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5129452347755432]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00874977  -> NO_OP  -> 00874977 
+			Confidence: [0.4692297577857971]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05737153  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5392202138900757]
+---- DEBATE 15 ----
+	 Query: 00657550	derivationally_related_form	00033020
+	 Query is False
+	 Final logit: [0.03172808140516281]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00874977  -> NO_OP  -> 00874977 
+			Confidence: [0.5303484201431274]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05737153  -> derivationally_related_form  -> 00658052 
+			Confidence: [0.5167291760444641]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00874977  -> _derivationally_related_form  -> 00657728 
+			Confidence: [0.5080016851425171]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00874977  -> hypernym  -> 00874806 
+			Confidence: [0.5261982083320618]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 05737153  -> _derivationally_related_form  -> 01112364 
+			Confidence: [0.47420835494995117]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 05737153  -> NO_OP  -> 05737153 
+			Confidence: [0.5524145364761353]
+---- DEBATE 16 ----
+	 Query: 00457998	derivationally_related_form	14456893
+	 Query is True
+	 Final logit: [0.09789469093084335]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 13454479  -> NO_OP  -> 13454479 
+			Confidence: [0.5272255539894104]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 14456893  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.4919095039367676]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 05402091  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.4424213767051697]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 00442847  -> _derivationally_related_form  -> 01577635 
+			Confidence: [0.489117830991745]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 00442847  -> derivationally_related_form  -> 13454479 
+			Confidence: [0.4834165871143341]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 14456138  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.538791835308075]
+---- DEBATE 17 ----
+	 Query: 00457998	derivationally_related_form	05923696
+	 Query is False
+	 Final logit: [0.02813454158604145]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 13454479  -> _derivationally_related_form  -> 00368367 
+			Confidence: [0.5247333645820618]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 13454479  -> _derivationally_related_form  -> 00457770 
+			Confidence: [0.49108144640922546]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 00146138  -> _hypernym  -> 00457569 
+			Confidence: [0.5200842022895813]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 13454479  -> derivationally_related_form  -> 00442847 
+			Confidence: [0.5163947343826294]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 13454479  -> derivationally_related_form  -> 00368367 
+			Confidence: [0.4815092980861664]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 14456138  -> _hypernym  -> 14456435 
+			Confidence: [0.5836051106452942]
+---- DEBATE 18 ----
+	 Query: 02145084	hypernym	01862557
+	 Query is True
+	 Final logit: [-0.03591330721974373]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 02146064  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.5869446992874146]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02146064  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.5001413822174072]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 02145767  -> hypernym  -> 01864707 
+			Confidence: [0.48812559247016907]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> member_meronym  -> 02147034 
+			Confidence: [0.4663209617137909]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 02140970  -> member_meronym  -> 02142064 
+			Confidence: [0.4032340347766876]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02145767  -> NO_OP  -> 02145767 
+			Confidence: [0.5627006888389587]
+---- DEBATE 19 ----
+	 Query: 02145084	hypernym	02534734
+	 Query is False
+	 Final logit: [0.06203262135386467]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 02147034  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.5863844752311707]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02147452  -> hypernym  -> 01864707 
+			Confidence: [0.5438523292541504]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 02145424  -> _hypernym  -> 02146700 
+			Confidence: [0.5399550795555115]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02145767  -> hypernym  -> 01864707 
+			Confidence: [0.4701181650161743]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> member_meronym  -> 02145767 
+			Confidence: [0.4726139008998871]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 02147034  -> hypernym  -> 01864707 
+			Confidence: [0.5929074883460999]
+---- DEBATE 20 ----
+	 Query: 10567401	hypernym	10372373
+	 Query is True
+	 Final logit: [-0.017998335883021355]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01315613  -> _hypernym  -> 01315333 
+			Confidence: [0.5445221066474915]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01315613  -> _hypernym  -> 01315333 
+			Confidence: [0.5162994861602783]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01315613  -> _hypernym  -> 01316401 
+			Confidence: [0.5814698934555054]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01317723  -> _hypernym  -> 01318659 
+			Confidence: [0.5380733013153076]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01315613  -> _derivationally_related_form  -> 10575787 
+			Confidence: [0.418680340051651]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01315613  -> _derivationally_related_form  -> 00945401 
+			Confidence: [0.5532618165016174]
+---- DEBATE 21 ----
+	 Query: 10567401	hypernym	00081572
+	 Query is False
+	 Final logit: [-0.0752842128276825]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01315613  -> _hypernym  -> 02127613 
+			Confidence: [0.541074812412262]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02153709  -> NO_OP  -> 02153709 
+			Confidence: [0.5090652108192444]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01317723  -> NO_OP  -> 01317723 
+			Confidence: [0.5587055087089539]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01315613  -> _also_see  -> 02130524 
+			Confidence: [0.5502276420593262]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> derivationally_related_form  -> 02153709 
+			Confidence: [0.45909425616264343]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02153709  -> derivationally_related_form  -> 00945401 
+			Confidence: [0.5494869947433472]
+---- DEBATE 22 ----
+	 Query: 06288527	hypernym	06294441
+	 Query is True
+	 Final logit: [-5.211454117670655e-05]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_of_domain_usage  -> 07574923  -> hypernym  -> 07573696 
+			Confidence: [0.5811225771903992]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> member_of_domain_usage  -> 07574923 
+			Confidence: [0.5179446935653687]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> member_of_domain_usage  -> 03788498  -> has_part  -> 03788601 
+			Confidence: [0.5048084259033203]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> member_of_domain_usage  -> 07574923  -> hypernym  -> 07573696 
+			Confidence: [0.5232410430908203]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> member_of_domain_usage  -> 07574923 
+			Confidence: [0.46809491515159607]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> member_of_domain_usage  -> 03788498  -> _member_of_domain_usage  -> QUERY_SUBJECT 
+			Confidence: [0.5541818141937256]
+---- DEBATE 23 ----
+	 Query: 06288527	hypernym	15047313
+	 Query is False
+	 Final logit: [0.019895177334547043]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_of_domain_usage  -> 07574923  -> _member_of_domain_usage  -> QUERY_SUBJECT 
+			Confidence: [0.5767301321029663]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_of_domain_usage  -> 03788498  -> _member_of_domain_usage  -> QUERY_SUBJECT 
+			Confidence: [0.5241457223892212]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> member_of_domain_usage  -> 07574923  -> hypernym  -> 07573696 
+			Confidence: [0.4601849913597107]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> member_of_domain_usage  -> 03788498  -> hypernym  -> 03790755 
+			Confidence: [0.523430585861206]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> member_of_domain_usage  -> 03788498  -> _member_of_domain_usage  -> QUERY_SUBJECT 
+			Confidence: [0.44130030274391174]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> member_of_domain_usage  -> 03788498 
+			Confidence: [0.5757994055747986]
+---- DEBATE 24 ----
+	 Query: 02192225	hypernym	02191766
+	 Query is True
+	 Final logit: [0.08668406307697296]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07823951  -> NO_OP  -> 07823951 
+			Confidence: [0.5384312272071838]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07823951  -> synset_domain_topic_of  -> 00243918 
+			Confidence: [0.5130550265312195]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07823951  -> NO_OP  -> 07823951 
+			Confidence: [0.5588428378105164]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> synset_domain_topic_of  -> 00243918 
+			Confidence: [0.49620363116264343]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 07823951 
+			Confidence: [0.4635070860385895]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 00243918  -> _synset_domain_topic_of  -> 01364184 
+			Confidence: [0.5729286074638367]
+---- DEBATE 25 ----
+	 Query: 02192225	hypernym	14446652
+	 Query is False
+	 Final logit: [0.04653915390372276]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07823951  -> NO_OP  -> 07823951 
+			Confidence: [0.5361232161521912]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07823951  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5160378217697144]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 00243918  -> _synset_domain_topic_of  -> 00323856 
+			Confidence: [0.4617667496204376]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 00243918  -> derivationally_related_form  -> 01665638 
+			Confidence: [0.5011147260665894]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 00243918  -> _synset_domain_topic_of  -> 00379440 
+			Confidence: [0.4256112575531006]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 00243918  -> _synset_domain_topic_of  -> 00236999 
+			Confidence: [0.5723475813865662]
+---- DEBATE 26 ----
+	 Query: 11836556	member_meronym	11836722
+	 Query is True
+	 Final logit: [-0.034212611615657806]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 11573660  -> _hypernym  -> 11851395 
+			Confidence: [0.535174548625946]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 11835806  -> hypernym  -> 11565040 
+			Confidence: [0.521550714969635]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 11573660 
+			Confidence: [0.5200117230415344]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 11835806  -> member_meronym  -> 11838266 
+			Confidence: [0.43778905272483826]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 11835806  -> member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.43575432896614075]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 11835806  -> member_meronym  -> 11838266 
+			Confidence: [0.5423545837402344]
+---- DEBATE 27 ----
+	 Query: 11836556	member_meronym	01932643
+	 Query is False
+	 Final logit: [0.022170860320329666]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5339094400405884]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 11835806  -> member_meronym  -> 11838266 
+			Confidence: [0.517268717288971]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 11835806  -> _member_meronym  -> 11804082 
+			Confidence: [0.5219940543174744]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 11835806  -> _member_meronym  -> 11804082 
+			Confidence: [0.48538997769355774]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 11573660  -> _hypernym  -> 11859024 
+			Confidence: [0.4365059435367584]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 11573660 
+			Confidence: [0.5415738224983215]
+---- DEBATE 28 ----
+	 Query: 11451442	has_part	11473954
+	 Query is True
+	 Final logit: [0.06611310690641403]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> has_part  -> 11482312  -> _has_part  -> QUERY_SUBJECT 
+			Confidence: [0.5090150833129883]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 11421401  -> hypernym  -> 11450869 
+			Confidence: [0.5461124181747437]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> has_part  -> 11482312  -> hypernym  -> 11450869 
+			Confidence: [0.49815768003463745]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 11420831  -> _hypernym  -> 11500968 
+			Confidence: [0.515302836894989]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> has_part  -> 11482312  -> NO_OP  -> 11482312 
+			Confidence: [0.4469383955001831]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 11420831  -> _hypernym  -> 11500968 
+			Confidence: [0.5614854693412781]
+---- DEBATE 29 ----
+	 Query: 11451442	has_part	03207305
+	 Query is False
+	 Final logit: [0.0774155855178833]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 11420831  -> _hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.5051218271255493]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> has_part  -> 05056490 
+			Confidence: [0.5300859212875366]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 11420831 
+			Confidence: [0.49188512563705444]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 11482312  -> _derivationally_related_form  -> 00321936 
+			Confidence: [0.533221960067749]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 11420831  -> NO_OP  -> 11420831 
+			Confidence: [0.41997745633125305]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> has_part  -> 11473954 
+			Confidence: [0.5494616031646729]
+---- DEBATE 30 ----
+	 Query: 00905399	derivationally_related_form	01249315
+	 Query is True
+	 Final logit: [0.05356339365243912]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 08441203  -> _synset_domain_topic_of  -> 08415272 
+			Confidence: [0.5089187026023865]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 06552639  -> _derivationally_related_form  -> 00905677 
+			Confidence: [0.47341519594192505]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 10399130  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.4545665979385376]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 10399130  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5227270126342773]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 10399130  -> hypernym  -> 09928136 
+			Confidence: [0.48212480545043945]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01249315  -> _derivationally_related_form  -> 00905677 
+			Confidence: [0.5537224411964417]
+---- DEBATE 31 ----
+	 Query: 00905399	derivationally_related_form	04505036
+	 Query is False
+	 Final logit: [0.02399875782430172]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 10399299  -> derivationally_related_form  -> 00903385 
+			Confidence: [0.5141997337341309]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 00903385  -> _derivationally_related_form  -> 10399299 
+			Confidence: [0.45643678307533264]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01249315  -> NO_OP  -> 01249315 
+			Confidence: [0.5326657295227051]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 10399299  -> NO_OP  -> 10399299 
+			Confidence: [0.5019599199295044]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 10399130  -> NO_OP  -> 10399130 
+			Confidence: [0.4668550491333008]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01249315  -> derivationally_related_form  -> 00905677 
+			Confidence: [0.5422155261039734]
+---- DEBATE 32 ----
+	 Query: 09023321	has_part	09435065
+	 Query is True
+	 Final logit: [-0.018079977482557297]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 08173515  -> NO_OP  -> 08173515 
+			Confidence: [0.5065966248512268]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 09025728  -> instance_hypernym  -> 08524735 
+			Confidence: [0.5188076496124268]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> has_part  -> 09233284  -> _has_part  -> QUERY_SUBJECT 
+			Confidence: [0.5108413100242615]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 09024972  -> _has_part  -> QUERY_SUBJECT 
+			Confidence: [0.5525301098823547]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> member_of_domain_region  -> 10025487  -> _member_of_domain_region  -> QUERY_SUBJECT 
+			Confidence: [0.47644251585006714]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 09453566  -> instance_hypernym  -> 09411430 
+			Confidence: [0.5321621894836426]
+---- DEBATE 33 ----
+	 Query: 09023321	has_part	05467432
+	 Query is False
+	 Final logit: [-0.07117337733507156]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_of_domain_region  -> 10039164  -> _member_of_domain_region  -> 08984788 
+			Confidence: [0.4881097078323364]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 09692250  -> _member_meronym  -> 08929922 
+			Confidence: [0.4870496988296509]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> has_part  -> 09453566  -> instance_hypernym  -> 09411430 
+			Confidence: [0.525275707244873]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> member_of_domain_region  -> 10142537  -> _instance_hypernym  -> 11084895 
+			Confidence: [0.5407918095588684]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> member_of_domain_region  -> 08018189  -> NO_OP  -> 08018189 
+			Confidence: [0.45351162552833557]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 09027853  -> instance_hypernym  -> 08552138 
+			Confidence: [0.5316113233566284]
+---- DEBATE 34 ----
+	 Query: 02607072	hypernym	02606384
+	 Query is True
+	 Final logit: [-0.007465285714715719]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5546571016311646]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 02606926  -> NO_OP  -> 02606926 
+			Confidence: [0.5368899703025818]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 02606926  -> hypernym  -> 01432517 
+			Confidence: [0.536949634552002]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4815603494644165]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_meronym  -> 02606926 
+			Confidence: [0.4367709755897522]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 02606926  -> hypernym  -> 01432517 
+			Confidence: [0.570824146270752]
+---- DEBATE 35 ----
+	 Query: 02607072	hypernym	13615036
+	 Query is False
+	 Final logit: [0.023408159613609314]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 02606926  -> _member_meronym  -> 02606194 
+			Confidence: [0.5361413955688477]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5376056432723999]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 02606926  -> NO_OP  -> 02606926 
+			Confidence: [0.569393515586853]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 02606926  -> _member_meronym  -> 02606194 
+			Confidence: [0.5089972615242004]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 02606926  -> NO_OP  -> 02606926 
+			Confidence: [0.4172665774822235]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 02606926  -> NO_OP  -> 02606926 
+			Confidence: [0.5639051795005798]
+---- DEBATE 36 ----
+	 Query: 07083441	hypernym	06282651
+	 Query is True
+	 Final logit: [-0.00934404693543911]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.555806040763855]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00863579  -> NO_OP  -> 00863579 
+			Confidence: [0.49944329261779785]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00863579  -> hypernym  -> 00862683 
+			Confidence: [0.5320512056350708]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.48057684302330017]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4530310034751892]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 00863579 
+			Confidence: [0.5453529953956604]
+---- DEBATE 37 ----
+	 Query: 07083441	hypernym	02517938
+	 Query is False
+	 Final logit: [0.00884745642542839]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5558398962020874]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 00863579 
+			Confidence: [0.47575536370277405]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 00863579 
+			Confidence: [0.4738768935203552]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00863579  -> NO_OP  -> 00863579 
+			Confidence: [0.5205249786376953]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.453022301197052]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 00863579 
+			Confidence: [0.5450186729431152]
+---- DEBATE 38 ----
+	 Query: 00605812	hypernym	00586262
+	 Query is True
+	 Final logit: [-0.054118990898132324]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5563604831695557]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5371906161308289]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.521489679813385]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4795996844768524]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4537275731563568]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5470573306083679]
+---- DEBATE 39 ----
+	 Query: 00605812	hypernym	06561942
+	 Query is False
+	 Final logit: [-0.0501595064997673]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5574402213096619]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5358745455741882]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5228590965270996]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.481090784072876]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4529358744621277]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.54683917760849]
+---- DEBATE 40 ----
+	 Query: 02889035	hypernym	04484160
+	 Query is True
+	 Final logit: [0.0073094298131763935]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01674717  -> derivationally_related_form  -> 03631177 
+			Confidence: [0.5280971527099609]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01674717  -> synset_domain_topic_of  -> 00714944 
+			Confidence: [0.5133964419364929]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01674717  -> _derivationally_related_form  -> 03631177 
+			Confidence: [0.45809316635131836]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01674717  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5349044799804688]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01674717  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.42555660009384155]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01519727  -> NO_OP  -> 01519727 
+			Confidence: [0.5559242367744446]
+---- DEBATE 41 ----
+	 Query: 02889035	hypernym	02174355
+	 Query is False
+	 Final logit: [-0.04118240252137184]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01519727  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5268073678016663]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01674717  -> hypernym  -> 01673891 
+			Confidence: [0.5105907917022705]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 01519727 
+			Confidence: [0.47103700041770935]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4813029170036316]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01674717  -> derivationally_related_form  -> 03965907 
+			Confidence: [0.42737817764282227]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01674717  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5566073656082153]
+---- DEBATE 42 ----
+	 Query: 09201301	has_part	09293917
+	 Query is True
+	 Final logit: [0.026215525344014168]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> has_part  -> 09294413  -> instance_hypernym  -> 09403734 
+			Confidence: [0.517549455165863]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 09453288  -> NO_OP  -> 09453288 
+			Confidence: [0.5209416151046753]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> has_part  -> 09294413  -> _has_part  -> 09147964 
+			Confidence: [0.5112841725349426]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 09224325  -> _has_part  -> 09134386 
+			Confidence: [0.5566558241844177]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> has_part  -> 09238425  -> NO_OP  -> 09238425 
+			Confidence: [0.4427039623260498]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 09192708  -> _has_part  -> 09134386 
+			Confidence: [0.5388558506965637]
+---- DEBATE 43 ----
+	 Query: 09201301	has_part	07754684
+	 Query is False
+	 Final logit: [0.08672229945659637]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> has_part  -> 09224325 
+			Confidence: [0.5003926753997803]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 09294413  -> _has_part  -> QUERY_SUBJECT 
+			Confidence: [0.526623010635376]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> has_part  -> 09224325  -> _has_part  -> 09134386 
+			Confidence: [0.5096422433853149]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 09238425  -> _has_part  -> QUERY_SUBJECT 
+			Confidence: [0.5519508719444275]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> has_part  -> 09192708  -> instance_hypernym  -> 09403734 
+			Confidence: [0.4711726903915405]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _has_part  -> 08563180  -> _has_part  -> 09044862 
+			Confidence: [0.5452283620834351]
+---- DEBATE 44 ----
+	 Query: 02644050	derivationally_related_form	07311661
+	 Query is True
+	 Final logit: [0.026433976367115974]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07311661  -> _derivationally_related_form  -> 01970348 
+			Confidence: [0.543199360370636]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07445480  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.4897138476371765]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07311661  -> _derivationally_related_form  -> 01970348 
+			Confidence: [0.5061081647872925]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07445480  -> _hypernym  -> 07370410 
+			Confidence: [0.5252065658569336]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00324384  -> _derivationally_related_form  -> 01983264 
+			Confidence: [0.4716477692127228]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07445480  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.539828360080719]
+---- DEBATE 45 ----
+	 Query: 02644050	derivationally_related_form	01543123
+	 Query is False
+	 Final logit: [0.10306721925735474]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07445480  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5116373896598816]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00324384  -> _derivationally_related_form  -> 01983264 
+			Confidence: [0.4913177788257599]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00324384  -> _derivationally_related_form  -> 01968569 
+			Confidence: [0.5067774653434753]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00324384  -> NO_OP  -> 00324384 
+			Confidence: [0.5015537738800049]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00324384  -> _derivationally_related_form  -> 01969216 
+			Confidence: [0.4978756308555603]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07445480  -> _hypernym  -> 07375635 
+			Confidence: [0.5807104110717773]
+---- DEBATE 46 ----
+	 Query: 12851860	hypernym	13112664
+	 Query is True
+	 Final logit: [-0.030533818528056145]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 12851673  -> hypernym  -> 11579418 
+			Confidence: [0.5170496106147766]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5378848910331726]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5220447778701782]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 12851673  -> _member_meronym  -> 12838027 
+			Confidence: [0.5112146139144897]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_meronym  -> 12851673 
+			Confidence: [0.43719246983528137]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_meronym  -> 12851673 
+			Confidence: [0.5692154765129089]
+---- DEBATE 47 ----
+	 Query: 12851860	hypernym	05070290
+	 Query is False
+	 Final logit: [-0.08992113918066025]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5564373731613159]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 12851673  -> _member_meronym  -> 12838027 
+			Confidence: [0.5015939474105835]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_meronym  -> 12851673 
+			Confidence: [0.46368536353111267]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 12851673  -> member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.4618407189846039]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 12851673  -> _member_meronym  -> 12838027 
+			Confidence: [0.3982789218425751]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 12851673  -> NO_OP  -> 12851673 
+			Confidence: [0.5622267127037048]
+---- DEBATE 48 ----
+	 Query: 00954422	also_see	02193194
+	 Query is True
+	 Final logit: [0.02522697113454342]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 06733939  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5153053998947144]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 06733939  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5182304382324219]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 00833199 
+			Confidence: [0.49737074971199036]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 00833199  -> _derivationally_related_form  -> 07214994 
+			Confidence: [0.508791446685791]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 06733939  -> derivationally_related_form  -> 01015244 
+			Confidence: [0.46723034977912903]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 00833199 
+			Confidence: [0.5543618202209473]
+---- DEBATE 49 ----
+	 Query: 00954422	also_see	00711715
+	 Query is False
+	 Final logit: [0.012063214555382729]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 06733939  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5140207409858704]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 06805297  -> derivationally_related_form  -> 00937208 
+			Confidence: [0.5196347832679749]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 06805297  -> hypernym  -> 07213395 
+			Confidence: [0.522860050201416]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 00833199  -> NO_OP  -> 00833199 
+			Confidence: [0.5036322474479675]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 06733939  -> hypernym  -> 06634376 
+			Confidence: [0.4670875072479248]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 06733939  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5646989941596985]
+---- DEBATE 50 ----
+	 Query: 01661243	hypernym	01654628
+	 Query is True
+	 Final logit: [0.08326447010040283]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _also_see  -> 01494310  -> _hypernym  -> 01498166 
+			Confidence: [0.5479530692100525]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00911752  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.46111616492271423]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00911752  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.46393242478370667]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4813132882118225]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 03295140  -> hypernym  -> 04341686 
+			Confidence: [0.43384671211242676]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00911752  -> derivationally_related_form  -> 01982866 
+			Confidence: [0.5662628412246704]
+---- DEBATE 51 ----
+	 Query: 01661243	hypernym	01695567
+	 Query is False
+	 Final logit: [-0.03964667022228241]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> synset_domain_topic_of  -> 00911048 
+			Confidence: [0.5537148118019104]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 00911048  -> _synset_domain_topic_of  -> 01655763 
+			Confidence: [0.5231722593307495]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _also_see  -> 01494310  -> _derivationally_related_form  -> 04110439 
+			Confidence: [0.4511534869670868]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 03295140  -> NO_OP  -> 03295140 
+			Confidence: [0.5229446887969971]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00911752  -> hypernym  -> 00911048 
+			Confidence: [0.40442344546318054]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 03295140  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5533835887908936]
+---- DEBATE 52 ----
+	 Query: 08389710	hypernym	08190754
+	 Query is True
+	 Final logit: [-0.020561613142490387]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 08199025  -> _synset_domain_topic_of  -> 00959992 
+			Confidence: [0.5423775911331177]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 08390012  -> NO_OP  -> 08390012 
+			Confidence: [0.5086520314216614]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 08199025  -> _synset_domain_topic_of  -> 08389438 
+			Confidence: [0.46018853783607483]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> synset_domain_topic_of  -> 08199025 
+			Confidence: [0.49930769205093384]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 09902353  -> NO_OP  -> 09902353 
+			Confidence: [0.40743476152420044]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 09902353  -> hypernym  -> 10622053 
+			Confidence: [0.5907986760139465]
+---- DEBATE 53 ----
+	 Query: 08389710	hypernym	07975026
+	 Query is False
+	 Final logit: [0.040598612278699875]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 09902353  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.5867161750793457]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 09902353  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.4985199570655823]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 08199025  -> _synset_domain_topic_of  -> 03493664 
+			Confidence: [0.46104034781455994]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 08389900  -> hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.49615079164505005]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 08390012  -> synset_domain_topic_of  -> 08199025 
+			Confidence: [0.4008055329322815]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 09902353  -> hypernym  -> 10622053 
+			Confidence: [0.5920349359512329]
+---- DEBATE 54 ----
+	 Query: 01422886	derivationally_related_form	03967942
+	 Query is True
+	 Final logit: [0.12713611125946045]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 01423623  -> hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.49814319610595703]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 01423285  -> _derivationally_related_form  -> 01074694 
+			Confidence: [0.45238572359085083]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 03967942  -> derivationally_related_form  -> 01478002 
+			Confidence: [0.48755714297294617]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 01423623  -> hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.501541018486023]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 01423623  -> derivationally_related_form  -> 03108853 
+			Confidence: [0.4871366024017334]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 01423167  -> hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.6033115386962891]
+---- DEBATE 55 ----
+	 Query: 01422886	derivationally_related_form	14014162
+	 Query is False
+	 Final logit: [0.025577349588274956]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 01220636  -> NO_OP  -> 01220636 
+			Confidence: [0.5414535999298096]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _hypernym  -> 01423167 
+			Confidence: [0.5215392708778381]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 01220636  -> NO_OP  -> 01220636 
+			Confidence: [0.5481325387954712]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 03967942 
+			Confidence: [0.5000640749931335]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 01423623  -> derivationally_related_form  -> 03108853 
+			Confidence: [0.48633331060409546]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 01423623  -> hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.6042728424072266]
+---- DEBATE 56 ----
+	 Query: 01489989	derivationally_related_form	02964389
+	 Query is True
+	 Final logit: [0.012427697889506817]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02964389  -> _derivationally_related_form  -> 01612084 
+			Confidence: [0.5453031063079834]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 03679986  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.4914463460445404]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 01483131  -> hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.5161182880401611]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00713952  -> NO_OP  -> 00713952 
+			Confidence: [0.5008031725883484]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 00452512  -> _hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.4313564598560333]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 03679986  -> NO_OP  -> 03679986 
+			Confidence: [0.5455714464187622]
+---- DEBATE 57 ----
+	 Query: 01489989	derivationally_related_form	01490336
+	 Query is False
+	 Final logit: [0.13761700689792633]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00713952  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5169681906700134]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 10655169  -> _derivationally_related_form  -> 02085742 
+			Confidence: [0.4933111071586609]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00713952  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.4441849887371063]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 01503952  -> NO_OP  -> 01503952 
+			Confidence: [0.4903295040130615]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00713952  -> NO_OP  -> 00713952 
+			Confidence: [0.467813104391098]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 10655169  -> _derivationally_related_form  -> 01612084 
+			Confidence: [0.5537914037704468]
+---- DEBATE 58 ----
+	 Query: 14181713	has_part	13079567
+	 Query is True
+	 Final logit: [0.06737196445465088]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> has_part  -> 14358335  -> NO_OP  -> 14358335 
+			Confidence: [0.5301244854927063]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> has_part  -> 14358335 
+			Confidence: [0.5317238569259644]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5343225598335266]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> has_part  -> 14358335 
+			Confidence: [0.4937727153301239]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 14176895  -> _hypernym  -> 14125466 
+			Confidence: [0.4167781174182892]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 14176895  -> _hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.5617106556892395]
+---- DEBATE 59 ----
+	 Query: 14181713	has_part	09124589
+	 Query is False
+	 Final logit: [0.01763625629246235]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> has_part  -> 13079567  -> NO_OP  -> 13079567 
+			Confidence: [0.528992772102356]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 13079567  -> _member_meronym  -> 13079203 
+			Confidence: [0.49164336919784546]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> has_part  -> 13079567  -> _member_meronym  -> 13079203 
+			Confidence: [0.4837070107460022]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 13079567  -> _has_part  -> QUERY_SUBJECT 
+			Confidence: [0.5525524616241455]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> has_part  -> 13079567  -> NO_OP  -> 13079567 
+			Confidence: [0.44490906596183777]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 13079567  -> NO_OP  -> 13079567 
+			Confidence: [0.5384028553962708]
+---- DEBATE 60 ----
+	 Query: 07767344	hypernym	13138308
+	 Query is True
+	 Final logit: [0.019741665571928024]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _has_part  -> 12301180  -> has_part  -> QUERY_SUBJECT 
+			Confidence: [0.5639795064926147]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 07582441  -> hypernym  -> 07810907 
+			Confidence: [0.5205538272857666]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _has_part  -> 12301180  -> hypernym  -> 12300840 
+			Confidence: [0.49978429079055786]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _has_part  -> 12301180  -> hypernym  -> 12300840 
+			Confidence: [0.50285804271698]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 07582441 
+			Confidence: [0.47389981150627136]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _has_part  -> 12301180  -> _member_meronym  -> 12300625 
+			Confidence: [0.5619823336601257]
+---- DEBATE 61 ----
+	 Query: 07767344	hypernym	05645597
+	 Query is False
+	 Final logit: [0.058137692511081696]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 07582441 
+			Confidence: [0.552838921546936]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _has_part  -> 12301180  -> _member_meronym  -> 12300625 
+			Confidence: [0.4832678735256195]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _has_part  -> 12301180  -> hypernym  -> 12300840 
+			Confidence: [0.49874067306518555]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _has_part  -> 12301180 
+			Confidence: [0.5043750405311584]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 07582441  -> _hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.3936409652233124]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _has_part  -> 12301180  -> hypernym  -> 12300840 
+			Confidence: [0.5800762176513672]
+---- DEBATE 62 ----
+	 Query: 01047381	derivationally_related_form	07121361
+	 Query is True
+	 Final logit: [0.0827355682849884]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 02492660 
+			Confidence: [0.5385468006134033]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 00983824  -> _hypernym  -> 00857517 
+			Confidence: [0.49577635526657104]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02492660  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5071620941162109]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 00983824  -> derivationally_related_form  -> 10743675 
+			Confidence: [0.49218207597732544]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02492660  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.49879711866378784]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07121361  -> derivationally_related_form  -> 00913065 
+			Confidence: [0.5417311787605286]
+---- DEBATE 63 ----
+	 Query: 01047381	derivationally_related_form	00560893
+	 Query is False
+	 Final logit: [0.020335650071501732]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07121361  -> NO_OP  -> 07121361 
+			Confidence: [0.547648549079895]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07121361  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5098233222961426]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02492660  -> _member_meronym  -> 02492536 
+			Confidence: [0.4835730195045471]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 07121361 
+			Confidence: [0.5003812313079834]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07121361  -> _derivationally_related_form  -> 00913065 
+			Confidence: [0.47597718238830566]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07121361  -> derivationally_related_form  -> 00914634 
+			Confidence: [0.5762507915496826]
+---- DEBATE 64 ----
+	 Query: 09769076	derivationally_related_form	01165290
+	 Query is True
+	 Final logit: [0.0033470948692411184]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01165290  -> _derivationally_related_form  -> 09768830 
+			Confidence: [0.5422570109367371]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5230441093444824]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 10059582 
+			Confidence: [0.48517775535583496]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 10059582 
+			Confidence: [0.4953474998474121]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01165290  -> hypernym  -> 00273445 
+			Confidence: [0.4790586829185486]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.543276309967041]
+---- DEBATE 65 ----
+	 Query: 09769076	derivationally_related_form	00002684
+	 Query is False
+	 Final logit: [0.06925968080759048]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5448482036590576]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01165290  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5145201683044434]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01165290  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5039354562759399]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 10059582  -> _hypernym  -> 10117017 
+			Confidence: [0.49795323610305786]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 10059582  -> _derivationally_related_form  -> 06201136 
+			Confidence: [0.4619375765323639]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5436549782752991]
+---- DEBATE 66 ----
+	 Query: 06767035	hypernym	06765044
+	 Query is True
+	 Final logit: [-0.028038503602147102]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02169352  -> _derivationally_related_form  -> 00879759 
+			Confidence: [0.5470938086509705]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02169352  -> NO_OP  -> 02169352 
+			Confidence: [0.500556468963623]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02455407  -> hypernym  -> 00661824 
+			Confidence: [0.5250900983810425]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00732552  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5280712842941284]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02154508  -> NO_OP  -> 02154508 
+			Confidence: [0.40564781427383423]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00732552  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5525839328765869]
+---- DEBATE 67 ----
+	 Query: 06767035	hypernym	01846331
+	 Query is False
+	 Final logit: [0.09588385373353958]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00732552  -> derivationally_related_form  -> 05703429 
+			Confidence: [0.5367013216018677]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02154508  -> _derivationally_related_form  -> 00151087 
+			Confidence: [0.4708731770515442]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02455407  -> _verb_group  -> 00729109 
+			Confidence: [0.46384167671203613]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02455407  -> derivationally_related_form  -> 00880662 
+			Confidence: [0.5340039730072021]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00732552  -> NO_OP  -> 00732552 
+			Confidence: [0.41760122776031494]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02118933  -> _derivationally_related_form  -> 05703429 
+			Confidence: [0.5564886927604675]
+---- DEBATE 68 ----
+	 Query: 07745466	hypernym	13138658
+	 Query is True
+	 Final logit: [-0.01979488879442215]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5566802024841309]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _has_part  -> 12656685  -> has_part  -> QUERY_SUBJECT 
+			Confidence: [0.534302830696106]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _has_part  -> 12656685 
+			Confidence: [0.5210302472114563]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _has_part  -> 12656685 
+			Confidence: [0.503329873085022]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 07742704  -> _hypernym  -> 07743224 
+			Confidence: [0.39637207984924316]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 07742704  -> derivationally_related_form  -> 01384102 
+			Confidence: [0.5513600707054138]
+---- DEBATE 69 ----
+	 Query: 07745466	hypernym	06969129
+	 Query is False
+	 Final logit: [-0.026532141491770744]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _has_part  -> 12656685  -> NO_OP  -> 12656685 
+			Confidence: [0.5599110722541809]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _has_part  -> 12656685 
+			Confidence: [0.5202358961105347]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5215653777122498]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _has_part  -> 12656685 
+			Confidence: [0.5066945552825928]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 13138658  -> derivationally_related_form  -> 13138308 
+			Confidence: [0.38565129041671753]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _has_part  -> 12656685  -> has_part  -> QUERY_SUBJECT 
+			Confidence: [0.5698043704032898]
+---- DEBATE 70 ----
+	 Query: 04677716	hypernym	04673965
+	 Query is True
+	 Final logit: [0.01035565696656704]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02697725  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5250935554504395]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 11094611  -> NO_OP  -> 11094611 
+			Confidence: [0.5097501277923584]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 06136258  -> _synset_domain_topic_of  -> 14376188 
+			Confidence: [0.46002039313316345]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 06136258  -> _synset_domain_topic_of  -> QUERY_SUBJECT 
+			Confidence: [0.4998355805873871]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02697725  -> _hypernym  -> 02723733 
+			Confidence: [0.4217650294303894]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 06136258  -> _synset_domain_topic_of  -> 07297927 
+			Confidence: [0.5712174773216248]
+---- DEBATE 71 ----
+	 Query: 04677716	hypernym	10215623
+	 Query is False
+	 Final logit: [0.041760656982660294]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02697725  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5287265777587891]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02697725  -> hypernym  -> 00836236 
+			Confidence: [0.534525454044342]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 06136258  -> _synset_domain_topic_of  -> 14376188 
+			Confidence: [0.459565132856369]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 06136258  -> _synset_domain_topic_of  -> 04621738 
+			Confidence: [0.4983024001121521]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 11094611  -> NO_OP  -> 11094611 
+			Confidence: [0.4036215841770172]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> synset_domain_topic_of  -> 11094611 
+			Confidence: [0.5680484175682068]
+---- DEBATE 72 ----
+	 Query: 01775879	member_meronym	01776313
+	 Query is True
+	 Final logit: [0.07680293917655945]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.53462815284729]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 01776192  -> _hypernym  -> 01776313 
+			Confidence: [0.5101306438446045]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 01779340  -> NO_OP  -> 01779340 
+			Confidence: [0.5204622745513916]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 01779340  -> NO_OP  -> 01779340 
+			Confidence: [0.4416426718235016]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 01776192  -> _hypernym  -> 01779629 
+			Confidence: [0.4346780776977539]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 01768969  -> member_meronym  -> 01769347 
+			Confidence: [0.5419871807098389]
+---- DEBATE 73 ----
+	 Query: 01775879	member_meronym	02345213
+	 Query is False
+	 Final logit: [0.07378998398780823]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> member_meronym  -> 01776546 
+			Confidence: [0.5180595517158508]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 01342529  -> _hypernym  -> 01822423 
+			Confidence: [0.5006342530250549]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> member_meronym  -> 01776313 
+			Confidence: [0.5492735505104065]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 01779340  -> NO_OP  -> 01779340 
+			Confidence: [0.4421687424182892]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 01776192  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.4458986818790436]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 01776546  -> member_meronym  -> 01776705 
+			Confidence: [0.5344852805137634]
+---- DEBATE 74 ----
+	 Query: 02010592	hypernym	01507175
+	 Query is True
+	 Final logit: [-0.08247175812721252]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 02007721  -> member_meronym  -> 02012063 
+			Confidence: [0.5238873362541199]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 02007721  -> member_meronym  -> 02010881 
+			Confidence: [0.5491554141044617]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_meronym  -> 02007721 
+			Confidence: [0.4642382562160492]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 02007721  -> member_meronym  -> 02008041 
+			Confidence: [0.46070173382759094]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 02007721  -> member_meronym  -> 02010881 
+			Confidence: [0.4051598310470581]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 02007721  -> NO_OP  -> 02007721 
+			Confidence: [0.5619074702262878]
+---- DEBATE 75 ----
+	 Query: 02010592	hypernym	14794993
+	 Query is False
+	 Final logit: [-0.05508919060230255]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_meronym  -> 02007721 
+			Confidence: [0.5576187372207642]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_meronym  -> 02007721 
+			Confidence: [0.4984365403652191]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 02007721  -> hypernym  -> 01504437 
+			Confidence: [0.5351794362068176]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4814487099647522]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 02007721  -> member_meronym  -> 02010881 
+			Confidence: [0.40579327940940857]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5474984049797058]
+---- DEBATE 76 ----
+	 Query: 03024746	derivationally_related_form	01570562
+	 Query is True
+	 Final logit: [0.08741898089647293]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 03068181  -> has_part  -> 03315805 
+			Confidence: [0.482796311378479]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5250097513198853]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01570562  -> hypernym  -> 01387786 
+			Confidence: [0.5040370225906372]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01570562  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5224037766456604]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 03068181  -> derivationally_related_form  -> 01215694 
+			Confidence: [0.45150163769721985]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 03068181  -> _hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.5953935980796814]
+---- DEBATE 77 ----
+	 Query: 03024746	derivationally_related_form	02521410
+	 Query is False
+	 Final logit: [0.07491429895162582]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01570562  -> derivationally_related_form  -> 03024882 
+			Confidence: [0.508926272392273]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 01570562 
+			Confidence: [0.48754701018333435]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01570562  -> hypernym  -> 01387786 
+			Confidence: [0.5045154690742493]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 03068181 
+			Confidence: [0.4961574673652649]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 03068181  -> hypernym  -> 02784218 
+			Confidence: [0.44489118456840515]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 03068181  -> _derivationally_related_form  -> 01215694 
+			Confidence: [0.5910886526107788]
+---- DEBATE 78 ----
+	 Query: 14577469	hypernym	13920835
+	 Query is True
+	 Final logit: [-0.019924432039260864]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00267041  -> verb_group  -> 00266798 
+			Confidence: [0.5307960510253906]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> derivationally_related_form  -> 00266798 
+			Confidence: [0.519119918346405]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00266798  -> _derivationally_related_form  -> 09315159 
+			Confidence: [0.45632660388946533]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00267041  -> verb_group  -> 00266798 
+			Confidence: [0.5431832075119019]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00266798  -> derivationally_related_form  -> 09315159 
+			Confidence: [0.437682569026947]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5455697178840637]
+---- DEBATE 79 ----
+	 Query: 14577469	hypernym	07208930
+	 Query is False
+	 Final logit: [0.11439274996519089]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00267041  -> _verb_group  -> 00266798 
+			Confidence: [0.5512253642082214]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00266798  -> _derivationally_related_form  -> 09315159 
+			Confidence: [0.47093385457992554]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00267041  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.503546953201294]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> derivationally_related_form  -> 00266798 
+			Confidence: [0.4913769066333771]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00266798  -> hypernym  -> 00146138 
+			Confidence: [0.4288595914840698]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00267041  -> synset_domain_topic_of  -> 06089447 
+			Confidence: [0.5738404393196106]
+---- DEBATE 80 ----
+	 Query: 02439732	derivationally_related_form	10151570
+	 Query is True
+	 Final logit: [0.043722689151763916]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01144876  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5153701305389404]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 02439501 
+			Confidence: [0.5357639789581299]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 10151570  -> hypernym  -> 09623038 
+			Confidence: [0.5029503703117371]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01144876  -> hypernym  -> 01133281 
+			Confidence: [0.5280029773712158]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 02439501  -> _hypernym  -> 02443849 
+			Confidence: [0.4357808828353882]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01144876  -> hypernym  -> 01133281 
+			Confidence: [0.5826237797737122]
+---- DEBATE 81 ----
+	 Query: 02439732	derivationally_related_form	07109847
+	 Query is False
+	 Final logit: [0.10783075541257858]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01144876  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5160006284713745]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 00815320 
+			Confidence: [0.48829612135887146]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 10151570  -> _derivationally_related_form  -> 02159427 
+			Confidence: [0.45354580879211426]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00815320  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5196489691734314]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 06651577  -> NO_OP  -> 06651577 
+			Confidence: [0.46484464406967163]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 02439501  -> NO_OP  -> 02439501 
+			Confidence: [0.5605625510215759]
+---- DEBATE 82 ----
+	 Query: 13480667	hypernym	13518963
+	 Query is True
+	 Final logit: [-0.0011959238909184933]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 13534274  -> derivationally_related_form  -> 01458464 
+			Confidence: [0.513111412525177]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 13534274  -> derivationally_related_form  -> 01458464 
+			Confidence: [0.5056450366973877]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 13534274  -> _derivationally_related_form  -> 01458464 
+			Confidence: [0.5189301371574402]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 01457954 
+			Confidence: [0.49798983335494995]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> derivationally_related_form  -> 01458664 
+			Confidence: [0.45957911014556885]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01457954  -> _derivationally_related_form  -> 13534274 
+			Confidence: [0.5562233328819275]
+---- DEBATE 83 ----
+	 Query: 13480667	hypernym	15034074
+	 Query is False
+	 Final logit: [0.006780503783375025]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 13534274  -> _derivationally_related_form  -> 01458228 
+			Confidence: [0.5571525692939758]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01457954  -> NO_OP  -> 01457954 
+			Confidence: [0.5089618563652039]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01458664  -> _derivationally_related_form  -> 14868564 
+			Confidence: [0.45524728298187256]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01458664  -> _derivationally_related_form  -> 04332243 
+			Confidence: [0.5141088962554932]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 13534274  -> derivationally_related_form  -> 01458228 
+			Confidence: [0.4239702820777893]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01458664  -> _derivationally_related_form  -> 04332243 
+			Confidence: [0.5532623529434204]
+---- DEBATE 84 ----
+	 Query: 13792183	derivationally_related_form	02538086
+	 Query is True
+	 Final logit: [0.09418345987796783]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 13791389 
+			Confidence: [0.5077844858169556]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 13791389  -> _hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.4944377541542053]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 13791389  -> NO_OP  -> 13791389 
+			Confidence: [0.5241554975509644]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01607072  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5117108225822449]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01607072  -> NO_OP  -> 01607072 
+			Confidence: [0.4654977023601532]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01607072  -> hypernym  -> 02603056 
+			Confidence: [0.575170636177063]
+---- DEBATE 85 ----
+	 Query: 13792183	derivationally_related_form	01264283
+	 Query is False
+	 Final logit: [0.04549667239189148]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01607072  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5122691988945007]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01607072  -> hypernym  -> 02603056 
+			Confidence: [0.5232951641082764]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 13791389 
+			Confidence: [0.4857616722583771]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01607072  -> hypernym  -> 02603056 
+			Confidence: [0.5312484502792358]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02538086  -> _derivationally_related_form  -> 01212882 
+			Confidence: [0.49795982241630554]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02538086  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5424514412879944]
+---- DEBATE 86 ----
+	 Query: 08703035	hypernym	08702805
+	 Query is True
+	 Final logit: [-0.03788284584879875]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _instance_hypernym  -> 08737041  -> NO_OP  -> 08737041 
+			Confidence: [0.5502604842185974]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _instance_hypernym  -> 08739206  -> _member_meronym  -> 08176077 
+			Confidence: [0.49256569147109985]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _instance_hypernym  -> 08737041  -> NO_OP  -> 08737041 
+			Confidence: [0.5313441753387451]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _instance_hypernym  -> 08739206  -> _member_meronym  -> 08176077 
+			Confidence: [0.4959675967693329]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _instance_hypernym  -> 08737716  -> member_of_domain_region  -> 08034028 
+			Confidence: [0.4726104140281677]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _instance_hypernym  -> 08738820  -> _has_part  -> 08735705 
+			Confidence: [0.5583398342132568]
+---- DEBATE 87 ----
+	 Query: 08703035	hypernym	00939857
+	 Query is False
+	 Final logit: [0.02736274152994156]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _instance_hypernym  -> 08736107  -> _has_part  -> 08735705 
+			Confidence: [0.5257240533828735]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _instance_hypernym  -> 08737041  -> _has_part  -> 08735705 
+			Confidence: [0.5119115710258484]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _instance_hypernym  -> 08736107  -> NO_OP  -> 08736107 
+			Confidence: [0.532279908657074]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _instance_hypernym  -> 08737041 
+			Confidence: [0.5069118142127991]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _instance_hypernym  -> 08737041 
+			Confidence: [0.46615445613861084]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _instance_hypernym  -> 08738820  -> _has_part  -> 08735705 
+			Confidence: [0.5576230883598328]
+---- DEBATE 88 ----
+	 Query: 03584111	hypernym	02905612
+	 Query is True
+	 Final logit: [0.07400467246770859]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _member_of_domain_usage  -> 06845599  -> member_of_domain_usage  -> 03690005 
+			Confidence: [0.5309195518493652]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5389600992202759]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_of_domain_usage  -> 06845599 
+			Confidence: [0.5019704103469849]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _member_of_domain_usage  -> 06845599  -> member_of_domain_usage  -> 03824014 
+			Confidence: [0.5137235522270203]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_of_domain_usage  -> 06845599 
+			Confidence: [0.46823492646217346]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _member_of_domain_usage  -> 06845599  -> member_of_domain_usage  -> 02705651 
+			Confidence: [0.5765399932861328]
+---- DEBATE 89 ----
+	 Query: 03584111	hypernym	01871979
+	 Query is False
+	 Final logit: [-0.011608397588133812]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _member_of_domain_usage  -> 06845599  -> member_of_domain_usage  -> 03891851 
+			Confidence: [0.5317597985267639]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _member_of_domain_usage  -> 06845599  -> member_of_domain_usage  -> 03758720 
+			Confidence: [0.5305200219154358]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _member_of_domain_usage  -> 06845599  -> member_of_domain_usage  -> 03869222 
+			Confidence: [0.5377482175827026]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_of_domain_usage  -> 06845599 
+			Confidence: [0.5056271553039551]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _member_of_domain_usage  -> 06845599  -> member_of_domain_usage  -> 03754822 
+			Confidence: [0.4178900420665741]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_of_domain_usage  -> 06845599 
+			Confidence: [0.568264901638031]
+---- DEBATE 90 ----
+	 Query: 12655351	has_part	07745197
+	 Query is True
+	 Final logit: [0.05126042291522026]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 12654387  -> _hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.5066254138946533]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 12654387  -> _member_meronym  -> 12653056 
+			Confidence: [0.45735713839530945]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 12654387  -> _hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.5556714534759521]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 12654387 
+			Confidence: [0.5023585557937622]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 12654387  -> _member_meronym  -> 12653056 
+			Confidence: [0.42427030205726624]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 12654387  -> _member_meronym  -> 12653056 
+			Confidence: [0.5723319053649902]
+---- DEBATE 91 ----
+	 Query: 12655351	has_part	07748912
+	 Query is False
+	 Final logit: [-0.010920260101556778]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 12654387  -> NO_OP  -> 12654387 
+			Confidence: [0.51971036195755]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 12654387  -> NO_OP  -> 12654387 
+			Confidence: [0.5178965926170349]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 12654387 
+			Confidence: [0.49147921800613403]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.48845693469047546]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 12654387  -> NO_OP  -> 12654387 
+			Confidence: [0.4194185733795166]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 12654387  -> _hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.5636072158813477]
+---- DEBATE 92 ----
+	 Query: 12385046	hypernym	11565385
+	 Query is True
+	 Final logit: [-0.052373263984918594]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 12385219  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.586943507194519]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 12359026  -> member_meronym  -> 12359734 
+			Confidence: [0.5484110116958618]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5224369168281555]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.48013898730278015]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 12359026  -> member_meronym  -> 12386039 
+			Confidence: [0.40462252497673035]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> member_meronym  -> 12385219 
+			Confidence: [0.5563372373580933]
+---- DEBATE 93 ----
+	 Query: 12385046	hypernym	03816849
+	 Query is False
+	 Final logit: [-0.011318002827465534]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 12385219  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.5866865515708923]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 12385219  -> hypernym  -> 11575425 
+			Confidence: [0.5450429320335388]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_meronym  -> 12359026 
+			Confidence: [0.46436548233032227]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> member_meronym  -> 12385219 
+			Confidence: [0.4664536714553833]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> member_meronym  -> 12385219 
+			Confidence: [0.4738668203353882]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 12359026  -> member_meronym  -> 12372708 
+			Confidence: [0.5437213182449341]
+---- DEBATE 94 ----
+	 Query: 00076563	derivationally_related_form	00599835
+	 Query is True
+	 Final logit: [0.11453195661306381]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00618057  -> derivationally_related_form  -> 09879744 
+			Confidence: [0.5098128318786621]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00618057  -> _derivationally_related_form  -> 00073828 
+			Confidence: [0.48760557174682617]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00618057  -> NO_OP  -> 00618057 
+			Confidence: [0.5299698710441589]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00599835  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5252940654754639]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00599835  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.4975739121437073]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00618057  -> derivationally_related_form  -> 09879744 
+			Confidence: [0.5744743943214417]
+---- DEBATE 95 ----
+	 Query: 00076563	derivationally_related_form	01100145
+	 Query is False
+	 Final logit: [0.08385460823774338]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00618057  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5486172437667847]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00599835  -> NO_OP  -> 00599835 
+			Confidence: [0.5018861889839172]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00618057  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5031236410140991]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00599835  -> NO_OP  -> 00599835 
+			Confidence: [0.5052309632301331]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00618057  -> NO_OP  -> 00618057 
+			Confidence: [0.4674484431743622]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 00599835  -> hypernym  -> 00598954 
+			Confidence: [0.574273943901062]
+---- DEBATE 96 ----
+	 Query: 00237078	derivationally_related_form	02434238
+	 Query is True
+	 Final logit: [0.02352551557123661]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 00235435  -> derivationally_related_form  -> 01075164 
+			Confidence: [0.4847685694694519]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 01252280  -> _derivationally_related_form  -> 00414174 
+			Confidence: [0.46192657947540283]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 00404642 
+			Confidence: [0.4843824505805969]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01647229  -> _derivationally_related_form  -> 00240184 
+			Confidence: [0.5102548599243164]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01659248  -> _verb_group  -> 01668603 
+			Confidence: [0.45049363374710083]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02434238  -> derivationally_related_form  -> 10383505 
+			Confidence: [0.5390642285346985]
+---- DEBATE 97 ----
+	 Query: 00237078	derivationally_related_form	01155687
+	 Query is False
+	 Final logit: [-0.10541509836912155]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01647229  -> _derivationally_related_form  -> 00240184 
+			Confidence: [0.5235077142715454]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 01252280  -> derivationally_related_form  -> 00413876 
+			Confidence: [0.5090205669403076]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 01152787  -> NO_OP  -> 01152787 
+			Confidence: [0.5472491979598999]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01659248  -> _derivationally_related_form  -> 10284064 
+			Confidence: [0.509372889995575]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> derivationally_related_form  -> 02448185 
+			Confidence: [0.5120485424995422]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02434238  -> derivationally_related_form  -> 00242583 
+			Confidence: [0.5767608284950256]
+---- DEBATE 98 ----
+	 Query: 02350175	derivationally_related_form	00395333
+	 Query is True
+	 Final logit: [0.0795888751745224]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07305760  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5180283188819885]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07305760  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.47300657629966736]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5131273865699768]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4805915355682373]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07305760  -> hypernym  -> 07357101 
+			Confidence: [0.48093146085739136]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> also_see  -> 02629256  -> _derivationally_related_form  -> 01079042 
+			Confidence: [0.5768569707870483]
+---- DEBATE 99 ----
+	 Query: 02350175	derivationally_related_form	10789118
+	 Query is False
+	 Final logit: [0.01929999329149723]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07305760  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5120815634727478]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> also_see  -> 02629256  -> derivationally_related_form  -> 01079042 
+			Confidence: [0.5347021818161011]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 07305760 
+			Confidence: [0.4858323037624359]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07305760  -> hypernym  -> 07357101 
+			Confidence: [0.5269367098808289]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00395333  -> _derivationally_related_form  -> 00471711 
+			Confidence: [0.47149136662483215]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> also_see  -> 02629256  -> derivationally_related_form  -> 01079042 
+			Confidence: [0.5451797842979431]
+---- DEBATE 100 ----
+	 Query: 05517406	has_part	05527216
+	 Query is True
+	 Final logit: [0.10081023722887039]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5161491632461548]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 05516848  -> hypernym  -> 05515670 
+			Confidence: [0.5174688696861267]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _has_part  -> 05514905  -> has_part  -> QUERY_SUBJECT 
+			Confidence: [0.5120069980621338]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _has_part  -> 05514905  -> _has_part  -> 05513807 
+			Confidence: [0.5122911334037781]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 05516848  -> _hypernym  -> 05392348 
+			Confidence: [0.41861629486083984]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _has_part  -> 05514905 
+			Confidence: [0.5411427617073059]
+---- DEBATE 101 ----
+	 Query: 05517406	has_part	09043052
+	 Query is False
+	 Final logit: [0.08037874847650528]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 05516848  -> hypernym  -> 05515670 
+			Confidence: [0.5102937817573547]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 05516848 
+			Confidence: [0.5328885316848755]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _has_part  -> 05514905 
+			Confidence: [0.5238151550292969]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _has_part  -> 05514905 
+			Confidence: [0.5153281688690186]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 05516848  -> NO_OP  -> 05516848 
+			Confidence: [0.424182653427124]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 05516848 
+			Confidence: [0.5453538298606873]
+---- DEBATE 102 ----
+	 Query: 00681429	derivationally_related_form	09802050
+	 Query is True
+	 Final logit: [0.01531805656850338]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 05736149  -> derivationally_related_form  -> 00660971 
+			Confidence: [0.5110313892364502]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05138488  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5166375041007996]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 00660971  -> hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.5150172710418701]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05733583  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5166215300559998]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> verb_group  -> 00682230  -> verb_group  -> QUERY_SUBJECT 
+			Confidence: [0.4397954046726227]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00996969  -> NO_OP  -> 00996969 
+			Confidence: [0.5522984266281128]
+---- DEBATE 103 ----
+	 Query: 00681429	derivationally_related_form	00202236
+	 Query is False
+	 Final logit: [0.031106119975447655]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _hypernym  -> 00682781 
+			Confidence: [0.5311731100082397]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 10692883  -> NO_OP  -> 10692883 
+			Confidence: [0.4934367537498474]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 03735637  -> NO_OP  -> 03735637 
+			Confidence: [0.5304053425788879]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05138488  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5190120339393616]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _verb_group  -> 00682230  -> verb_group  -> QUERY_SUBJECT 
+			Confidence: [0.498018741607666]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 13413493  -> NO_OP  -> 13413493 
+			Confidence: [0.5481707453727722]
+---- DEBATE 104 ----
+	 Query: 03519578	hypernym	03519981
+	 Query is True
+	 Final logit: [-0.010431323200464249]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5571994185447693]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5381892919540405]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _member_of_domain_region  -> 08860123  -> NO_OP  -> 08860123 
+			Confidence: [0.5396984219551086]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4783294200897217]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.45438873767852783]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _member_of_domain_region  -> 08860123  -> member_of_domain_region  -> 10345015 
+			Confidence: [0.5672996044158936]
+---- DEBATE 105 ----
+	 Query: 03519578	hypernym	06613686
+	 Query is False
+	 Final logit: [0.018293699249625206]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _member_of_domain_region  -> 08860123  -> member_of_domain_region  -> 10690421 
+			Confidence: [0.5447602868080139]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5380349159240723]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _member_of_domain_region  -> 08860123  -> member_of_domain_region  -> 04020617 
+			Confidence: [0.5128981471061707]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _member_of_domain_region  -> 08860123  -> member_of_domain_region  -> 01891638 
+			Confidence: [0.5071913003921509]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_of_domain_region  -> 08860123 
+			Confidence: [0.4528311789035797]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _member_of_domain_region  -> 08860123  -> member_of_domain_region  -> 08624656 
+			Confidence: [0.5664451718330383]
+---- DEBATE 106 ----
+	 Query: 12139367	member_meronym	12139575
+	 Query is True
+	 Final logit: [0.0704982727766037]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 12100538  -> member_meronym  -> 12140137 
+			Confidence: [0.5136740207672119]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_meronym  -> 12100538 
+			Confidence: [0.45942601561546326]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 12100538  -> member_meronym  -> 12116267 
+			Confidence: [0.5778747797012329]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 12100538  -> member_meronym  -> 12141037 
+			Confidence: [0.4366012215614319]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 11556857  -> _hypernym  -> 12070177 
+			Confidence: [0.43559402227401733]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 11556857  -> _hypernym  -> 11786017 
+			Confidence: [0.5835599899291992]
+---- DEBATE 107 ----
+	 Query: 12139367	member_meronym	08979054
+	 Query is False
+	 Final logit: [-0.013294870033860207]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 11556857  -> _hypernym  -> 11785100 
+			Confidence: [0.5335214138031006]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _member_meronym  -> 12100538 
+			Confidence: [0.45978474617004395]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5416085720062256]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 12100538  -> member_meronym  -> 12118223 
+			Confidence: [0.4341987371444702]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 11556857 
+			Confidence: [0.5020604133605957]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 12100538  -> member_meronym  -> 12109719 
+			Confidence: [0.5403173565864563]
+---- DEBATE 108 ----
+	 Query: 04853948	hypernym	04874672
+	 Query is True
+	 Final logit: [-0.02801828645169735]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02319129  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5347421169281006]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 02319129 
+			Confidence: [0.4767811596393585]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02319129  -> NO_OP  -> 02319129 
+			Confidence: [0.5597527027130127]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02319129  -> _also_see  -> 01222884 
+			Confidence: [0.5358899831771851]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 02319129 
+			Confidence: [0.4646204710006714]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> derivationally_related_form  -> 02319129 
+			Confidence: [0.5477538704872131]
+---- DEBATE 109 ----
+	 Query: 04853948	hypernym	05621439
+	 Query is False
+	 Final logit: [-0.02887766994535923]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> derivationally_related_form  -> 02319129 
+			Confidence: [0.5407915115356445]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02319129  -> NO_OP  -> 02319129 
+			Confidence: [0.5004453659057617]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02319129  -> NO_OP  -> 02319129 
+			Confidence: [0.560011088848114]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02319129  -> also_see  -> 01222884 
+			Confidence: [0.5396145582199097]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02319129  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.4315749704837799]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02319129  -> NO_OP  -> 02319129 
+			Confidence: [0.5515530705451965]
+---- DEBATE 110 ----
+	 Query: 03660664	has_part	02968333
+	 Query is True
+	 Final logit: [0.026235617697238922]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> has_part  -> 04058096  -> hypernym  -> 04105893 
+			Confidence: [0.5096977353096008]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5406914949417114]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> has_part  -> 04058096  -> hypernym  -> 04105893 
+			Confidence: [0.49873489141464233]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 04058096  -> hypernym  -> 04105893 
+			Confidence: [0.5503756403923035]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4846166968345642]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5226917266845703]
+---- DEBATE 111 ----
+	 Query: 03660664	has_part	09141526
+	 Query is False
+	 Final logit: [0.06058640778064728]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> has_part  -> 04058096 
+			Confidence: [0.4964373707771301]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 03177349  -> has_part  -> 04328946 
+			Confidence: [0.5122113823890686]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> has_part  -> 02968333 
+			Confidence: [0.5211328268051147]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 02968333  -> NO_OP  -> 02968333 
+			Confidence: [0.5265704989433289]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 03177349  -> _hypernym  -> 03800563 
+			Confidence: [0.4190269708633423]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> has_part  -> 02968333  -> hypernym  -> 02696048 
+			Confidence: [0.5395075082778931]
+---- DEBATE 112 ----
+	 Query: 08454818	synset_domain_topic_of	08441203
+	 Query is True
+	 Final logit: [0.003429765347391367]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 08441203 
+			Confidence: [0.5219601392745972]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 08441203  -> _synset_domain_topic_of  -> 13952601 
+			Confidence: [0.5339212417602539]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 08199025  -> _synset_domain_topic_of  -> 07340725 
+			Confidence: [0.46748068928718567]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 08441203  -> _synset_domain_topic_of  -> 06526004 
+			Confidence: [0.4706224799156189]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 08441203 
+			Confidence: [0.48050108551979065]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 08441203 
+			Confidence: [0.5454515218734741]
+---- DEBATE 113 ----
+	 Query: 08454818	synset_domain_topic_of	06282651
+	 Query is False
+	 Final logit: [0.01744709350168705]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> synset_domain_topic_of  -> 08441203 
+			Confidence: [0.5194023251533508]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5379104018211365]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> synset_domain_topic_of  -> 08441203 
+			Confidence: [0.5073882341384888]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 08441203  -> _synset_domain_topic_of  -> 01014821 
+			Confidence: [0.4751955568790436]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 08441203  -> _synset_domain_topic_of  -> 01192150 
+			Confidence: [0.4581427276134491]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> synset_domain_topic_of  -> 08441203  -> _synset_domain_topic_of  -> 00739850 
+			Confidence: [0.5508870482444763]
+---- DEBATE 114 ----
+	 Query: 04818284	derivationally_related_form	02393401
+	 Query is True
+	 Final logit: [-0.016788484528660774]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 04818700  -> NO_OP  -> 04818700 
+			Confidence: [0.5401347279548645]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 04818700  -> NO_OP  -> 04818700 
+			Confidence: [0.4863879680633545]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 04818700  -> NO_OP  -> 04818700 
+			Confidence: [0.5479534268379211]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02393401  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5189595222473145]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02393401  -> _also_see  -> 01849288 
+			Confidence: [0.5121555924415588]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02393401  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5406226515769958]
+---- DEBATE 115 ----
+	 Query: 04818284	derivationally_related_form	02254258
+	 Query is False
+	 Final logit: [0.06418425589799881]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 04815321  -> _hypernym  -> QUERY_SUBJECT 
+			Confidence: [0.5220111608505249]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _hypernym  -> 04818700 
+			Confidence: [0.5197526812553406]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02393401  -> _also_see  -> 00851103 
+			Confidence: [0.5211383104324341]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _hypernym  -> 04818700 
+			Confidence: [0.49367058277130127]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02393401  -> _also_see  -> 00851103 
+			Confidence: [0.5097349882125854]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 04818700  -> NO_OP  -> 04818700 
+			Confidence: [0.5779821872711182]
+---- DEBATE 116 ----
+	 Query: 00048828	hypernym	00048225
+	 Query is True
+	 Final logit: [0.01754106767475605]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02005948  -> derivationally_related_form  -> 09810166 
+			Confidence: [0.5352680683135986]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02005948  -> _hypernym  -> 02006834 
+			Confidence: [0.5169996619224548]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> derivationally_related_form  -> 02005948 
+			Confidence: [0.48490387201309204]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02005948  -> _hypernym  -> 01981436 
+			Confidence: [0.5406275987625122]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> derivationally_related_form  -> 02005948 
+			Confidence: [0.45859596133232117]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 02005948  -> _hypernym  -> 02015384 
+			Confidence: [0.5575021505355835]
+---- DEBATE 117 ----
+	 Query: 00048828	hypernym	13989627
+	 Query is False
+	 Final logit: [0.030966611579060555]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5568642020225525]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02005948  -> _hypernym  -> 02015384 
+			Confidence: [0.5227242708206177]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02005948  -> derivationally_related_form  -> 09810166 
+			Confidence: [0.46535536646842957]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 02005948 
+			Confidence: [0.49867862462997437]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 02005948  -> derivationally_related_form  -> 00048374 
+			Confidence: [0.4244093596935272]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5472561120986938]
+---- DEBATE 118 ----
+	 Query: 00922867	derivationally_related_form	05816790
+	 Query is True
+	 Final logit: [0.00048785744002088904]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01004582  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5489742159843445]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01004582  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.518028974533081]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05816790  -> _derivationally_related_form  -> 00772640 
+			Confidence: [0.5066753625869751]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 01004582  -> hypernym  -> 00996969 
+			Confidence: [0.530076265335083]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00999787  -> NO_OP  -> 00999787 
+			Confidence: [0.45076051354408264]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 01004582  -> NO_OP  -> 01004582 
+			Confidence: [0.5479856133460999]
+---- DEBATE 119 ----
+	 Query: 00922867	derivationally_related_form	04763650
+	 Query is False
+	 Final logit: [0.07792690396308899]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 00999787  -> hypernym  -> 00999245 
+			Confidence: [0.5102555751800537]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05816790  -> _hypernym  -> 15129927 
+			Confidence: [0.5186736583709717]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05816790  -> _hypernym  -> 15129927 
+			Confidence: [0.5471174716949463]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05816790  -> NO_OP  -> 05816790 
+			Confidence: [0.5042726397514343]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05816790  -> hypernym  -> 05816622 
+			Confidence: [0.4773164689540863]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 00923307  -> _hypernym  -> 00820611 
+			Confidence: [0.6065303087234497]
+---- DEBATE 120 ----
+	 Query: 02897820	hypernym	14786479
+	 Query is True
+	 Final logit: [-0.053693898022174835]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5563678741455078]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5370149612426758]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5229409337043762]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4799969792366028]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.45402082800865173]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.546905517578125]
+---- DEBATE 121 ----
+	 Query: 02897820	hypernym	02517938
+	 Query is False
+	 Final logit: [-0.052341312170028687]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5558398962020874]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.537230372428894]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5225023031234741]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.48177480697631836]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.453022301197052]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.5456696152687073]
+---- DEBATE 122 ----
+	 Query: 02694247	derivationally_related_form	09493562
+	 Query is True
+	 Final logit: [0.026866791769862175]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05769314  -> hypernym  -> 05767733 
+			Confidence: [0.5131300687789917]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 05769314  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.4738798141479492]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 09493562 
+			Confidence: [0.48278844356536865]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 09493562  -> NO_OP  -> 09493562 
+			Confidence: [0.5030404329299927]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05769314  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.49679458141326904]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> _derivationally_related_form  -> 09493562 
+			Confidence: [0.5715948343276978]
+---- DEBATE 123 ----
+	 Query: 02694247	derivationally_related_form	05977340
+	 Query is False
+	 Final logit: [0.05123256891965866]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05769314  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5105994343757629]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 05769314  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5164459347724915]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 05769314  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.45554494857788086]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> NO_OP  -> QUERY_SUBJECT 
+			Confidence: [0.4795261323451996]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 05769314  -> hypernym  -> 05767733 
+			Confidence: [0.4589025676250458]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 05769314  -> derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.5761262774467468]
+---- DEBATE 124 ----
+	 Query: 00989602	derivationally_related_form	06891022
+	 Query is True
+	 Final logit: [0.10195973515510559]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 06891022  -> _hypernym  -> 07006951 
+			Confidence: [0.5545249581336975]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07167415  -> _derivationally_related_form  -> QUERY_SUBJECT 
+			Confidence: [0.47322604060173035]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> _hypernym  -> 00990008  -> _derivationally_related_form  -> 10380672 
+			Confidence: [0.5021661520004272]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 00990008  -> derivationally_related_form  -> 07238694 
+			Confidence: [0.50920569896698]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07167415  -> NO_OP  -> 07167415 
+			Confidence: [0.46858885884284973]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 06891022  -> _derivationally_related_form  -> 02148788 
+			Confidence: [0.5543655157089233]
+---- DEBATE 125 ----
+	 Query: 00989602	derivationally_related_form	08512736
+	 Query is False
+	 Final logit: [0.08212342113256454]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07167415  -> derivationally_related_form  -> 02148788 
+			Confidence: [0.5107489228248596]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07167415  -> NO_OP  -> 07167415 
+			Confidence: [0.501757800579071]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07071483  -> _hypernym  -> 07082573 
+			Confidence: [0.5121570825576782]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _hypernym  -> 00990008  -> NO_OP  -> 00990008 
+			Confidence: [0.49121716618537903]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> derivationally_related_form  -> 07071483  -> _hypernym  -> 07083732 
+			Confidence: [0.44998854398727417]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> _derivationally_related_form  -> 07167415  -> _derivationally_related_form  -> 02148788 
+			Confidence: [0.5549570918083191]
+---- DEBATE 126 ----
+	 Query: 12800327	member_meronym	12800586
+	 Query is True
+	 Final logit: [0.0851839929819107]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 12800832  -> NO_OP  -> 12800832 
+			Confidence: [0.5669358372688293]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> member_meronym  -> 12800832 
+			Confidence: [0.5250781774520874]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 11585340  -> _hypernym  -> 12577000 
+			Confidence: [0.5624115467071533]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> _member_meronym  -> 12792041  -> member_meronym  -> 12799119 
+			Confidence: [0.4358873665332794]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> member_meronym  -> 12800832  -> NO_OP  -> 12800832 
+			Confidence: [0.4392538368701935]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 11585340  -> _hypernym  -> 12946578 
+			Confidence: [0.5807242393493652]
+---- DEBATE 127 ----
+	 Query: 12800327	member_meronym	02422561
+	 Query is False
+	 Final logit: [0.13344158232212067]
+
+	 Pro argument 0 (Correct):
+			QUERY_SUBJECT -> _member_meronym  -> 12792041  -> member_meronym  -> 12799580 
+			Confidence: [0.5123172998428345]
+
+
+	 Con argument 0 (Incorrect):
+			QUERY_SUBJECT -> member_meronym  -> 12800586  -> _member_meronym  -> QUERY_SUBJECT 
+			Confidence: [0.4766955077648163]
+
+
+	 Pro argument 1 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 11585340  -> _hypernym  -> 12939664 
+			Confidence: [0.5632856488227844]
+
+
+	 Con argument 1 (Incorrect):
+			QUERY_SUBJECT -> NO_OP  -> QUERY_SUBJECT  -> hypernym  -> 11585340 
+			Confidence: [0.4956945776939392]
+
+
+	 Pro argument 2 (Correct):
+			QUERY_SUBJECT -> hypernym  -> 11585340  -> _hypernym  -> 12651062 
+			Confidence: [0.43224015831947327]
+
+
+	 Con argument 2 (Incorrect):
+			QUERY_SUBJECT -> hypernym  -> 11585340  -> _hypernym  -> 12518725 
+			Confidence: [0.581021785736084]

@@ -1,0 +1,2 @@
+model_checkpoint_path: "unbiased_model.ckpt"
+all_model_checkpoint_paths: "unbiased_model.ckpt"
