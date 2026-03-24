@@ -4,6 +4,7 @@ from tqdm import tqdm
 import json
 import pickle
 import os
+import sys
 import uuid
 import datetime
 from pprint import pprint
@@ -16,6 +17,11 @@ from scipy.special import expit as sig
 os.environ.setdefault('TF_CPP_MIN_LOG_LEVEL', '3')
 if os.environ.get('CUDA_VISIBLE_DEVICES', None) in ('', '-1'):
     os.environ.setdefault('TF_DISABLE_CUDA', '1')
+
+# TensorFlow optionally imports JAX for some TFLite paths. On Kaggle, preinstalled
+# jax/ml_dtypes combinations can be incompatible and raise ValueError at import time.
+# Mark JAX as unavailable so TensorFlow falls back cleanly.
+sys.modules.setdefault('jax', None)
 
 import tensorflow as tf
 
@@ -64,7 +70,6 @@ def tf_div(*args, **kwargs):
 
 if os.name == 'posix':
     import resource
-import sys
 from code.model.baseline import ReactiveBaseline
 from code.model.debate_printer import  Debate_Printer
 
