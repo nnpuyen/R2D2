@@ -30,7 +30,28 @@ if os.environ.get('CUDA_VISIBLE_DEVICES', None) in ('', '-1'):
 # Mark JAX as unavailable so TensorFlow falls back cleanly.
 sys.modules.setdefault('jax', None)
 
-import tensorflow as tf
+
+def import_tensorflow():
+    # Kaggle TensorFlow images can emit non-fatal duplicate CUDA factory
+    # registration logs to stderr during import. Silence only that import step.
+    is_kaggle = bool(os.environ.get('KAGGLE_URL_BASE') or os.environ.get('KAGGLE_KERNEL_RUN_TYPE'))
+    if not is_kaggle:
+        import tensorflow as tf_module
+        return tf_module
+
+    saved_stderr = os.dup(2)
+    devnull_fd = os.open(os.devnull, os.O_WRONLY)
+    try:
+        os.dup2(devnull_fd, 2)
+        import tensorflow as tf_module
+    finally:
+        os.dup2(saved_stderr, 2)
+        os.close(saved_stderr)
+        os.close(devnull_fd)
+    return tf_module
+
+
+tf = import_tensorflow()
 
 warnings.filterwarnings('ignore', message='.*`layer.add_variable` is deprecated.*')
 
