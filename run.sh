@@ -1,45 +1,82 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-file_path=$1
-
-if [ ! -f "$file_path" ]; then
-    echo "Error: Config file '$file_path' not found"
-    exit 1
-fi
-
-params=""
-while IFS= read -r line || [ -n "$line" ]
-do
-    [[ -z "$line" || "$line" =~ ^#.*$ ]] && continue
-    name="--$(cut -d '=' -f1 <<<"$line")"
-    val="$(cut -d '=' -f2 <<<"$line")"
-    val="$(cut -d '"' -f2 <<<"$val")"
-    params="$params $name $val"
-done < "$file_path"
-
-export PYTHONPATH="."
-
-# If user did not provide CUDA_VISIBLE_DEVICES externally, auto-detect GPU support.
-if [ -z "${CUDA_VISIBLE_DEVICES+x}" ]; then
-    if command -v nvidia-smi >/dev/null 2>&1 && nvidia-smi -L >/dev/null 2>&1; then
-        gpu_id=0
-        export CUDA_VISIBLE_DEVICES="$gpu_id"
-        echo "Using GPU $gpu_id"
-    else
-        export CUDA_VISIBLE_DEVICES="-1"
-        export TF_DISABLE_CUDA="1"
-        echo "No NVIDIA driver detected. Falling back to CPU mode."
-    fi
-fi
-
-# Reduce TensorFlow backend startup noise (can be overridden by user env).
-export TF_CPP_MIN_LOG_LEVEL="${TF_CPP_MIN_LOG_LEVEL:-3}"
-
-cmd="python3 code/model/trainer.py $params"
+#!/usr/bin/env python3
+import os
+import shlex
+import subprocess
+import sys
 
 
+def parse_value(raw_value: str) -> str:
+    value = raw_value.strip()
+    if len(value) >= 2 and ((value[0] == '"' and value[-1] == '"') or (value[0] == "'" and value[-1] == "'")):
+        return value[1:-1]
+    return value
 
-echo "Executing $cmd"
 
-$cmd
+def load_params(config_path: str) -> list[str]:
+    params: list[str] = []
+    with open(config_path, "r", encoding="utf-8") as cfg:
+        for line in cfg:
+            stripped = line.strip()
+            if not stripped or stripped.startswith("#"):
+                continue
+            if "=" not in stripped:
+                continue
+            key, raw_value = stripped.split("=", 1)
+            key = key.strip()
+            if not key:
+                continue
+            params.extend([f"--{key}", parse_value(raw_value)])
+    return params
+
+
+def detect_gpu() -> bool:
+    try:
+        result = subprocess.run(
+            ["nvidia-smi", "-L"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+        )
+        return result.returncode == 0
+    except FileNotFoundError:
+        return False
+
+
+def main() -> int:
+    if len(sys.argv) < 2:
+        print("Usage: run.sh <config_file>")
+        return 2
+
+    file_path = sys.argv[1]
+    if not os.path.isfile(file_path):
+        print(f"Error: Config file '{file_path}' not found")
+        return 1
+
+    params = load_params(file_path)
+
+    env = os.environ.copy()
+    env["PYTHONPATH"] = "."
+
+    # If user did not provide CUDA_VISIBLE_DEVICES externally, auto-detect GPU support.
+    if "CUDA_VISIBLE_DEVICES" not in env:
+        if detect_gpu():
+            env["CUDA_VISIBLE_DEVICES"] = "0"
+            print("Using GPU 0")
+        else:
+            env["CUDA_VISIBLE_DEVICES"] = "-1"
+            env["TF_DISABLE_CUDA"] = "1"
+            print("No NVIDIA driver detected. Falling back to CPU mode.")
+
+    # Reduce TensorFlow backend startup noise (can be overridden by user env).
+    env.setdefault("TF_CPP_MIN_LOG_LEVEL", "3")
+
+    python_exec = sys.executable or "python3"
+    cmd = [python_exec, "code/model/trainer.py", *params]
+    print(f"Executing {shlex.join(cmd)}")
+
+    completed = subprocess.run(cmd, env=env, check=False)
+    return completed.returncode
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
