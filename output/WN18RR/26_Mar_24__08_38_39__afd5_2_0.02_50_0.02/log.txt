@@ -1,0 +1,17 @@
+03/24/2026 08:38:39 AM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+03/24/2026 08:38:39 AM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+03/24/2026 08:38:40 AM: [ KG constructed ]
+03/24/2026 08:38:40 AM: [ KG constructed ]
+03/24/2026 08:38:41 AM: [ KG constructed ]
+03/24/2026 08:38:41 AM: [ Creating TF graph... ]
+03/24/2026 08:38:41 AM: [ From /home/bn/R2D2/.venv/lib/python3.12/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:988: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor ]
+03/24/2026 08:38:46 AM: [ TF Graph creation done.. ]
+03/24/2026 08:38:47 AM: [ BATCH COUNTER: 0  ]
+03/24/2026 08:38:47 AM: [ From /home/bn/R2D2/code/model/trainer.py:584: BaseSession.partial_run_setup (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function. ]
+03/24/2026 08:38:48 AM: [ From /home/bn/R2D2/code/model/trainer.py:596: BaseSession.partial_run (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function. ]

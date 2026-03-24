@@ -2,25 +2,33 @@ from __future__ import absolute_import
 from __future__ import division
 from tqdm import tqdm
 import json
-import time
 import pickle
 import os
 import uuid
 import datetime
 from pprint import pprint
 import logging
+import warnings
 import numpy as np
 from scipy.special import expit as sig
+
+# Set TensorFlow runtime defaults before importing TensorFlow.
+os.environ.setdefault('TF_CPP_MIN_LOG_LEVEL', '3')
+if os.environ.get('CUDA_VISIBLE_DEVICES', None) in ('', '-1'):
+    os.environ.setdefault('TF_DISABLE_CUDA', '1')
+
 import tensorflow as tf
+
+warnings.filterwarnings('ignore', message='.*`layer.add_variable` is deprecated.*')
+
 # TensorFlow 1.x compatibility for newer TensorFlow versions
 if hasattr(tf, 'compat'):
-    tf.compat.v1.disable_v2_behavior()
+    tf.compat.v1.disable_eager_execution()
 from code.model.judge import Judge
 from code.model.agent import Agent
 from code.options import read_options
 from code.model.environment import env
 from sklearn.model_selection import ParameterGrid
-import itertools
 import random
 import sklearn
 import gc
@@ -560,16 +568,17 @@ class Trainer(object):
         for episode in self.train_environment.get_episodes():
             is_train_judge = (self.batch_counter // self.train_judge_every) % 2 == 0 \
                              or self.batch_counter >= self.rounds_sub_training
-            fetches, feeds, feed_dict = self.get_partial_run_setup(is_train_judge)
+            feed_dict = {}
             which_agent_list = []
             logger.info("BATCH COUNTER: {} ".format(self.batch_counter))
             self.batch_counter += 1
 
-            feed_dict[0][self.query_subject] = episode.get_query_subjects()  # check getters
-            feed_dict[0][self.query_relation] = episode.get_query_relation()
-            feed_dict[0][self.query_object] = episode.get_query_objects()
-            feed_dict[0][self.learning_rate_judge_ph] = self.learning_rate_judge  # check getters
-            feed_dict[0][self.random_flag] = self.batch_counter < self.train_judge_every
+            feed_dict[self.query_subject] = episode.get_query_subjects()  # check getters
+            feed_dict[self.query_relation] = episode.get_query_relation()
+            feed_dict[self.query_object] = episode.get_query_objects()
+            feed_dict[self.learning_rate_judge_ph] = self.learning_rate_judge  # check getters
+            feed_dict[self.random_flag] = self.batch_counter < self.train_judge_every
+            feed_dict[self.range_arr] = np.arange(self.batch_size)
 
             episode_answers = episode.get_labels()
 
@@ -577,13 +586,11 @@ class Trainer(object):
                                           episode.get_labels())
 
 
-            feed_dict[0][self.labels] = episode_answers
+            feed_dict[self.labels] = episode_answers
 
             loss_before_regularization = []
             logits = []
             i = 0
-
-            h = sess.partial_run_setup(fetches=fetches, feeds=feeds)
 
             debate_printer_rel_list = []
             debate_printer_ent_list = []
@@ -591,18 +598,19 @@ class Trainer(object):
                 state = episode.reset_initial_state()
                 for path_num in range(self.path_length):
                     which_agent_list.append(0.0)
-                    feed_dict[i][self.which_agent_sequence[i]] = 0.0
-                    feed_dict[i][self.candidate_relation_sequence[i]] = state['next_relations']
-                    feed_dict[i][self.candidate_entity_sequence[i]] = state['next_entities']
-                    feed_dict[i][self.entity_sequence[i]] = state['current_entities']
-                    temp_logits_judge, per_example_loss, per_example_logits, idx, rewards, print_rewards = sess.partial_run(h, [
+                    feed_dict[self.which_agent_sequence[i]] = 0.0
+                    feed_dict[self.candidate_relation_sequence[i]] = state['next_relations']
+                    feed_dict[self.candidate_entity_sequence[i]] = state['next_entities']
+                    feed_dict[self.entity_sequence[i]] = state['current_entities']
+                    feed_dict[self.input_path[i]] = np.zeros(self.batch_size)  # placebo
+                    temp_logits_judge, per_example_loss, per_example_logits, idx, rewards, print_rewards = sess.run([
                         self.temp_logits_judge[i],
                         self.per_example_loss[i],
                         self.per_example_logits[i],
                         self.action_idx[i],
                         self.rewards_agents[i],
                         self.rewards_before_baseline[i]],
-                                                        feed_dict=feed_dict[i])
+                                                        feed_dict=feed_dict)
                     loss_before_regularization.append(per_example_loss)
                     rel_string, ent_string = debate_printer.get_action_rel_ent(idx, state)
                     debate_printer_rel_list.append(rel_string)
@@ -620,19 +628,19 @@ class Trainer(object):
 
                 for path_num in range(self.path_length):
                     which_agent_list.append(1.0)
-                    feed_dict[i][self.which_agent_sequence[i]] = 1.0
-                    feed_dict[i][self.candidate_relation_sequence[i]] = state['next_relations']
-                    feed_dict[i][self.candidate_entity_sequence[i]] = state['next_entities']
-                    feed_dict[i][self.entity_sequence[i]] = state['current_entities']
-                    temp_logits_judge, per_example_loss, per_example_logits, idx, rewards, print_rewards = sess.partial_run(h, [
+                    feed_dict[self.which_agent_sequence[i]] = 1.0
+                    feed_dict[self.candidate_relation_sequence[i]] = state['next_relations']
+                    feed_dict[self.candidate_entity_sequence[i]] = state['next_entities']
+                    feed_dict[self.entity_sequence[i]] = state['current_entities']
+                    feed_dict[self.input_path[i]] = np.zeros(self.batch_size)  # placebo
+                    temp_logits_judge, per_example_loss, per_example_logits, idx, rewards, print_rewards = sess.run([
                         self.temp_logits_judge[i],
                         self.per_example_loss[i],
                         self.per_example_logits[i],
                         self.action_idx[i],
                         self.rewards_agents[i],
                         self.rewards_before_baseline[i]],
-                                                                                                    feed_dict=feed_dict[
-                                                                                                        i])
+                                                                                                    feed_dict=feed_dict)
                     loss_before_regularization.append(per_example_loss)
                     rel_string, ent_string = debate_printer.get_action_rel_ent(idx, state)
                     debate_printer_rel_list.append(rel_string)
@@ -647,12 +655,13 @@ class Trainer(object):
                 debate_printer_ent_list.clear()
 
 
-            logits_judge = sess.partial_run(h, self.final_logits_judge)
+            logits_judge = sess.run(self.final_logits_judge, feed_dict=feed_dict)
             debate_printer.set_debates_final_logit(logits_judge)
             if is_train_judge:
-                loss_judge, _ = sess.partial_run(h, [
+                loss_judge, _ = sess.run([
                                                                       self.loss_judge,
-                                                                      self.dummy_judge])
+                                                                      self.dummy_judge],
+                                        feed_dict=feed_dict)
 
                 self.learning_rate_judge = self.learning_rate_judge_init
             else:
@@ -677,9 +686,10 @@ class Trainer(object):
                                                                                                    which_agent_list))  # [B, T]
 
             if not is_train_judge:
-                _ = sess.partial_run(h,[self.dummy],
-                                      feed_dict={self.cum_discounted_reward_1: cum_discounted_reward_1,
-                                                 self.cum_discounted_reward_2: cum_discounted_reward_2})  # self.dummy seems to be a hack for training_op
+                train_feed_dict = dict(feed_dict)
+                train_feed_dict[self.cum_discounted_reward_1] = cum_discounted_reward_1
+                train_feed_dict[self.cum_discounted_reward_2] = cum_discounted_reward_2
+                _ = sess.run([self.dummy], feed_dict=train_feed_dict)  # self.dummy seems to be a hack for training_op
 
             if self.batch_counter == self.rounds_sub_training:
                 self.model_saver.save(sess, self.model_dir + '/unbiased_model/unbiased_model.ckpt')
@@ -903,12 +913,20 @@ class Trainer(object):
             binary_preds = np.greater(sk_mean_logit_list, best_threshold).astype(int)
             best_acc = sklearn.metrics.accuracy_score(binary_preds, sk_correct_answer_list)
 
+        # Calculate precision, recall, and f1 using the best threshold
+        binary_preds_best = np.greater(sk_mean_logit_list, best_threshold).astype(int)
+        best_precision = sklearn.metrics.precision_score(sk_correct_answer_list, binary_preds_best)
+        best_recall = sklearn.metrics.recall_score(sk_correct_answer_list, binary_preds_best)
+        best_f1 = sklearn.metrics.f1_score(sk_correct_answer_list, binary_preds_best)
 
         logger.info("========== SKLEARN METRICS =============")
         logger.info("Best Threshold === {}".format(best_threshold))
-        logger.info("Acc === {}".format(best_acc))
-        logger.info("AUC_PR === {}".format(auc_pr))
-        logger.info("AUC_ROC === {}".format(auc_roc))
+        logger.info("Accuracy === {}".format(best_acc))
+        logger.info("Precision === {}".format(best_precision))
+        logger.info("Recall === {}".format(best_recall))
+        logger.info("F1 === {}".format(best_f1))
+        logger.info("PR_AUC === {}".format(auc_pr))
+        logger.info("ROC_AUC === {}".format(auc_roc))
         logger.info("========================================")
 
         if self.is_use_fixed_false_facts:

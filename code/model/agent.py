@@ -1,13 +1,12 @@
 import numpy as np
 import tensorflow as tf
+import warnings
+
+warnings.filterwarnings('ignore', message='.*`layer.add_variable` is deprecated.*')
+
 # TensorFlow 1.x compatibility for newer TensorFlow versions
 if hasattr(tf, 'compat'):
-    tf.compat.v1.disable_v2_behavior()
-    # Import RNN cells explicitly
-    try:
-        from tensorflow.python.ops import rnn_cell_impl
-    except ImportError:
-        pass
+    tf.compat.v1.disable_eager_execution()
 
 # Compatibility helper for variable_scope
 def tf_variable_scope(*args, **kwargs):
@@ -30,13 +29,10 @@ def tf_to_int32(x):
     """Helper function for TensorFlow tf.to_int32 compatibility"""
     return tf.cast(x, tf.int32)
 
-# Compatibility helper for tf.multinomial
+# Compatibility helper for categorical sampling
 def tf_multinomial(logits, num_samples, **kwargs):
-    """Helper function for TensorFlow tf.multinomial compatibility"""
-    if hasattr(tf, 'compat'):
-        return tf.compat.v1.multinomial(logits=logits, num_samples=num_samples, **kwargs)
-    else:
-        return tf.multinomial(logits=logits, num_samples=num_samples, **kwargs)
+    """Helper function for TensorFlow categorical sampling compatibility"""
+    return tf.random.categorical(logits=logits, num_samples=num_samples, **kwargs)
 
 
 class Agent(object):
@@ -74,13 +70,13 @@ class Agent(object):
         if self.use_entity_embeddings:
             # Use compatibility layer for TensorFlow 2.x
             if hasattr(tf, 'compat'):
-                self.entity_initializer = tf.compat.v1.keras.initializers.glorot_uniform()
+                self.entity_initializer = tf.compat.v1.glorot_uniform_initializer()
             else:
                 self.entity_initializer = tf.contrib.layers.xavier_initializer()
             self.m = 2
         else:
             self.m = 1
-            self.entity_initializer = tf.zeros_initializer()
+            self.entity_initializer = tf.keras.initializers.Zeros()
 
         self.define_embeddings()
         self.define_agents_policy()
@@ -102,7 +98,7 @@ class Agent(object):
 
                 # Use compatibility layer for TensorFlow 2.x
                 if hasattr(tf, 'compat'):
-                    xavier_init_1 = tf.compat.v1.keras.initializers.glorot_uniform()
+                    xavier_init_1 = tf.compat.v1.glorot_uniform_initializer()
                 else:
                     xavier_init_1 = tf.contrib.layers.xavier_initializer()
 
@@ -129,7 +125,7 @@ class Agent(object):
 
                 # Use compatibility layer for TensorFlow 2.x
                 if hasattr(tf, 'compat'):
-                    xavier_init_1 = tf.compat.v1.keras.initializers.glorot_uniform()
+                    xavier_init_1 = tf.compat.v1.glorot_uniform_initializer()
                 else:
                     xavier_init_1 = tf.contrib.layers.xavier_initializer()
 
@@ -158,7 +154,7 @@ class Agent(object):
 
                 # Use compatibility layer for TensorFlow 2.x
                 if hasattr(tf, 'compat'):
-                    xavier_init_2 = tf.compat.v1.keras.initializers.glorot_uniform()
+                    xavier_init_2 = tf.compat.v1.glorot_uniform_initializer()
                 else:
                     xavier_init_2 = tf.contrib.layers.xavier_initializer()
 
@@ -185,7 +181,7 @@ class Agent(object):
 
                 # Use compatibility layer for TensorFlow 2.x
                 if hasattr(tf, 'compat'):
-                    xavier_init_2 = tf.compat.v1.keras.initializers.glorot_uniform()
+                    xavier_init_2 = tf.compat.v1.glorot_uniform_initializer()
                 else:
                     xavier_init_2 = tf.contrib.layers.xavier_initializer()
 
@@ -214,62 +210,21 @@ class Agent(object):
         :return: None
         '''
 
-        cells = []
-        for _ in range(self.hidden_layers):
-            # Use compatibility layer for TensorFlow 2.x
-            if hasattr(tf, 'compat'):
-                try:
-                    # Try to use the legacy RNN cell from rnn_cell_impl
-                    from tensorflow.python.ops.rnn_cell_impl import BasicLSTMCell
-                    cells.append(BasicLSTMCell(self.m * self.embedding_size, state_is_tuple=True))
-                except (ImportError, AttributeError):
-                    # Final fallback to tf.contrib (this will require TF1.x)
-                    cells.append(
-                        tf.contrib.rnn.LSTMCell(self.m * self.embedding_size, use_peepholes=True, state_is_tuple=True))
-            else:
-                cells.append(
-                    tf.contrib.rnn.LSTMCell(self.m * self.embedding_size, use_peepholes=True, state_is_tuple=True))
-        
-        if hasattr(tf, 'compat'):
-            try:
-                from tensorflow.python.ops.rnn_cell_impl import MultiRNNCell
-                self.policy_agent_1 = MultiRNNCell(cells, state_is_tuple=True)
-            except (ImportError, AttributeError):
-                self.policy_agent_1 = tf.contrib.rnn.MultiRNNCell(cells, state_is_tuple=True)
-        else:
-            self.policy_agent_1 = tf.contrib.rnn.MultiRNNCell(cells, state_is_tuple=True)
+        def build_policy_cell_stack():
+            cells = []
+            for _ in range(self.hidden_layers):
+                cells.append(tf.keras.layers.LSTMCell(self.m * self.embedding_size))
+            return tf.keras.layers.StackedRNNCells(cells)
 
-        cells = []
-        for _ in range(self.hidden_layers):
-            # Use compatibility layer for TensorFlow 2.x
-            if hasattr(tf, 'compat'):
-                try:
-                    # Try to use the legacy RNN cell from rnn_cell_impl
-                    from tensorflow.python.ops.rnn_cell_impl import BasicLSTMCell
-                    cells.append(BasicLSTMCell(self.m * self.embedding_size, state_is_tuple=True))
-                except (ImportError, AttributeError):
-                    # Final fallback to tf.contrib (this will require TF1.x)
-                    cells.append(
-                        tf.contrib.rnn.LSTMCell(self.m * self.embedding_size, use_peepholes=True, state_is_tuple=True))
-            else:
-                cells.append(
-                    tf.contrib.rnn.LSTMCell(self.m * self.embedding_size, use_peepholes=True, state_is_tuple=True))
-        
-        if hasattr(tf, 'compat'):
-            try:
-                from tensorflow.python.ops.rnn_cell_impl import MultiRNNCell
-                self.policy_agent_2 = MultiRNNCell(cells, state_is_tuple=True)
-            except (ImportError, AttributeError):
-                self.policy_agent_2 = tf.contrib.rnn.MultiRNNCell(cells, state_is_tuple=True)
-        else:
-            self.policy_agent_2 = tf.contrib.rnn.MultiRNNCell(cells, state_is_tuple=True)
+        self.policy_agent_1 = build_policy_cell_stack()
+        self.policy_agent_2 = build_policy_cell_stack()
 
 
     def format_state(self,state):
         '''
         Formats the cell- and hidden-state of the LSTM such that it can be fed to the LSTM cells.
 
-        This is necessary as the state is fed as a tensor but the MultiRNNCell requires the state to be a tuple.
+        This is necessary as the state is fed as a tensor but the stacked LSTM cells require a list-like state.
 
         :param state: Tensor, [hidden_layers_agent, 2, Batch_size, embedding_size * m],
         A tensor containing the hidden and cell state of for the every RNN Cell of the agents.
@@ -537,8 +492,16 @@ class Agent(object):
         '''
 
         def get_prev_state_agents():
-            prev_state_agent_1 = self.policy_agent_1.zero_state(batch_size=self.batch_size, dtype=tf.float32)
-            prev_state_agent_2 = self.policy_agent_2.zero_state(batch_size=self.batch_size, dtype=tf.float32)
+            # Keras RNN cells expose get_initial_state, while legacy TF cells expose zero_state.
+            if hasattr(self.policy_agent_1, 'get_initial_state'):
+                prev_state_agent_1 = self.policy_agent_1.get_initial_state(batch_size=self.batch_size)
+            else:
+                prev_state_agent_1 = self.policy_agent_1.zero_state(batch_size=self.batch_size, dtype=tf.float32)
+
+            if hasattr(self.policy_agent_2, 'get_initial_state'):
+                prev_state_agent_2 = self.policy_agent_2.get_initial_state(batch_size=self.batch_size)
+            else:
+                prev_state_agent_2 = self.policy_agent_2.zero_state(batch_size=self.batch_size, dtype=tf.float32)
             return prev_state_agent_1, prev_state_agent_2
 
         prev_relation = self.dummy_start_label #TODO: Use dummy label to signal end of argument to agents?

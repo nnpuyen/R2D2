@@ -1,0 +1,11 @@
+03/24/2026 08:41:41 AM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+03/24/2026 08:41:41 AM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+03/24/2026 08:41:42 AM: [ KG constructed ]
+03/24/2026 08:41:43 AM: [ KG constructed ]
+03/24/2026 08:41:43 AM: [ KG constructed ]
+03/24/2026 08:41:43 AM: [ Creating TF graph... ]
+03/24/2026 08:41:43 AM: [ From /home/bn/R2D2/.venv/lib/python3.12/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:988: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor ]
+03/24/2026 08:41:48 AM: [ TF Graph creation done.. ]
+03/24/2026 08:41:49 AM: [ BATCH COUNTER: 0  ]

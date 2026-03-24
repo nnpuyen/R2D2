@@ -1,0 +1,2561 @@
+2025-10-07 10:27:05.487980: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2025-10-07 10:27:05.571445: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-10-07 10:27:07.682061: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+WARNING:tensorflow:From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Arguments:
+	                      Lambda : [0.02]
+	             base_output_dir : output/WN18RR/
+	                  batch_size : [512]
+	                        beta : [0.02]
+	             custom_baseline : [False]
+	              data_input_dir : datasets/WN18RR/
+	              embedding_size : [256]
+	                  eval_every : 4000
+	           false_facts_train : 1
+	                       gamma : 1
+	              grad_clip_norm : 5
+	                 hidden_size : [64]
+	    is_use_fixed_false_facts : True
+	                layers_agent : [1]
+	                layers_judge : [1]
+	        learning_rate_agents : [0.0001]
+	         learning_rate_judge : [0.0001]
+	                  load_model : 0
+	             max_num_actions : 200
+	              model_load_dir : 
+	                num_rollouts : [20]
+	            number_arguments : [3]
+	                 path_length : [2]
+	pretrained_embeddings_action : 0
+	pretrained_embeddings_entity : 0
+	  pretrained_embeddings_path : 0
+	         rounds_sub_training : [2000]
+	           save_debate_every : 1000
+	                        seed : [42]
+	               test_rollouts : [50]
+	            total_iterations : [4000]
+	     train_entity_embeddings : [1]
+	           train_judge_every : [200]
+	   train_relation_embeddings : [1]
+	       use_entity_embeddings : True
+	                   vocab_dir : datasets/WN18RR/vocab
+INFO:root:reading vocab files...
+10/07/2025 10:27:08 AM: [ reading vocab files... ]
+INFO:root:Reading mid to name map
+10/07/2025 10:27:08 AM: [ Reading mid to name map ]
+INFO:root:Done..
+10/07/2025 10:27:08 AM: [ Done.. ]
+INFO:root:Total number of entities 40946
+10/07/2025 10:27:08 AM: [ Total number of entities 40946 ]
+INFO:root:Total number of relations 27
+10/07/2025 10:27:08 AM: [ Total number of relations 27 ]
+/home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:709: UserWarning: `tf.nn.rnn_cell.BasicLSTMCell` is deprecated and will be removed in a future version. This class is equivalent as `tf.keras.layers.LSTMCell`, and will be replaced by that in Tensorflow 2.0.
+  warnings.warn("`tf.nn.rnn_cell.BasicLSTMCell` is deprecated and will be "
+WARNING:tensorflow:`tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0.
+Arguments:
+	                      Lambda : 0.02
+	             base_output_dir : output/WN18RR/
+	                  batch_size : 512
+	                        beta : 0.02
+	             custom_baseline : False
+	              data_input_dir : datasets/WN18RR/
+	              embedding_size : 256
+	                  eval_every : 4000
+	           false_facts_train : 1
+	                       gamma : 1
+	              grad_clip_norm : 5
+	                 hidden_size : 64
+	    is_use_fixed_false_facts : True
+	                layers_agent : 1
+	                layers_judge : 1
+	        learning_rate_agents : 0.0001
+	         learning_rate_judge : 0.0001
+	                  load_model : False
+	             max_num_actions : 200
+	                   model_dir : output/WN18RR//25_Oct_07__10_27_08__a285_2_0.02_50_0.02/model/
+	              model_load_dir : 
+	                num_rollouts : 20
+	            number_arguments : 3
+	                  output_dir : output/WN18RR//25_Oct_07__10_27_08__a285_2_0.02_50_0.02
+	                 path_length : 2
+	pretrained_embeddings_action : 0
+	pretrained_embeddings_entity : 0
+	  pretrained_embeddings_path : 0
+	         rounds_sub_training : 2000
+	           save_debate_every : 1000
+	                        seed : 42
+	               test_rollouts : 50
+	            total_iterations : 4000
+	     train_entity_embeddings : 1
+	           train_judge_every : 200
+	   train_relation_embeddings : 1
+	       use_entity_embeddings : True
+	                   vocab_dir : datasets/WN18RR/vocab
+WARNING:tensorflow:`tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0.
+10/07/2025 10:27:08 AM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+WARNING:tensorflow:`tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:`tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0.
+10/07/2025 10:27:08 AM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+INFO:code.data.grapher:KG constructed
+10/07/2025 10:27:12 AM: [ KG constructed ]
+INFO:code.data.grapher:KG constructed
+10/07/2025 10:27:14 AM: [ KG constructed ]
+INFO:code.data.grapher:KG constructed
+10/07/2025 10:27:17 AM: [ KG constructed ]
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1759832837.412783    4843 cuda_executor.cc:1309] INTERNAL: CUDA Runtime error: Failed call to cudaGetRuntimeVersion: Error loading CUDA libraries. GPU will not be used.: Error loading CUDA libraries. GPU will not be used.
+W0000 00:00:1759832837.466825    4843 gpu_device.cc:2342] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+INFO:root:Creating TF graph...
+10/07/2025 10:27:17 AM: [ Creating TF graph... ]
+/home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/keras/engine/base_layer_v1.py:1702: UserWarning: `layer.add_variable` is deprecated and will be removed in a future version. Please use `layer.add_weight` method instead.
+  warnings.warn('`layer.add_variable` is deprecated and '
+WARNING:tensorflow:From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:760: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:760: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+10/07/2025 10:27:17 AM: [ From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:760: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor ]
+WARNING:tensorflow:From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/util/dispatch.py:1264: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.random.categorical` instead.
+WARNING:tensorflow:From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/util/dispatch.py:1264: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.random.categorical` instead.
+10/07/2025 10:27:17 AM: [ From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/util/dispatch.py:1264: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.random.categorical` instead. ]
+INFO:root:TF Graph creation done..
+10/07/2025 10:27:26 AM: [ TF Graph creation done.. ]
+I0000 00:00:1759832847.377944    4843 mlir_graph_optimization_pass.cc:437] MLIR V1 optimization pass is not enabled
+INFO:root:BATCH COUNTER: 0 
+10/07/2025 10:27:31 AM: [ BATCH COUNTER: 0  ]
+WARNING:tensorflow:From /home/bn/R2D2/code/model/trainer.py:586: BaseSession.partial_run_setup (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function.
+WARNING:tensorflow:From /home/bn/R2D2/code/model/trainer.py:586: BaseSession.partial_run_setup (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function.
+10/07/2025 10:27:32 AM: [ From /home/bn/R2D2/code/model/trainer.py:586: BaseSession.partial_run_setup (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function. ]
+WARNING:tensorflow:From /home/bn/R2D2/code/model/trainer.py:598: BaseSession.partial_run (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function.
+WARNING:tensorflow:From /home/bn/R2D2/code/model/trainer.py:598: BaseSession.partial_run (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function.
+10/07/2025 10:27:36 AM: [ From /home/bn/R2D2/code/model/trainer.py:598: BaseSession.partial_run (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function. ]
+2025-10-07 10:27:36.547405: W external/local_xla/xla/tsl/framework/cpu_allocator_impl.cc:84] Allocation of 4194304000 exceeds 10% of free system memory.
+2025-10-07 10:27:36.550622: W external/local_xla/xla/tsl/framework/cpu_allocator_impl.cc:84] Allocation of 4194304000 exceeds 10% of free system memory.
+2025-10-07 10:27:37.080696: W external/local_xla/xla/tsl/framework/cpu_allocator_impl.cc:84] Allocation of 8388608000 exceeds 10% of free system memory.
+2025-10-07 10:27:40.697263: W external/local_xla/xla/tsl/framework/cpu_allocator_impl.cc:84] Allocation of 4194304000 exceeds 10% of free system memory.
+2025-10-07 10:27:40.697365: W external/local_xla/xla/tsl/framework/cpu_allocator_impl.cc:84] Allocation of 4194304000 exceeds 10% of free system memory.
+INFO:root:Mean label === 0.5
+10/07/2025 10:28:27 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.491796875
+10/07/2025 10:28:27 AM: [ Acc === 0.491796875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2511633336544037
+10/07/2025 10:28:27 AM: [ MEDIAN REWARD A1 === 0.2511633336544037 ]
+INFO:root:MEDIAN REWARD A2 === -0.2561107575893402
+10/07/2025 10:28:27 AM: [ MEDIAN REWARD A2 === -0.2561107575893402 ]
+INFO:root:Memory usage : 21900088 (kb)
+10/07/2025 10:28:27 AM: [ Memory usage : 21900088 (kb) ]
+INFO:root:BATCH COUNTER: 1 
+10/07/2025 10:28:29 AM: [ BATCH COUNTER: 1  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:29:19 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.4837890625
+10/07/2025 10:29:19 AM: [ Acc === 0.4837890625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2512049973011017
+10/07/2025 10:29:19 AM: [ MEDIAN REWARD A1 === 0.2512049973011017 ]
+INFO:root:MEDIAN REWARD A2 === -0.2560995817184448
+10/07/2025 10:29:19 AM: [ MEDIAN REWARD A2 === -0.2560995817184448 ]
+INFO:root:Memory usage : 22320456 (kb)
+10/07/2025 10:29:19 AM: [ Memory usage : 22320456 (kb) ]
+INFO:root:BATCH COUNTER: 2 
+10/07/2025 10:29:20 AM: [ BATCH COUNTER: 2  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:30:10 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.49638671875
+10/07/2025 10:30:10 AM: [ Acc === 0.49638671875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25136038661003113
+10/07/2025 10:30:10 AM: [ MEDIAN REWARD A1 === 0.25136038661003113 ]
+INFO:root:MEDIAN REWARD A2 === -0.25611719489097595
+10/07/2025 10:30:10 AM: [ MEDIAN REWARD A2 === -0.25611719489097595 ]
+INFO:root:Memory usage : 22320456 (kb)
+10/07/2025 10:30:10 AM: [ Memory usage : 22320456 (kb) ]
+INFO:root:BATCH COUNTER: 3 
+10/07/2025 10:30:11 AM: [ BATCH COUNTER: 3  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:31:01 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.515869140625
+10/07/2025 10:31:01 AM: [ Acc === 0.515869140625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2514432370662689
+10/07/2025 10:31:01 AM: [ MEDIAN REWARD A1 === 0.2514432370662689 ]
+INFO:root:MEDIAN REWARD A2 === -0.2562020719051361
+10/07/2025 10:31:01 AM: [ MEDIAN REWARD A2 === -0.2562020719051361 ]
+INFO:root:Memory usage : 22374396 (kb)
+10/07/2025 10:31:01 AM: [ Memory usage : 22374396 (kb) ]
+INFO:root:BATCH COUNTER: 4 
+10/07/2025 10:31:04 AM: [ BATCH COUNTER: 4  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:31:55 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.512158203125
+10/07/2025 10:31:55 AM: [ Acc === 0.512158203125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25158220529556274
+10/07/2025 10:31:55 AM: [ MEDIAN REWARD A1 === 0.25158220529556274 ]
+INFO:root:MEDIAN REWARD A2 === -0.25617551803588867
+10/07/2025 10:31:55 AM: [ MEDIAN REWARD A2 === -0.25617551803588867 ]
+INFO:root:Memory usage : 22683484 (kb)
+10/07/2025 10:31:55 AM: [ Memory usage : 22683484 (kb) ]
+INFO:root:BATCH COUNTER: 5 
+10/07/2025 10:31:57 AM: [ BATCH COUNTER: 5  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:32:47 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.520263671875
+10/07/2025 10:32:47 AM: [ Acc === 0.520263671875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25173941254615784
+10/07/2025 10:32:47 AM: [ MEDIAN REWARD A1 === 0.25173941254615784 ]
+INFO:root:MEDIAN REWARD A2 === -0.25615212321281433
+10/07/2025 10:32:47 AM: [ MEDIAN REWARD A2 === -0.25615212321281433 ]
+INFO:root:Memory usage : 22683484 (kb)
+10/07/2025 10:32:47 AM: [ Memory usage : 22683484 (kb) ]
+INFO:root:BATCH COUNTER: 6 
+10/07/2025 10:32:49 AM: [ BATCH COUNTER: 6  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:33:39 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.54384765625
+10/07/2025 10:33:39 AM: [ Acc === 0.54384765625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2517702877521515
+10/07/2025 10:33:39 AM: [ MEDIAN REWARD A1 === 0.2517702877521515 ]
+INFO:root:MEDIAN REWARD A2 === -0.25612595677375793
+10/07/2025 10:33:39 AM: [ MEDIAN REWARD A2 === -0.25612595677375793 ]
+INFO:root:Memory usage : 22817420 (kb)
+10/07/2025 10:33:39 AM: [ Memory usage : 22817420 (kb) ]
+INFO:root:BATCH COUNTER: 7 
+10/07/2025 10:33:41 AM: [ BATCH COUNTER: 7  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:34:32 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.537158203125
+10/07/2025 10:34:32 AM: [ Acc === 0.537158203125 ]
+INFO:root:MEDIAN REWARD A1 === 0.251925528049469
+10/07/2025 10:34:32 AM: [ MEDIAN REWARD A1 === 0.251925528049469 ]
+INFO:root:MEDIAN REWARD A2 === -0.2562601864337921
+10/07/2025 10:34:32 AM: [ MEDIAN REWARD A2 === -0.2562601864337921 ]
+INFO:root:Memory usage : 22817420 (kb)
+10/07/2025 10:34:32 AM: [ Memory usage : 22817420 (kb) ]
+INFO:root:BATCH COUNTER: 8 
+10/07/2025 10:34:34 AM: [ BATCH COUNTER: 8  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:35:25 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5298828125
+10/07/2025 10:35:25 AM: [ Acc === 0.5298828125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2520235776901245
+10/07/2025 10:35:25 AM: [ MEDIAN REWARD A1 === 0.2520235776901245 ]
+INFO:root:MEDIAN REWARD A2 === -0.25619155168533325
+10/07/2025 10:35:25 AM: [ MEDIAN REWARD A2 === -0.25619155168533325 ]
+INFO:root:Memory usage : 22817420 (kb)
+10/07/2025 10:35:25 AM: [ Memory usage : 22817420 (kb) ]
+INFO:root:BATCH COUNTER: 9 
+10/07/2025 10:35:26 AM: [ BATCH COUNTER: 9  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:36:16 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.527392578125
+10/07/2025 10:36:16 AM: [ Acc === 0.527392578125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25202450156211853
+10/07/2025 10:36:16 AM: [ MEDIAN REWARD A1 === 0.25202450156211853 ]
+INFO:root:MEDIAN REWARD A2 === -0.25626808404922485
+10/07/2025 10:36:16 AM: [ MEDIAN REWARD A2 === -0.25626808404922485 ]
+INFO:root:Memory usage : 22817420 (kb)
+10/07/2025 10:36:16 AM: [ Memory usage : 22817420 (kb) ]
+INFO:root:BATCH COUNTER: 10 
+10/07/2025 10:36:19 AM: [ BATCH COUNTER: 10  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:37:10 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5392578125
+10/07/2025 10:37:10 AM: [ Acc === 0.5392578125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25224000215530396
+10/07/2025 10:37:10 AM: [ MEDIAN REWARD A1 === 0.25224000215530396 ]
+INFO:root:MEDIAN REWARD A2 === -0.25647205114364624
+10/07/2025 10:37:10 AM: [ MEDIAN REWARD A2 === -0.25647205114364624 ]
+INFO:root:Memory usage : 22817420 (kb)
+10/07/2025 10:37:10 AM: [ Memory usage : 22817420 (kb) ]
+INFO:root:BATCH COUNTER: 11 
+10/07/2025 10:37:11 AM: [ BATCH COUNTER: 11  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:38:01 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.535791015625
+10/07/2025 10:38:01 AM: [ Acc === 0.535791015625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25223463773727417
+10/07/2025 10:38:01 AM: [ MEDIAN REWARD A1 === 0.25223463773727417 ]
+INFO:root:MEDIAN REWARD A2 === -0.25629761815071106
+10/07/2025 10:38:01 AM: [ MEDIAN REWARD A2 === -0.25629761815071106 ]
+INFO:root:Memory usage : 22817420 (kb)
+10/07/2025 10:38:01 AM: [ Memory usage : 22817420 (kb) ]
+INFO:root:BATCH COUNTER: 12 
+10/07/2025 10:38:03 AM: [ BATCH COUNTER: 12  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:38:54 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5462890625
+10/07/2025 10:38:54 AM: [ Acc === 0.5462890625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2523352801799774
+10/07/2025 10:38:54 AM: [ MEDIAN REWARD A1 === 0.2523352801799774 ]
+INFO:root:MEDIAN REWARD A2 === -0.25634562969207764
+10/07/2025 10:38:54 AM: [ MEDIAN REWARD A2 === -0.25634562969207764 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:38:54 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 13 
+10/07/2025 10:38:55 AM: [ BATCH COUNTER: 13  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:39:46 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.529345703125
+10/07/2025 10:39:46 AM: [ Acc === 0.529345703125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25248482823371887
+10/07/2025 10:39:46 AM: [ MEDIAN REWARD A1 === 0.25248482823371887 ]
+INFO:root:MEDIAN REWARD A2 === -0.2564757168292999
+10/07/2025 10:39:46 AM: [ MEDIAN REWARD A2 === -0.2564757168292999 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:39:46 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 14 
+10/07/2025 10:39:49 AM: [ BATCH COUNTER: 14  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:40:40 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.550048828125
+10/07/2025 10:40:40 AM: [ Acc === 0.550048828125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25258705019950867
+10/07/2025 10:40:40 AM: [ MEDIAN REWARD A1 === 0.25258705019950867 ]
+INFO:root:MEDIAN REWARD A2 === -0.25648659467697144
+10/07/2025 10:40:40 AM: [ MEDIAN REWARD A2 === -0.25648659467697144 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:40:40 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 15 
+10/07/2025 10:40:41 AM: [ BATCH COUNTER: 15  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:41:33 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.57314453125
+10/07/2025 10:41:33 AM: [ Acc === 0.57314453125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25258100032806396
+10/07/2025 10:41:33 AM: [ MEDIAN REWARD A1 === 0.25258100032806396 ]
+INFO:root:MEDIAN REWARD A2 === -0.2565518021583557
+10/07/2025 10:41:33 AM: [ MEDIAN REWARD A2 === -0.2565518021583557 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:41:33 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 16 
+10/07/2025 10:41:34 AM: [ BATCH COUNTER: 16  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:42:25 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55556640625
+10/07/2025 10:42:25 AM: [ Acc === 0.55556640625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2526147961616516
+10/07/2025 10:42:25 AM: [ MEDIAN REWARD A1 === 0.2526147961616516 ]
+INFO:root:MEDIAN REWARD A2 === -0.2564729154109955
+10/07/2025 10:42:25 AM: [ MEDIAN REWARD A2 === -0.2564729154109955 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:42:25 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 17 
+10/07/2025 10:42:27 AM: [ BATCH COUNTER: 17  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:43:17 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5431640625
+10/07/2025 10:43:17 AM: [ Acc === 0.5431640625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2525469958782196
+10/07/2025 10:43:17 AM: [ MEDIAN REWARD A1 === 0.2525469958782196 ]
+INFO:root:MEDIAN REWARD A2 === -0.2565271854400635
+10/07/2025 10:43:17 AM: [ MEDIAN REWARD A2 === -0.2565271854400635 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:43:17 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 18 
+10/07/2025 10:43:18 AM: [ BATCH COUNTER: 18  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:44:08 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.551806640625
+10/07/2025 10:44:08 AM: [ Acc === 0.551806640625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2526450455188751
+10/07/2025 10:44:08 AM: [ MEDIAN REWARD A1 === 0.2526450455188751 ]
+INFO:root:MEDIAN REWARD A2 === -0.25652965903282166
+10/07/2025 10:44:08 AM: [ MEDIAN REWARD A2 === -0.25652965903282166 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:44:08 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 19 
+10/07/2025 10:44:10 AM: [ BATCH COUNTER: 19  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:45:01 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.556396484375
+10/07/2025 10:45:01 AM: [ Acc === 0.556396484375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25278279185295105
+10/07/2025 10:45:01 AM: [ MEDIAN REWARD A1 === 0.25278279185295105 ]
+INFO:root:MEDIAN REWARD A2 === -0.256612092256546
+10/07/2025 10:45:01 AM: [ MEDIAN REWARD A2 === -0.256612092256546 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:45:01 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 20 
+10/07/2025 10:45:02 AM: [ BATCH COUNTER: 20  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:45:53 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.552294921875
+10/07/2025 10:45:53 AM: [ Acc === 0.552294921875 ]
+INFO:root:MEDIAN REWARD A1 === 0.252635657787323
+10/07/2025 10:45:53 AM: [ MEDIAN REWARD A1 === 0.252635657787323 ]
+INFO:root:MEDIAN REWARD A2 === -0.2565469443798065
+10/07/2025 10:45:53 AM: [ MEDIAN REWARD A2 === -0.2565469443798065 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:45:53 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 21 
+10/07/2025 10:45:55 AM: [ BATCH COUNTER: 21  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:46:45 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.540380859375
+10/07/2025 10:46:45 AM: [ Acc === 0.540380859375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25258541107177734
+10/07/2025 10:46:45 AM: [ MEDIAN REWARD A1 === 0.25258541107177734 ]
+INFO:root:MEDIAN REWARD A2 === -0.2564610242843628
+10/07/2025 10:46:45 AM: [ MEDIAN REWARD A2 === -0.2564610242843628 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:46:45 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 22 
+10/07/2025 10:46:46 AM: [ BATCH COUNTER: 22  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:47:37 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.54169921875
+10/07/2025 10:47:37 AM: [ Acc === 0.54169921875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2527030408382416
+10/07/2025 10:47:37 AM: [ MEDIAN REWARD A1 === 0.2527030408382416 ]
+INFO:root:MEDIAN REWARD A2 === -0.2565620541572571
+10/07/2025 10:47:37 AM: [ MEDIAN REWARD A2 === -0.2565620541572571 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:47:37 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 23 
+10/07/2025 10:47:39 AM: [ BATCH COUNTER: 23  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:48:31 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.557666015625
+10/07/2025 10:48:31 AM: [ Acc === 0.557666015625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2526954412460327
+10/07/2025 10:48:31 AM: [ MEDIAN REWARD A1 === 0.2526954412460327 ]
+INFO:root:MEDIAN REWARD A2 === -0.2565312683582306
+10/07/2025 10:48:31 AM: [ MEDIAN REWARD A2 === -0.2565312683582306 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:48:31 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 24 
+10/07/2025 10:48:32 AM: [ BATCH COUNTER: 24  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:49:22 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.538525390625
+10/07/2025 10:49:22 AM: [ Acc === 0.538525390625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25261375308036804
+10/07/2025 10:49:22 AM: [ MEDIAN REWARD A1 === 0.25261375308036804 ]
+INFO:root:MEDIAN REWARD A2 === -0.256625235080719
+10/07/2025 10:49:22 AM: [ MEDIAN REWARD A2 === -0.256625235080719 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:49:22 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 25 
+10/07/2025 10:49:23 AM: [ BATCH COUNTER: 25  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:50:14 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.559228515625
+10/07/2025 10:50:14 AM: [ Acc === 0.559228515625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25257226824760437
+10/07/2025 10:50:14 AM: [ MEDIAN REWARD A1 === 0.25257226824760437 ]
+INFO:root:MEDIAN REWARD A2 === -0.2566097676753998
+10/07/2025 10:50:14 AM: [ MEDIAN REWARD A2 === -0.2566097676753998 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:50:14 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 26 
+10/07/2025 10:50:16 AM: [ BATCH COUNTER: 26  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:51:08 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55302734375
+10/07/2025 10:51:08 AM: [ Acc === 0.55302734375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25260698795318604
+10/07/2025 10:51:08 AM: [ MEDIAN REWARD A1 === 0.25260698795318604 ]
+INFO:root:MEDIAN REWARD A2 === -0.2566072344779968
+10/07/2025 10:51:08 AM: [ MEDIAN REWARD A2 === -0.2566072344779968 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:51:08 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 27 
+10/07/2025 10:51:10 AM: [ BATCH COUNTER: 27  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:52:00 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.540283203125
+10/07/2025 10:52:00 AM: [ Acc === 0.540283203125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2527613341808319
+10/07/2025 10:52:00 AM: [ MEDIAN REWARD A1 === 0.2527613341808319 ]
+INFO:root:MEDIAN REWARD A2 === -0.25665098428726196
+10/07/2025 10:52:00 AM: [ MEDIAN REWARD A2 === -0.25665098428726196 ]
+INFO:root:Memory usage : 22864108 (kb)
+10/07/2025 10:52:00 AM: [ Memory usage : 22864108 (kb) ]
+INFO:root:BATCH COUNTER: 28 
+10/07/2025 10:52:01 AM: [ BATCH COUNTER: 28  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:52:53 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.547802734375
+10/07/2025 10:52:53 AM: [ Acc === 0.547802734375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25271934270858765
+10/07/2025 10:52:53 AM: [ MEDIAN REWARD A1 === 0.25271934270858765 ]
+INFO:root:MEDIAN REWARD A2 === -0.2565949261188507
+10/07/2025 10:52:53 AM: [ MEDIAN REWARD A2 === -0.2565949261188507 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 10:52:53 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 29 
+10/07/2025 10:52:54 AM: [ BATCH COUNTER: 29  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:53:45 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.564013671875
+10/07/2025 10:53:45 AM: [ Acc === 0.564013671875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2526802718639374
+10/07/2025 10:53:45 AM: [ MEDIAN REWARD A1 === 0.2526802718639374 ]
+INFO:root:MEDIAN REWARD A2 === -0.25660771131515503
+10/07/2025 10:53:45 AM: [ MEDIAN REWARD A2 === -0.25660771131515503 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 10:53:45 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 30 
+10/07/2025 10:53:46 AM: [ BATCH COUNTER: 30  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:54:37 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.57236328125
+10/07/2025 10:54:37 AM: [ Acc === 0.57236328125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25266557931900024
+10/07/2025 10:54:37 AM: [ MEDIAN REWARD A1 === 0.25266557931900024 ]
+INFO:root:MEDIAN REWARD A2 === -0.2563936412334442
+10/07/2025 10:54:37 AM: [ MEDIAN REWARD A2 === -0.2563936412334442 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 10:54:37 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 31 
+10/07/2025 10:54:38 AM: [ BATCH COUNTER: 31  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:55:29 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.53818359375
+10/07/2025 10:55:29 AM: [ Acc === 0.53818359375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25281822681427
+10/07/2025 10:55:29 AM: [ MEDIAN REWARD A1 === 0.25281822681427 ]
+INFO:root:MEDIAN REWARD A2 === -0.25658366084098816
+10/07/2025 10:55:29 AM: [ MEDIAN REWARD A2 === -0.25658366084098816 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 10:55:29 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 32 
+10/07/2025 10:55:30 AM: [ BATCH COUNTER: 32  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:56:21 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.582177734375
+10/07/2025 10:56:21 AM: [ Acc === 0.582177734375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2527426481246948
+10/07/2025 10:56:21 AM: [ MEDIAN REWARD A1 === 0.2527426481246948 ]
+INFO:root:MEDIAN REWARD A2 === -0.2566739320755005
+10/07/2025 10:56:21 AM: [ MEDIAN REWARD A2 === -0.2566739320755005 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 10:56:21 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 33 
+10/07/2025 10:56:22 AM: [ BATCH COUNTER: 33  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:57:13 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55615234375
+10/07/2025 10:57:13 AM: [ Acc === 0.55615234375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2529168725013733
+10/07/2025 10:57:13 AM: [ MEDIAN REWARD A1 === 0.2529168725013733 ]
+INFO:root:MEDIAN REWARD A2 === -0.2566245198249817
+10/07/2025 10:57:13 AM: [ MEDIAN REWARD A2 === -0.2566245198249817 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 10:57:13 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 34 
+10/07/2025 10:57:15 AM: [ BATCH COUNTER: 34  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:58:06 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.569970703125
+10/07/2025 10:58:06 AM: [ Acc === 0.569970703125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2530774176120758
+10/07/2025 10:58:06 AM: [ MEDIAN REWARD A1 === 0.2530774176120758 ]
+INFO:root:MEDIAN REWARD A2 === -0.25661641359329224
+10/07/2025 10:58:06 AM: [ MEDIAN REWARD A2 === -0.25661641359329224 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 10:58:06 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 35 
+10/07/2025 10:58:08 AM: [ BATCH COUNTER: 35  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:59:00 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55068359375
+10/07/2025 10:59:00 AM: [ Acc === 0.55068359375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25294649600982666
+10/07/2025 10:59:00 AM: [ MEDIAN REWARD A1 === 0.25294649600982666 ]
+INFO:root:MEDIAN REWARD A2 === -0.25652167201042175
+10/07/2025 10:59:00 AM: [ MEDIAN REWARD A2 === -0.25652167201042175 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 10:59:00 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 36 
+10/07/2025 10:59:01 AM: [ BATCH COUNTER: 36  ]
+INFO:root:Mean label === 0.5
+10/07/2025 10:59:51 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.559326171875
+10/07/2025 10:59:51 AM: [ Acc === 0.559326171875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25294166803359985
+10/07/2025 10:59:51 AM: [ MEDIAN REWARD A1 === 0.25294166803359985 ]
+INFO:root:MEDIAN REWARD A2 === -0.25671884417533875
+10/07/2025 10:59:51 AM: [ MEDIAN REWARD A2 === -0.25671884417533875 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 10:59:51 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 37 
+10/07/2025 10:59:53 AM: [ BATCH COUNTER: 37  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:00:45 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.579296875
+10/07/2025 11:00:45 AM: [ Acc === 0.579296875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25285130739212036
+10/07/2025 11:00:45 AM: [ MEDIAN REWARD A1 === 0.25285130739212036 ]
+INFO:root:MEDIAN REWARD A2 === -0.25685375928878784
+10/07/2025 11:00:45 AM: [ MEDIAN REWARD A2 === -0.25685375928878784 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 11:00:45 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 38 
+10/07/2025 11:00:47 AM: [ BATCH COUNTER: 38  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:01:39 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.574658203125
+10/07/2025 11:01:39 AM: [ Acc === 0.574658203125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25321054458618164
+10/07/2025 11:01:39 AM: [ MEDIAN REWARD A1 === 0.25321054458618164 ]
+INFO:root:MEDIAN REWARD A2 === -0.2566971480846405
+10/07/2025 11:01:39 AM: [ MEDIAN REWARD A2 === -0.2566971480846405 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 11:01:39 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 39 
+10/07/2025 11:01:41 AM: [ BATCH COUNTER: 39  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:02:32 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.54228515625
+10/07/2025 11:02:32 AM: [ Acc === 0.54228515625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2529243528842926
+10/07/2025 11:02:32 AM: [ MEDIAN REWARD A1 === 0.2529243528842926 ]
+INFO:root:MEDIAN REWARD A2 === -0.2567273676395416
+10/07/2025 11:02:32 AM: [ MEDIAN REWARD A2 === -0.2567273676395416 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 11:02:32 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 40 
+10/07/2025 11:02:34 AM: [ BATCH COUNTER: 40  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:03:25 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.551708984375
+10/07/2025 11:03:25 AM: [ Acc === 0.551708984375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25307896733283997
+10/07/2025 11:03:25 AM: [ MEDIAN REWARD A1 === 0.25307896733283997 ]
+INFO:root:MEDIAN REWARD A2 === -0.25676214694976807
+10/07/2025 11:03:25 AM: [ MEDIAN REWARD A2 === -0.25676214694976807 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 11:03:25 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 41 
+10/07/2025 11:03:26 AM: [ BATCH COUNTER: 41  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:04:16 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.56806640625
+10/07/2025 11:04:16 AM: [ Acc === 0.56806640625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2529459595680237
+10/07/2025 11:04:16 AM: [ MEDIAN REWARD A1 === 0.2529459595680237 ]
+INFO:root:MEDIAN REWARD A2 === -0.2567976117134094
+10/07/2025 11:04:16 AM: [ MEDIAN REWARD A2 === -0.2567976117134094 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 11:04:16 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 42 
+10/07/2025 11:04:18 AM: [ BATCH COUNTER: 42  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:05:08 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.525830078125
+10/07/2025 11:05:08 AM: [ Acc === 0.525830078125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2530001699924469
+10/07/2025 11:05:08 AM: [ MEDIAN REWARD A1 === 0.2530001699924469 ]
+INFO:root:MEDIAN REWARD A2 === -0.25680336356163025
+10/07/2025 11:05:08 AM: [ MEDIAN REWARD A2 === -0.25680336356163025 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 11:05:08 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 43 
+10/07/2025 11:05:09 AM: [ BATCH COUNTER: 43  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:06:00 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55732421875
+10/07/2025 11:06:00 AM: [ Acc === 0.55732421875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2529730200767517
+10/07/2025 11:06:00 AM: [ MEDIAN REWARD A1 === 0.2529730200767517 ]
+INFO:root:MEDIAN REWARD A2 === -0.25675156712532043
+10/07/2025 11:06:00 AM: [ MEDIAN REWARD A2 === -0.25675156712532043 ]
+INFO:root:Memory usage : 22927516 (kb)
+10/07/2025 11:06:00 AM: [ Memory usage : 22927516 (kb) ]
+INFO:root:BATCH COUNTER: 44 
+10/07/2025 11:06:02 AM: [ BATCH COUNTER: 44  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:06:53 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.574365234375
+10/07/2025 11:06:53 AM: [ Acc === 0.574365234375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2529430687427521
+10/07/2025 11:06:53 AM: [ MEDIAN REWARD A1 === 0.2529430687427521 ]
+INFO:root:MEDIAN REWARD A2 === -0.2567248046398163
+10/07/2025 11:06:53 AM: [ MEDIAN REWARD A2 === -0.2567248046398163 ]
+INFO:root:Memory usage : 23093792 (kb)
+10/07/2025 11:06:53 AM: [ Memory usage : 23093792 (kb) ]
+INFO:root:BATCH COUNTER: 45 
+10/07/2025 11:06:54 AM: [ BATCH COUNTER: 45  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:07:45 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55380859375
+10/07/2025 11:07:45 AM: [ Acc === 0.55380859375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25312548875808716
+10/07/2025 11:07:45 AM: [ MEDIAN REWARD A1 === 0.25312548875808716 ]
+INFO:root:MEDIAN REWARD A2 === -0.25684472918510437
+10/07/2025 11:07:45 AM: [ MEDIAN REWARD A2 === -0.25684472918510437 ]
+INFO:root:Memory usage : 23093792 (kb)
+10/07/2025 11:07:45 AM: [ Memory usage : 23093792 (kb) ]
+INFO:root:BATCH COUNTER: 46 
+10/07/2025 11:07:47 AM: [ BATCH COUNTER: 46  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:08:37 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.556591796875
+10/07/2025 11:08:37 AM: [ Acc === 0.556591796875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2529374361038208
+10/07/2025 11:08:37 AM: [ MEDIAN REWARD A1 === 0.2529374361038208 ]
+INFO:root:MEDIAN REWARD A2 === -0.2567073404788971
+10/07/2025 11:08:37 AM: [ MEDIAN REWARD A2 === -0.2567073404788971 ]
+INFO:root:Memory usage : 23207000 (kb)
+10/07/2025 11:08:37 AM: [ Memory usage : 23207000 (kb) ]
+INFO:root:BATCH COUNTER: 47 
+10/07/2025 11:08:38 AM: [ BATCH COUNTER: 47  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:09:29 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55126953125
+10/07/2025 11:09:29 AM: [ Acc === 0.55126953125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25289374589920044
+10/07/2025 11:09:29 AM: [ MEDIAN REWARD A1 === 0.25289374589920044 ]
+INFO:root:MEDIAN REWARD A2 === -0.25672194361686707
+10/07/2025 11:09:29 AM: [ MEDIAN REWARD A2 === -0.25672194361686707 ]
+INFO:root:Memory usage : 23207000 (kb)
+10/07/2025 11:09:29 AM: [ Memory usage : 23207000 (kb) ]
+INFO:root:BATCH COUNTER: 48 
+10/07/2025 11:09:31 AM: [ BATCH COUNTER: 48  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:10:22 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5494140625
+10/07/2025 11:10:22 AM: [ Acc === 0.5494140625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25302156805992126
+10/07/2025 11:10:22 AM: [ MEDIAN REWARD A1 === 0.25302156805992126 ]
+INFO:root:MEDIAN REWARD A2 === -0.2568415105342865
+10/07/2025 11:10:22 AM: [ MEDIAN REWARD A2 === -0.2568415105342865 ]
+INFO:root:Memory usage : 23207000 (kb)
+10/07/2025 11:10:22 AM: [ Memory usage : 23207000 (kb) ]
+INFO:root:BATCH COUNTER: 49 
+10/07/2025 11:10:23 AM: [ BATCH COUNTER: 49  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:11:13 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.554296875
+10/07/2025 11:11:13 AM: [ Acc === 0.554296875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25300732254981995
+10/07/2025 11:11:13 AM: [ MEDIAN REWARD A1 === 0.25300732254981995 ]
+INFO:root:MEDIAN REWARD A2 === -0.25693410634994507
+10/07/2025 11:11:13 AM: [ MEDIAN REWARD A2 === -0.25693410634994507 ]
+INFO:root:Memory usage : 23207000 (kb)
+10/07/2025 11:11:13 AM: [ Memory usage : 23207000 (kb) ]
+INFO:root:BATCH COUNTER: 50 
+10/07/2025 11:11:15 AM: [ BATCH COUNTER: 50  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:12:07 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.550830078125
+10/07/2025 11:12:07 AM: [ Acc === 0.550830078125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25277578830718994
+10/07/2025 11:12:07 AM: [ MEDIAN REWARD A1 === 0.25277578830718994 ]
+INFO:root:MEDIAN REWARD A2 === -0.2567431628704071
+10/07/2025 11:12:07 AM: [ MEDIAN REWARD A2 === -0.2567431628704071 ]
+INFO:root:Memory usage : 23207000 (kb)
+10/07/2025 11:12:07 AM: [ Memory usage : 23207000 (kb) ]
+INFO:root:BATCH COUNTER: 51 
+10/07/2025 11:12:08 AM: [ BATCH COUNTER: 51  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:12:58 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.548291015625
+10/07/2025 11:12:58 AM: [ Acc === 0.548291015625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2529538571834564
+10/07/2025 11:12:58 AM: [ MEDIAN REWARD A1 === 0.2529538571834564 ]
+INFO:root:MEDIAN REWARD A2 === -0.2568635642528534
+10/07/2025 11:12:58 AM: [ MEDIAN REWARD A2 === -0.2568635642528534 ]
+INFO:root:Memory usage : 23207000 (kb)
+10/07/2025 11:12:58 AM: [ Memory usage : 23207000 (kb) ]
+INFO:root:BATCH COUNTER: 52 
+10/07/2025 11:13:01 AM: [ BATCH COUNTER: 52  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:13:51 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.549755859375
+10/07/2025 11:13:51 AM: [ Acc === 0.549755859375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2529703676700592
+10/07/2025 11:13:51 AM: [ MEDIAN REWARD A1 === 0.2529703676700592 ]
+INFO:root:MEDIAN REWARD A2 === -0.2567681074142456
+10/07/2025 11:13:51 AM: [ MEDIAN REWARD A2 === -0.2567681074142456 ]
+INFO:root:Memory usage : 23207000 (kb)
+10/07/2025 11:13:51 AM: [ Memory usage : 23207000 (kb) ]
+INFO:root:BATCH COUNTER: 53 
+10/07/2025 11:13:53 AM: [ BATCH COUNTER: 53  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:14:43 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.550732421875
+10/07/2025 11:14:43 AM: [ Acc === 0.550732421875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2529182732105255
+10/07/2025 11:14:43 AM: [ MEDIAN REWARD A1 === 0.2529182732105255 ]
+INFO:root:MEDIAN REWARD A2 === -0.25666677951812744
+10/07/2025 11:14:43 AM: [ MEDIAN REWARD A2 === -0.25666677951812744 ]
+INFO:root:Memory usage : 23207000 (kb)
+10/07/2025 11:14:43 AM: [ Memory usage : 23207000 (kb) ]
+INFO:root:BATCH COUNTER: 54 
+10/07/2025 11:14:44 AM: [ BATCH COUNTER: 54  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:15:35 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.546435546875
+10/07/2025 11:15:35 AM: [ Acc === 0.546435546875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25286585092544556
+10/07/2025 11:15:35 AM: [ MEDIAN REWARD A1 === 0.25286585092544556 ]
+INFO:root:MEDIAN REWARD A2 === -0.2567979693412781
+10/07/2025 11:15:35 AM: [ MEDIAN REWARD A2 === -0.2567979693412781 ]
+INFO:root:Memory usage : 23207000 (kb)
+10/07/2025 11:15:35 AM: [ Memory usage : 23207000 (kb) ]
+INFO:root:BATCH COUNTER: 55 
+10/07/2025 11:15:36 AM: [ BATCH COUNTER: 55  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:16:28 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5634765625
+10/07/2025 11:16:28 AM: [ Acc === 0.5634765625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2532416582107544
+10/07/2025 11:16:28 AM: [ MEDIAN REWARD A1 === 0.2532416582107544 ]
+INFO:root:MEDIAN REWARD A2 === -0.2569059431552887
+10/07/2025 11:16:28 AM: [ MEDIAN REWARD A2 === -0.2569059431552887 ]
+INFO:root:Memory usage : 23207000 (kb)
+10/07/2025 11:16:28 AM: [ Memory usage : 23207000 (kb) ]
+INFO:root:BATCH COUNTER: 56 
+10/07/2025 11:16:29 AM: [ BATCH COUNTER: 56  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:17:19 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.570068359375
+10/07/2025 11:17:19 AM: [ Acc === 0.570068359375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2529855966567993
+10/07/2025 11:17:19 AM: [ MEDIAN REWARD A1 === 0.2529855966567993 ]
+INFO:root:MEDIAN REWARD A2 === -0.25692108273506165
+10/07/2025 11:17:19 AM: [ MEDIAN REWARD A2 === -0.25692108273506165 ]
+INFO:root:Memory usage : 23207000 (kb)
+10/07/2025 11:17:19 AM: [ Memory usage : 23207000 (kb) ]
+INFO:root:BATCH COUNTER: 57 
+10/07/2025 11:17:21 AM: [ BATCH COUNTER: 57  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:18:11 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.552783203125
+10/07/2025 11:18:11 AM: [ Acc === 0.552783203125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2530069351196289
+10/07/2025 11:18:11 AM: [ MEDIAN REWARD A1 === 0.2530069351196289 ]
+INFO:root:MEDIAN REWARD A2 === -0.2568407952785492
+10/07/2025 11:18:11 AM: [ MEDIAN REWARD A2 === -0.2568407952785492 ]
+INFO:root:Memory usage : 23499464 (kb)
+10/07/2025 11:18:11 AM: [ Memory usage : 23499464 (kb) ]
+INFO:root:BATCH COUNTER: 58 
+10/07/2025 11:18:12 AM: [ BATCH COUNTER: 58  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:19:04 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5642578125
+10/07/2025 11:19:04 AM: [ Acc === 0.5642578125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25302860140800476
+10/07/2025 11:19:04 AM: [ MEDIAN REWARD A1 === 0.25302860140800476 ]
+INFO:root:MEDIAN REWARD A2 === -0.2567232847213745
+10/07/2025 11:19:04 AM: [ MEDIAN REWARD A2 === -0.2567232847213745 ]
+INFO:root:Memory usage : 23499464 (kb)
+10/07/2025 11:19:04 AM: [ Memory usage : 23499464 (kb) ]
+INFO:root:BATCH COUNTER: 59 
+10/07/2025 11:19:05 AM: [ BATCH COUNTER: 59  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:19:55 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.556689453125
+10/07/2025 11:19:55 AM: [ Acc === 0.556689453125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25300753116607666
+10/07/2025 11:19:55 AM: [ MEDIAN REWARD A1 === 0.25300753116607666 ]
+INFO:root:MEDIAN REWARD A2 === -0.2568604052066803
+10/07/2025 11:19:55 AM: [ MEDIAN REWARD A2 === -0.2568604052066803 ]
+INFO:root:Memory usage : 23499464 (kb)
+10/07/2025 11:19:55 AM: [ Memory usage : 23499464 (kb) ]
+INFO:root:BATCH COUNTER: 60 
+10/07/2025 11:19:57 AM: [ BATCH COUNTER: 60  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:20:47 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.565771484375
+10/07/2025 11:20:47 AM: [ Acc === 0.565771484375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2531212866306305
+10/07/2025 11:20:47 AM: [ MEDIAN REWARD A1 === 0.2531212866306305 ]
+INFO:root:MEDIAN REWARD A2 === -0.2569192051887512
+10/07/2025 11:20:47 AM: [ MEDIAN REWARD A2 === -0.2569192051887512 ]
+INFO:root:Memory usage : 23499464 (kb)
+10/07/2025 11:20:47 AM: [ Memory usage : 23499464 (kb) ]
+INFO:root:BATCH COUNTER: 61 
+10/07/2025 11:20:48 AM: [ BATCH COUNTER: 61  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:21:39 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.570703125
+10/07/2025 11:21:39 AM: [ Acc === 0.570703125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2529718279838562
+10/07/2025 11:21:39 AM: [ MEDIAN REWARD A1 === 0.2529718279838562 ]
+INFO:root:MEDIAN REWARD A2 === -0.2568238079547882
+10/07/2025 11:21:39 AM: [ MEDIAN REWARD A2 === -0.2568238079547882 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:21:39 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 62 
+10/07/2025 11:21:41 AM: [ BATCH COUNTER: 62  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:22:31 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.545751953125
+10/07/2025 11:22:31 AM: [ Acc === 0.545751953125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2530154287815094
+10/07/2025 11:22:31 AM: [ MEDIAN REWARD A1 === 0.2530154287815094 ]
+INFO:root:MEDIAN REWARD A2 === -0.2568611204624176
+10/07/2025 11:22:31 AM: [ MEDIAN REWARD A2 === -0.2568611204624176 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:22:31 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 63 
+10/07/2025 11:22:32 AM: [ BATCH COUNTER: 63  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:23:24 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.570068359375
+10/07/2025 11:23:24 AM: [ Acc === 0.570068359375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2531251907348633
+10/07/2025 11:23:24 AM: [ MEDIAN REWARD A1 === 0.2531251907348633 ]
+INFO:root:MEDIAN REWARD A2 === -0.2568346858024597
+10/07/2025 11:23:24 AM: [ MEDIAN REWARD A2 === -0.2568346858024597 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:23:24 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 64 
+10/07/2025 11:23:26 AM: [ BATCH COUNTER: 64  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:24:16 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55205078125
+10/07/2025 11:24:16 AM: [ Acc === 0.55205078125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25321683287620544
+10/07/2025 11:24:16 AM: [ MEDIAN REWARD A1 === 0.25321683287620544 ]
+INFO:root:MEDIAN REWARD A2 === -0.25676393508911133
+10/07/2025 11:24:16 AM: [ MEDIAN REWARD A2 === -0.25676393508911133 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:24:16 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 65 
+10/07/2025 11:24:17 AM: [ BATCH COUNTER: 65  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:25:09 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.544775390625
+10/07/2025 11:25:09 AM: [ Acc === 0.544775390625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25326627492904663
+10/07/2025 11:25:09 AM: [ MEDIAN REWARD A1 === 0.25326627492904663 ]
+INFO:root:MEDIAN REWARD A2 === -0.25695735216140747
+10/07/2025 11:25:09 AM: [ MEDIAN REWARD A2 === -0.25695735216140747 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:25:09 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 66 
+10/07/2025 11:25:10 AM: [ BATCH COUNTER: 66  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:26:02 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5580078125
+10/07/2025 11:26:02 AM: [ Acc === 0.5580078125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25328102707862854
+10/07/2025 11:26:02 AM: [ MEDIAN REWARD A1 === 0.25328102707862854 ]
+INFO:root:MEDIAN REWARD A2 === -0.25684329867362976
+10/07/2025 11:26:02 AM: [ MEDIAN REWARD A2 === -0.25684329867362976 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:26:02 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 67 
+10/07/2025 11:26:03 AM: [ BATCH COUNTER: 67  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:26:53 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.557177734375
+10/07/2025 11:26:53 AM: [ Acc === 0.557177734375 ]
+INFO:root:MEDIAN REWARD A1 === 0.253349244594574
+10/07/2025 11:26:53 AM: [ MEDIAN REWARD A1 === 0.253349244594574 ]
+INFO:root:MEDIAN REWARD A2 === -0.2569866478443146
+10/07/2025 11:26:53 AM: [ MEDIAN REWARD A2 === -0.2569866478443146 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:26:53 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 68 
+10/07/2025 11:26:54 AM: [ BATCH COUNTER: 68  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:27:45 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.555908203125
+10/07/2025 11:27:45 AM: [ Acc === 0.555908203125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2532271146774292
+10/07/2025 11:27:45 AM: [ MEDIAN REWARD A1 === 0.2532271146774292 ]
+INFO:root:MEDIAN REWARD A2 === -0.25687938928604126
+10/07/2025 11:27:45 AM: [ MEDIAN REWARD A2 === -0.25687938928604126 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:27:45 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 69 
+10/07/2025 11:27:48 AM: [ BATCH COUNTER: 69  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:28:38 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.566162109375
+10/07/2025 11:28:38 AM: [ Acc === 0.566162109375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2533198297023773
+10/07/2025 11:28:38 AM: [ MEDIAN REWARD A1 === 0.2533198297023773 ]
+INFO:root:MEDIAN REWARD A2 === -0.2569562494754791
+10/07/2025 11:28:38 AM: [ MEDIAN REWARD A2 === -0.2569562494754791 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:28:38 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 70 
+10/07/2025 11:28:40 AM: [ BATCH COUNTER: 70  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:29:31 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.544384765625
+10/07/2025 11:29:31 AM: [ Acc === 0.544384765625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2532080411911011
+10/07/2025 11:29:31 AM: [ MEDIAN REWARD A1 === 0.2532080411911011 ]
+INFO:root:MEDIAN REWARD A2 === -0.2569788694381714
+10/07/2025 11:29:31 AM: [ MEDIAN REWARD A2 === -0.2569788694381714 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:29:31 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 71 
+10/07/2025 11:29:32 AM: [ BATCH COUNTER: 71  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:30:22 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.562255859375
+10/07/2025 11:30:22 AM: [ Acc === 0.562255859375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2533606290817261
+10/07/2025 11:30:22 AM: [ MEDIAN REWARD A1 === 0.2533606290817261 ]
+INFO:root:MEDIAN REWARD A2 === -0.25718849897384644
+10/07/2025 11:30:22 AM: [ MEDIAN REWARD A2 === -0.25718849897384644 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:30:22 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 72 
+10/07/2025 11:30:24 AM: [ BATCH COUNTER: 72  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:31:14 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.528076171875
+10/07/2025 11:31:14 AM: [ Acc === 0.528076171875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25329121947288513
+10/07/2025 11:31:14 AM: [ MEDIAN REWARD A1 === 0.25329121947288513 ]
+INFO:root:MEDIAN REWARD A2 === -0.2571147084236145
+10/07/2025 11:31:14 AM: [ MEDIAN REWARD A2 === -0.2571147084236145 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:31:14 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 73 
+10/07/2025 11:31:17 AM: [ BATCH COUNTER: 73  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:32:07 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.562548828125
+10/07/2025 11:32:07 AM: [ Acc === 0.562548828125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2533184289932251
+10/07/2025 11:32:07 AM: [ MEDIAN REWARD A1 === 0.2533184289932251 ]
+INFO:root:MEDIAN REWARD A2 === -0.25724461674690247
+10/07/2025 11:32:07 AM: [ MEDIAN REWARD A2 === -0.25724461674690247 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:32:07 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 74 
+10/07/2025 11:32:09 AM: [ BATCH COUNTER: 74  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:32:59 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5783203125
+10/07/2025 11:32:59 AM: [ Acc === 0.5783203125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2533077001571655
+10/07/2025 11:32:59 AM: [ MEDIAN REWARD A1 === 0.2533077001571655 ]
+INFO:root:MEDIAN REWARD A2 === -0.25717389583587646
+10/07/2025 11:32:59 AM: [ MEDIAN REWARD A2 === -0.25717389583587646 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:32:59 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 75 
+10/07/2025 11:33:02 AM: [ BATCH COUNTER: 75  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:33:53 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55556640625
+10/07/2025 11:33:53 AM: [ Acc === 0.55556640625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25332263112068176
+10/07/2025 11:33:53 AM: [ MEDIAN REWARD A1 === 0.25332263112068176 ]
+INFO:root:MEDIAN REWARD A2 === -0.25715768337249756
+10/07/2025 11:33:53 AM: [ MEDIAN REWARD A2 === -0.25715768337249756 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:33:53 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 76 
+10/07/2025 11:33:54 AM: [ BATCH COUNTER: 76  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:34:46 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5529296875
+10/07/2025 11:34:46 AM: [ Acc === 0.5529296875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25348615646362305
+10/07/2025 11:34:46 AM: [ MEDIAN REWARD A1 === 0.25348615646362305 ]
+INFO:root:MEDIAN REWARD A2 === -0.2571767568588257
+10/07/2025 11:34:46 AM: [ MEDIAN REWARD A2 === -0.2571767568588257 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:34:46 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 77 
+10/07/2025 11:34:48 AM: [ BATCH COUNTER: 77  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:35:38 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.557080078125
+10/07/2025 11:35:38 AM: [ Acc === 0.557080078125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25324729084968567
+10/07/2025 11:35:38 AM: [ MEDIAN REWARD A1 === 0.25324729084968567 ]
+INFO:root:MEDIAN REWARD A2 === -0.25707191228866577
+10/07/2025 11:35:38 AM: [ MEDIAN REWARD A2 === -0.25707191228866577 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:35:38 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 78 
+10/07/2025 11:35:39 AM: [ BATCH COUNTER: 78  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:36:29 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55673828125
+10/07/2025 11:36:29 AM: [ Acc === 0.55673828125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2535061538219452
+10/07/2025 11:36:29 AM: [ MEDIAN REWARD A1 === 0.2535061538219452 ]
+INFO:root:MEDIAN REWARD A2 === -0.25725728273391724
+10/07/2025 11:36:29 AM: [ MEDIAN REWARD A2 === -0.25725728273391724 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:36:29 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 79 
+10/07/2025 11:36:32 AM: [ BATCH COUNTER: 79  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:37:22 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.57822265625
+10/07/2025 11:37:22 AM: [ Acc === 0.57822265625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2533942461013794
+10/07/2025 11:37:22 AM: [ MEDIAN REWARD A1 === 0.2533942461013794 ]
+INFO:root:MEDIAN REWARD A2 === -0.2571493089199066
+10/07/2025 11:37:22 AM: [ MEDIAN REWARD A2 === -0.2571493089199066 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:37:22 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 80 
+10/07/2025 11:37:24 AM: [ BATCH COUNTER: 80  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:38:14 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5517578125
+10/07/2025 11:38:14 AM: [ Acc === 0.5517578125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25342896580696106
+10/07/2025 11:38:14 AM: [ MEDIAN REWARD A1 === 0.25342896580696106 ]
+INFO:root:MEDIAN REWARD A2 === -0.2571449875831604
+10/07/2025 11:38:14 AM: [ MEDIAN REWARD A2 === -0.2571449875831604 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:38:14 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 81 
+10/07/2025 11:38:16 AM: [ BATCH COUNTER: 81  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:39:07 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55654296875
+10/07/2025 11:39:07 AM: [ Acc === 0.55654296875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25358524918556213
+10/07/2025 11:39:07 AM: [ MEDIAN REWARD A1 === 0.25358524918556213 ]
+INFO:root:MEDIAN REWARD A2 === -0.25728270411491394
+10/07/2025 11:39:07 AM: [ MEDIAN REWARD A2 === -0.25728270411491394 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:39:07 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 82 
+10/07/2025 11:39:09 AM: [ BATCH COUNTER: 82  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:39:59 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.557275390625
+10/07/2025 11:39:59 AM: [ Acc === 0.557275390625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2535530626773834
+10/07/2025 11:39:59 AM: [ MEDIAN REWARD A1 === 0.2535530626773834 ]
+INFO:root:MEDIAN REWARD A2 === -0.25723108649253845
+10/07/2025 11:39:59 AM: [ MEDIAN REWARD A2 === -0.25723108649253845 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:39:59 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 83 
+10/07/2025 11:40:01 AM: [ BATCH COUNTER: 83  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:40:52 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.543505859375
+10/07/2025 11:40:52 AM: [ Acc === 0.543505859375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25335484743118286
+10/07/2025 11:40:52 AM: [ MEDIAN REWARD A1 === 0.25335484743118286 ]
+INFO:root:MEDIAN REWARD A2 === -0.25735291838645935
+10/07/2025 11:40:52 AM: [ MEDIAN REWARD A2 === -0.25735291838645935 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:40:52 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 84 
+10/07/2025 11:40:53 AM: [ BATCH COUNTER: 84  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:41:45 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.541162109375
+10/07/2025 11:41:45 AM: [ Acc === 0.541162109375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2534976005554199
+10/07/2025 11:41:45 AM: [ MEDIAN REWARD A1 === 0.2534976005554199 ]
+INFO:root:MEDIAN REWARD A2 === -0.2570840120315552
+10/07/2025 11:41:45 AM: [ MEDIAN REWARD A2 === -0.2570840120315552 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:41:45 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 85 
+10/07/2025 11:41:48 AM: [ BATCH COUNTER: 85  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:42:39 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55537109375
+10/07/2025 11:42:39 AM: [ Acc === 0.55537109375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2534947395324707
+10/07/2025 11:42:39 AM: [ MEDIAN REWARD A1 === 0.2534947395324707 ]
+INFO:root:MEDIAN REWARD A2 === -0.25708872079849243
+10/07/2025 11:42:39 AM: [ MEDIAN REWARD A2 === -0.25708872079849243 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:42:39 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 86 
+10/07/2025 11:42:40 AM: [ BATCH COUNTER: 86  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:43:30 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55537109375
+10/07/2025 11:43:30 AM: [ Acc === 0.55537109375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2535509765148163
+10/07/2025 11:43:30 AM: [ MEDIAN REWARD A1 === 0.2535509765148163 ]
+INFO:root:MEDIAN REWARD A2 === -0.25723886489868164
+10/07/2025 11:43:30 AM: [ MEDIAN REWARD A2 === -0.25723886489868164 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:43:30 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 87 
+10/07/2025 11:43:32 AM: [ BATCH COUNTER: 87  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:44:22 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.56337890625
+10/07/2025 11:44:22 AM: [ Acc === 0.56337890625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25355589389801025
+10/07/2025 11:44:22 AM: [ MEDIAN REWARD A1 === 0.25355589389801025 ]
+INFO:root:MEDIAN REWARD A2 === -0.25726792216300964
+10/07/2025 11:44:22 AM: [ MEDIAN REWARD A2 === -0.25726792216300964 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:44:22 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 88 
+10/07/2025 11:44:23 AM: [ BATCH COUNTER: 88  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:45:13 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.53984375
+10/07/2025 11:45:13 AM: [ Acc === 0.53984375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25351789593696594
+10/07/2025 11:45:13 AM: [ MEDIAN REWARD A1 === 0.25351789593696594 ]
+INFO:root:MEDIAN REWARD A2 === -0.2570827901363373
+10/07/2025 11:45:13 AM: [ MEDIAN REWARD A2 === -0.2570827901363373 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:45:13 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 89 
+10/07/2025 11:45:15 AM: [ BATCH COUNTER: 89  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:46:06 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.557373046875
+10/07/2025 11:46:06 AM: [ Acc === 0.557373046875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2535136342048645
+10/07/2025 11:46:06 AM: [ MEDIAN REWARD A1 === 0.2535136342048645 ]
+INFO:root:MEDIAN REWARD A2 === -0.25709405541419983
+10/07/2025 11:46:06 AM: [ MEDIAN REWARD A2 === -0.25709405541419983 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:46:06 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 90 
+10/07/2025 11:46:07 AM: [ BATCH COUNTER: 90  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:46:57 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.559326171875
+10/07/2025 11:46:57 AM: [ Acc === 0.559326171875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2534341812133789
+10/07/2025 11:46:57 AM: [ MEDIAN REWARD A1 === 0.2534341812133789 ]
+INFO:root:MEDIAN REWARD A2 === -0.2572319209575653
+10/07/2025 11:46:57 AM: [ MEDIAN REWARD A2 === -0.2572319209575653 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:46:57 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 91 
+10/07/2025 11:46:59 AM: [ BATCH COUNTER: 91  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:47:49 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.553369140625
+10/07/2025 11:47:49 AM: [ Acc === 0.553369140625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25347641110420227
+10/07/2025 11:47:49 AM: [ MEDIAN REWARD A1 === 0.25347641110420227 ]
+INFO:root:MEDIAN REWARD A2 === -0.25728726387023926
+10/07/2025 11:47:49 AM: [ MEDIAN REWARD A2 === -0.25728726387023926 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:47:49 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 92 
+10/07/2025 11:47:51 AM: [ BATCH COUNTER: 92  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:48:41 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5599609375
+10/07/2025 11:48:41 AM: [ Acc === 0.5599609375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25358954071998596
+10/07/2025 11:48:41 AM: [ MEDIAN REWARD A1 === 0.25358954071998596 ]
+INFO:root:MEDIAN REWARD A2 === -0.25726211071014404
+10/07/2025 11:48:41 AM: [ MEDIAN REWARD A2 === -0.25726211071014404 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:48:41 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 93 
+10/07/2025 11:48:43 AM: [ BATCH COUNTER: 93  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:49:33 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.56162109375
+10/07/2025 11:49:33 AM: [ Acc === 0.56162109375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25357919931411743
+10/07/2025 11:49:33 AM: [ MEDIAN REWARD A1 === 0.25357919931411743 ]
+INFO:root:MEDIAN REWARD A2 === -0.25712260603904724
+10/07/2025 11:49:33 AM: [ MEDIAN REWARD A2 === -0.25712260603904724 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:49:33 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 94 
+10/07/2025 11:49:35 AM: [ BATCH COUNTER: 94  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:50:25 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.553173828125
+10/07/2025 11:50:25 AM: [ Acc === 0.553173828125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2537096440792084
+10/07/2025 11:50:25 AM: [ MEDIAN REWARD A1 === 0.2537096440792084 ]
+INFO:root:MEDIAN REWARD A2 === -0.2573290765285492
+10/07/2025 11:50:25 AM: [ MEDIAN REWARD A2 === -0.2573290765285492 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:50:25 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 95 
+10/07/2025 11:50:26 AM: [ BATCH COUNTER: 95  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:51:18 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.567529296875
+10/07/2025 11:51:18 AM: [ Acc === 0.567529296875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25377047061920166
+10/07/2025 11:51:18 AM: [ MEDIAN REWARD A1 === 0.25377047061920166 ]
+INFO:root:MEDIAN REWARD A2 === -0.25730282068252563
+10/07/2025 11:51:18 AM: [ MEDIAN REWARD A2 === -0.25730282068252563 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:51:18 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 96 
+10/07/2025 11:51:20 AM: [ BATCH COUNTER: 96  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:52:10 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.54853515625
+10/07/2025 11:52:10 AM: [ Acc === 0.54853515625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25374263525009155
+10/07/2025 11:52:10 AM: [ MEDIAN REWARD A1 === 0.25374263525009155 ]
+INFO:root:MEDIAN REWARD A2 === -0.25709450244903564
+10/07/2025 11:52:10 AM: [ MEDIAN REWARD A2 === -0.25709450244903564 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:52:10 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 97 
+10/07/2025 11:52:13 AM: [ BATCH COUNTER: 97  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:53:04 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5869140625
+10/07/2025 11:53:04 AM: [ Acc === 0.5869140625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25373414158821106
+10/07/2025 11:53:04 AM: [ MEDIAN REWARD A1 === 0.25373414158821106 ]
+INFO:root:MEDIAN REWARD A2 === -0.25724437832832336
+10/07/2025 11:53:04 AM: [ MEDIAN REWARD A2 === -0.25724437832832336 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:53:04 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 98 
+10/07/2025 11:53:06 AM: [ BATCH COUNTER: 98  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:53:56 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.562841796875
+10/07/2025 11:53:56 AM: [ Acc === 0.562841796875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2537616491317749
+10/07/2025 11:53:56 AM: [ MEDIAN REWARD A1 === 0.2537616491317749 ]
+INFO:root:MEDIAN REWARD A2 === -0.2571808099746704
+10/07/2025 11:53:56 AM: [ MEDIAN REWARD A2 === -0.2571808099746704 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:53:56 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 99 
+10/07/2025 11:53:57 AM: [ BATCH COUNTER: 99  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:54:48 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.569580078125
+10/07/2025 11:54:48 AM: [ Acc === 0.569580078125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25381311774253845
+10/07/2025 11:54:48 AM: [ MEDIAN REWARD A1 === 0.25381311774253845 ]
+INFO:root:MEDIAN REWARD A2 === -0.2572137117385864
+10/07/2025 11:54:48 AM: [ MEDIAN REWARD A2 === -0.2572137117385864 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:54:48 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 100 
+10/07/2025 11:54:49 AM: [ BATCH COUNTER: 100  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:55:39 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.56787109375
+10/07/2025 11:55:39 AM: [ Acc === 0.56787109375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2538725435733795
+10/07/2025 11:55:39 AM: [ MEDIAN REWARD A1 === 0.2538725435733795 ]
+INFO:root:MEDIAN REWARD A2 === -0.25727578997612
+10/07/2025 11:55:39 AM: [ MEDIAN REWARD A2 === -0.25727578997612 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:55:39 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 101 
+10/07/2025 11:55:41 AM: [ BATCH COUNTER: 101  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:56:32 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55380859375
+10/07/2025 11:56:32 AM: [ Acc === 0.55380859375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25376564264297485
+10/07/2025 11:56:32 AM: [ MEDIAN REWARD A1 === 0.25376564264297485 ]
+INFO:root:MEDIAN REWARD A2 === -0.2571772038936615
+10/07/2025 11:56:32 AM: [ MEDIAN REWARD A2 === -0.2571772038936615 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:56:32 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 102 
+10/07/2025 11:56:33 AM: [ BATCH COUNTER: 102  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:57:25 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.571826171875
+10/07/2025 11:57:25 AM: [ Acc === 0.571826171875 ]
+INFO:root:MEDIAN REWARD A1 === 0.253835529088974
+10/07/2025 11:57:25 AM: [ MEDIAN REWARD A1 === 0.253835529088974 ]
+INFO:root:MEDIAN REWARD A2 === -0.25732147693634033
+10/07/2025 11:57:25 AM: [ MEDIAN REWARD A2 === -0.25732147693634033 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:57:25 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 103 
+10/07/2025 11:57:26 AM: [ BATCH COUNTER: 103  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:58:16 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.559814453125
+10/07/2025 11:58:16 AM: [ Acc === 0.559814453125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25415974855422974
+10/07/2025 11:58:16 AM: [ MEDIAN REWARD A1 === 0.25415974855422974 ]
+INFO:root:MEDIAN REWARD A2 === -0.2570444941520691
+10/07/2025 11:58:16 AM: [ MEDIAN REWARD A2 === -0.2570444941520691 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:58:16 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 104 
+10/07/2025 11:58:17 AM: [ BATCH COUNTER: 104  ]
+INFO:root:Mean label === 0.5
+10/07/2025 11:59:07 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.570361328125
+10/07/2025 11:59:07 AM: [ Acc === 0.570361328125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2539943754673004
+10/07/2025 11:59:07 AM: [ MEDIAN REWARD A1 === 0.2539943754673004 ]
+INFO:root:MEDIAN REWARD A2 === -0.2571617364883423
+10/07/2025 11:59:07 AM: [ MEDIAN REWARD A2 === -0.2571617364883423 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 11:59:07 AM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 105 
+10/07/2025 11:59:10 AM: [ BATCH COUNTER: 105  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:00:01 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.56103515625
+10/07/2025 12:00:01 PM: [ Acc === 0.56103515625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2540041506290436
+10/07/2025 12:00:01 PM: [ MEDIAN REWARD A1 === 0.2540041506290436 ]
+INFO:root:MEDIAN REWARD A2 === -0.25752007961273193
+10/07/2025 12:00:01 PM: [ MEDIAN REWARD A2 === -0.25752007961273193 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:00:01 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 106 
+10/07/2025 12:00:02 PM: [ BATCH COUNTER: 106  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:00:52 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.566796875
+10/07/2025 12:00:52 PM: [ Acc === 0.566796875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2539871037006378
+10/07/2025 12:00:52 PM: [ MEDIAN REWARD A1 === 0.2539871037006378 ]
+INFO:root:MEDIAN REWARD A2 === -0.25736454129219055
+10/07/2025 12:00:52 PM: [ MEDIAN REWARD A2 === -0.25736454129219055 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:00:52 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 107 
+10/07/2025 12:00:54 PM: [ BATCH COUNTER: 107  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:01:46 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5734375
+10/07/2025 12:01:46 PM: [ Acc === 0.5734375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25401830673217773
+10/07/2025 12:01:46 PM: [ MEDIAN REWARD A1 === 0.25401830673217773 ]
+INFO:root:MEDIAN REWARD A2 === -0.2573319971561432
+10/07/2025 12:01:46 PM: [ MEDIAN REWARD A2 === -0.2573319971561432 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:01:46 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 108 
+10/07/2025 12:01:48 PM: [ BATCH COUNTER: 108  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:02:39 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.561328125
+10/07/2025 12:02:39 PM: [ Acc === 0.561328125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2539137601852417
+10/07/2025 12:02:39 PM: [ MEDIAN REWARD A1 === 0.2539137601852417 ]
+INFO:root:MEDIAN REWARD A2 === -0.25717371702194214
+10/07/2025 12:02:39 PM: [ MEDIAN REWARD A2 === -0.25717371702194214 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:02:39 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 109 
+10/07/2025 12:02:41 PM: [ BATCH COUNTER: 109  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:03:32 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.54208984375
+10/07/2025 12:03:32 PM: [ Acc === 0.54208984375 ]
+INFO:root:MEDIAN REWARD A1 === 0.254243940114975
+10/07/2025 12:03:32 PM: [ MEDIAN REWARD A1 === 0.254243940114975 ]
+INFO:root:MEDIAN REWARD A2 === -0.25750911235809326
+10/07/2025 12:03:32 PM: [ MEDIAN REWARD A2 === -0.25750911235809326 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:03:32 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 110 
+10/07/2025 12:03:34 PM: [ BATCH COUNTER: 110  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:04:24 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5642578125
+10/07/2025 12:04:24 PM: [ Acc === 0.5642578125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25411656498908997
+10/07/2025 12:04:24 PM: [ MEDIAN REWARD A1 === 0.25411656498908997 ]
+INFO:root:MEDIAN REWARD A2 === -0.25732237100601196
+10/07/2025 12:04:24 PM: [ MEDIAN REWARD A2 === -0.25732237100601196 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:04:24 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 111 
+10/07/2025 12:04:25 PM: [ BATCH COUNTER: 111  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:05:16 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.557958984375
+10/07/2025 12:05:16 PM: [ Acc === 0.557958984375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2542864680290222
+10/07/2025 12:05:16 PM: [ MEDIAN REWARD A1 === 0.2542864680290222 ]
+INFO:root:MEDIAN REWARD A2 === -0.25736936926841736
+10/07/2025 12:05:16 PM: [ MEDIAN REWARD A2 === -0.25736936926841736 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:05:16 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 112 
+10/07/2025 12:05:17 PM: [ BATCH COUNTER: 112  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:06:08 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.57314453125
+10/07/2025 12:06:08 PM: [ Acc === 0.57314453125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2539493441581726
+10/07/2025 12:06:08 PM: [ MEDIAN REWARD A1 === 0.2539493441581726 ]
+INFO:root:MEDIAN REWARD A2 === -0.2573307752609253
+10/07/2025 12:06:08 PM: [ MEDIAN REWARD A2 === -0.2573307752609253 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:06:08 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 113 
+10/07/2025 12:06:10 PM: [ BATCH COUNTER: 113  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:06:59 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.566357421875
+10/07/2025 12:06:59 PM: [ Acc === 0.566357421875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2542172968387604
+10/07/2025 12:06:59 PM: [ MEDIAN REWARD A1 === 0.2542172968387604 ]
+INFO:root:MEDIAN REWARD A2 === -0.25751468539237976
+10/07/2025 12:06:59 PM: [ MEDIAN REWARD A2 === -0.25751468539237976 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:06:59 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 114 
+10/07/2025 12:07:01 PM: [ BATCH COUNTER: 114  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:07:51 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55771484375
+10/07/2025 12:07:51 PM: [ Acc === 0.55771484375 ]
+INFO:root:MEDIAN REWARD A1 === 0.254302054643631
+10/07/2025 12:07:51 PM: [ MEDIAN REWARD A1 === 0.254302054643631 ]
+INFO:root:MEDIAN REWARD A2 === -0.2573147714138031
+10/07/2025 12:07:51 PM: [ MEDIAN REWARD A2 === -0.2573147714138031 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:07:51 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 115 
+10/07/2025 12:07:54 PM: [ BATCH COUNTER: 115  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:08:44 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.543994140625
+10/07/2025 12:08:44 PM: [ Acc === 0.543994140625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25399085879325867
+10/07/2025 12:08:44 PM: [ MEDIAN REWARD A1 === 0.25399085879325867 ]
+INFO:root:MEDIAN REWARD A2 === -0.2573288679122925
+10/07/2025 12:08:44 PM: [ MEDIAN REWARD A2 === -0.2573288679122925 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:08:44 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 116 
+10/07/2025 12:08:45 PM: [ BATCH COUNTER: 116  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:09:37 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.53935546875
+10/07/2025 12:09:37 PM: [ Acc === 0.53935546875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25438299775123596
+10/07/2025 12:09:37 PM: [ MEDIAN REWARD A1 === 0.25438299775123596 ]
+INFO:root:MEDIAN REWARD A2 === -0.25737106800079346
+10/07/2025 12:09:37 PM: [ MEDIAN REWARD A2 === -0.25737106800079346 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:09:37 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 117 
+10/07/2025 12:09:38 PM: [ BATCH COUNTER: 117  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:10:28 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.577197265625
+10/07/2025 12:10:28 PM: [ Acc === 0.577197265625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25438523292541504
+10/07/2025 12:10:28 PM: [ MEDIAN REWARD A1 === 0.25438523292541504 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576025128364563
+10/07/2025 12:10:28 PM: [ MEDIAN REWARD A2 === -0.2576025128364563 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:10:28 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 118 
+10/07/2025 12:10:30 PM: [ BATCH COUNTER: 118  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:11:19 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5677734375
+10/07/2025 12:11:19 PM: [ Acc === 0.5677734375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25445085763931274
+10/07/2025 12:11:19 PM: [ MEDIAN REWARD A1 === 0.25445085763931274 ]
+INFO:root:MEDIAN REWARD A2 === -0.2575504183769226
+10/07/2025 12:11:19 PM: [ MEDIAN REWARD A2 === -0.2575504183769226 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:11:19 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 119 
+10/07/2025 12:11:22 PM: [ BATCH COUNTER: 119  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:12:12 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.563037109375
+10/07/2025 12:12:12 PM: [ Acc === 0.563037109375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25441229343414307
+10/07/2025 12:12:12 PM: [ MEDIAN REWARD A1 === 0.25441229343414307 ]
+INFO:root:MEDIAN REWARD A2 === -0.25760725140571594
+10/07/2025 12:12:12 PM: [ MEDIAN REWARD A2 === -0.25760725140571594 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:12:12 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 120 
+10/07/2025 12:12:13 PM: [ BATCH COUNTER: 120  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:13:05 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.559765625
+10/07/2025 12:13:05 PM: [ Acc === 0.559765625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25446879863739014
+10/07/2025 12:13:05 PM: [ MEDIAN REWARD A1 === 0.25446879863739014 ]
+INFO:root:MEDIAN REWARD A2 === -0.2574167549610138
+10/07/2025 12:13:05 PM: [ MEDIAN REWARD A2 === -0.2574167549610138 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:13:05 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 121 
+10/07/2025 12:13:06 PM: [ BATCH COUNTER: 121  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:13:57 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.56962890625
+10/07/2025 12:13:57 PM: [ Acc === 0.56962890625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2545618414878845
+10/07/2025 12:13:57 PM: [ MEDIAN REWARD A1 === 0.2545618414878845 ]
+INFO:root:MEDIAN REWARD A2 === -0.25756964087486267
+10/07/2025 12:13:57 PM: [ MEDIAN REWARD A2 === -0.25756964087486267 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:13:57 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 122 
+10/07/2025 12:13:58 PM: [ BATCH COUNTER: 122  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:14:49 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.56455078125
+10/07/2025 12:14:49 PM: [ Acc === 0.56455078125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25419145822525024
+10/07/2025 12:14:49 PM: [ MEDIAN REWARD A1 === 0.25419145822525024 ]
+INFO:root:MEDIAN REWARD A2 === -0.2573442757129669
+10/07/2025 12:14:49 PM: [ MEDIAN REWARD A2 === -0.2573442757129669 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:14:49 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 123 
+10/07/2025 12:14:50 PM: [ BATCH COUNTER: 123  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:15:41 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.565087890625
+10/07/2025 12:15:41 PM: [ Acc === 0.565087890625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25433456897735596
+10/07/2025 12:15:41 PM: [ MEDIAN REWARD A1 === 0.25433456897735596 ]
+INFO:root:MEDIAN REWARD A2 === -0.257354736328125
+10/07/2025 12:15:41 PM: [ MEDIAN REWARD A2 === -0.257354736328125 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:15:41 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 124 
+10/07/2025 12:15:43 PM: [ BATCH COUNTER: 124  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:16:33 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5767578125
+10/07/2025 12:16:33 PM: [ Acc === 0.5767578125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2542232275009155
+10/07/2025 12:16:33 PM: [ MEDIAN REWARD A1 === 0.2542232275009155 ]
+INFO:root:MEDIAN REWARD A2 === -0.2575624883174896
+10/07/2025 12:16:33 PM: [ MEDIAN REWARD A2 === -0.2575624883174896 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:16:33 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 125 
+10/07/2025 12:16:35 PM: [ BATCH COUNTER: 125  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:17:26 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55224609375
+10/07/2025 12:17:26 PM: [ Acc === 0.55224609375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2544618248939514
+10/07/2025 12:17:26 PM: [ MEDIAN REWARD A1 === 0.2544618248939514 ]
+INFO:root:MEDIAN REWARD A2 === -0.25753241777420044
+10/07/2025 12:17:26 PM: [ MEDIAN REWARD A2 === -0.25753241777420044 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:17:26 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 126 
+10/07/2025 12:17:27 PM: [ BATCH COUNTER: 126  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:18:17 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.56142578125
+10/07/2025 12:18:17 PM: [ Acc === 0.56142578125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2544671595096588
+10/07/2025 12:18:17 PM: [ MEDIAN REWARD A1 === 0.2544671595096588 ]
+INFO:root:MEDIAN REWARD A2 === -0.25736889243125916
+10/07/2025 12:18:17 PM: [ MEDIAN REWARD A2 === -0.25736889243125916 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:18:17 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 127 
+10/07/2025 12:18:18 PM: [ BATCH COUNTER: 127  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:19:11 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5595703125
+10/07/2025 12:19:11 PM: [ Acc === 0.5595703125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25424879789352417
+10/07/2025 12:19:11 PM: [ MEDIAN REWARD A1 === 0.25424879789352417 ]
+INFO:root:MEDIAN REWARD A2 === -0.25743669271469116
+10/07/2025 12:19:11 PM: [ MEDIAN REWARD A2 === -0.25743669271469116 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:19:11 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 128 
+10/07/2025 12:19:12 PM: [ BATCH COUNTER: 128  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:20:02 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.573388671875
+10/07/2025 12:20:02 PM: [ Acc === 0.573388671875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25447937846183777
+10/07/2025 12:20:02 PM: [ MEDIAN REWARD A1 === 0.25447937846183777 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576548755168915
+10/07/2025 12:20:02 PM: [ MEDIAN REWARD A2 === -0.2576548755168915 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:20:02 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 129 
+10/07/2025 12:20:04 PM: [ BATCH COUNTER: 129  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:20:54 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5640625
+10/07/2025 12:20:54 PM: [ Acc === 0.5640625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2544461488723755
+10/07/2025 12:20:54 PM: [ MEDIAN REWARD A1 === 0.2544461488723755 ]
+INFO:root:MEDIAN REWARD A2 === -0.2575656771659851
+10/07/2025 12:20:54 PM: [ MEDIAN REWARD A2 === -0.2575656771659851 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:20:54 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 130 
+10/07/2025 12:20:56 PM: [ BATCH COUNTER: 130  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:21:48 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.559326171875
+10/07/2025 12:21:48 PM: [ Acc === 0.559326171875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2544320225715637
+10/07/2025 12:21:48 PM: [ MEDIAN REWARD A1 === 0.2544320225715637 ]
+INFO:root:MEDIAN REWARD A2 === -0.2575632631778717
+10/07/2025 12:21:48 PM: [ MEDIAN REWARD A2 === -0.2575632631778717 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:21:48 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 131 
+10/07/2025 12:21:49 PM: [ BATCH COUNTER: 131  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:22:40 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.56572265625
+10/07/2025 12:22:40 PM: [ Acc === 0.56572265625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2542583644390106
+10/07/2025 12:22:40 PM: [ MEDIAN REWARD A1 === 0.2542583644390106 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576269805431366
+10/07/2025 12:22:40 PM: [ MEDIAN REWARD A2 === -0.2576269805431366 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:22:40 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 132 
+10/07/2025 12:22:41 PM: [ BATCH COUNTER: 132  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:23:33 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5560546875
+10/07/2025 12:23:33 PM: [ Acc === 0.5560546875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2544410526752472
+10/07/2025 12:23:33 PM: [ MEDIAN REWARD A1 === 0.2544410526752472 ]
+INFO:root:MEDIAN REWARD A2 === -0.25767412781715393
+10/07/2025 12:23:33 PM: [ MEDIAN REWARD A2 === -0.25767412781715393 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:23:33 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 133 
+10/07/2025 12:23:34 PM: [ BATCH COUNTER: 133  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:24:25 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55986328125
+10/07/2025 12:24:25 PM: [ Acc === 0.55986328125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2542033791542053
+10/07/2025 12:24:25 PM: [ MEDIAN REWARD A1 === 0.2542033791542053 ]
+INFO:root:MEDIAN REWARD A2 === -0.25748348236083984
+10/07/2025 12:24:25 PM: [ MEDIAN REWARD A2 === -0.25748348236083984 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:24:25 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 134 
+10/07/2025 12:24:27 PM: [ BATCH COUNTER: 134  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:25:17 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.58779296875
+10/07/2025 12:25:17 PM: [ Acc === 0.58779296875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25433361530303955
+10/07/2025 12:25:17 PM: [ MEDIAN REWARD A1 === 0.25433361530303955 ]
+INFO:root:MEDIAN REWARD A2 === -0.25767794251441956
+10/07/2025 12:25:17 PM: [ MEDIAN REWARD A2 === -0.25767794251441956 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:25:17 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 135 
+10/07/2025 12:25:19 PM: [ BATCH COUNTER: 135  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:26:09 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.554736328125
+10/07/2025 12:26:09 PM: [ Acc === 0.554736328125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2543927729129791
+10/07/2025 12:26:09 PM: [ MEDIAN REWARD A1 === 0.2543927729129791 ]
+INFO:root:MEDIAN REWARD A2 === -0.2575683891773224
+10/07/2025 12:26:09 PM: [ MEDIAN REWARD A2 === -0.2575683891773224 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:26:09 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 136 
+10/07/2025 12:26:11 PM: [ BATCH COUNTER: 136  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:27:03 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.566748046875
+10/07/2025 12:27:03 PM: [ Acc === 0.566748046875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25443536043167114
+10/07/2025 12:27:03 PM: [ MEDIAN REWARD A1 === 0.25443536043167114 ]
+INFO:root:MEDIAN REWARD A2 === -0.25758010149002075
+10/07/2025 12:27:03 PM: [ MEDIAN REWARD A2 === -0.25758010149002075 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:27:03 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 137 
+10/07/2025 12:27:04 PM: [ BATCH COUNTER: 137  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:27:56 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.586572265625
+10/07/2025 12:27:56 PM: [ Acc === 0.586572265625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25438645482063293
+10/07/2025 12:27:56 PM: [ MEDIAN REWARD A1 === 0.25438645482063293 ]
+INFO:root:MEDIAN REWARD A2 === -0.2574257254600525
+10/07/2025 12:27:56 PM: [ MEDIAN REWARD A2 === -0.2574257254600525 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:27:56 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 138 
+10/07/2025 12:27:57 PM: [ BATCH COUNTER: 138  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:28:48 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.551123046875
+10/07/2025 12:28:48 PM: [ Acc === 0.551123046875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25442397594451904
+10/07/2025 12:28:48 PM: [ MEDIAN REWARD A1 === 0.25442397594451904 ]
+INFO:root:MEDIAN REWARD A2 === -0.25761061906814575
+10/07/2025 12:28:48 PM: [ MEDIAN REWARD A2 === -0.25761061906814575 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:28:48 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 139 
+10/07/2025 12:28:50 PM: [ BATCH COUNTER: 139  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:29:39 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.587060546875
+10/07/2025 12:29:39 PM: [ Acc === 0.587060546875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25426608324050903
+10/07/2025 12:29:39 PM: [ MEDIAN REWARD A1 === 0.25426608324050903 ]
+INFO:root:MEDIAN REWARD A2 === -0.25764262676239014
+10/07/2025 12:29:39 PM: [ MEDIAN REWARD A2 === -0.25764262676239014 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:29:39 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 140 
+10/07/2025 12:29:41 PM: [ BATCH COUNTER: 140  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:30:30 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.57861328125
+10/07/2025 12:30:30 PM: [ Acc === 0.57861328125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2544247508049011
+10/07/2025 12:30:30 PM: [ MEDIAN REWARD A1 === 0.2544247508049011 ]
+INFO:root:MEDIAN REWARD A2 === -0.2580084204673767
+10/07/2025 12:30:30 PM: [ MEDIAN REWARD A2 === -0.2580084204673767 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:30:30 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 141 
+10/07/2025 12:30:32 PM: [ BATCH COUNTER: 141  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:31:23 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5759765625
+10/07/2025 12:31:23 PM: [ Acc === 0.5759765625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2542688250541687
+10/07/2025 12:31:23 PM: [ MEDIAN REWARD A1 === 0.2542688250541687 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576214671134949
+10/07/2025 12:31:23 PM: [ MEDIAN REWARD A2 === -0.2576214671134949 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:31:23 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 142 
+10/07/2025 12:31:25 PM: [ BATCH COUNTER: 142  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:32:14 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.549072265625
+10/07/2025 12:32:14 PM: [ Acc === 0.549072265625 ]
+INFO:root:MEDIAN REWARD A1 === 0.254284143447876
+10/07/2025 12:32:14 PM: [ MEDIAN REWARD A1 === 0.254284143447876 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576826214790344
+10/07/2025 12:32:14 PM: [ MEDIAN REWARD A2 === -0.2576826214790344 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:32:14 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 143 
+10/07/2025 12:32:16 PM: [ BATCH COUNTER: 143  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:33:07 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.553955078125
+10/07/2025 12:33:07 PM: [ Acc === 0.553955078125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25449490547180176
+10/07/2025 12:33:07 PM: [ MEDIAN REWARD A1 === 0.25449490547180176 ]
+INFO:root:MEDIAN REWARD A2 === -0.25776350498199463
+10/07/2025 12:33:07 PM: [ MEDIAN REWARD A2 === -0.25776350498199463 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:33:07 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 144 
+10/07/2025 12:33:08 PM: [ BATCH COUNTER: 144  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:34:00 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.562890625
+10/07/2025 12:34:00 PM: [ Acc === 0.562890625 ]
+INFO:root:MEDIAN REWARD A1 === 0.254423588514328
+10/07/2025 12:34:00 PM: [ MEDIAN REWARD A1 === 0.254423588514328 ]
+INFO:root:MEDIAN REWARD A2 === -0.25763174891471863
+10/07/2025 12:34:00 PM: [ MEDIAN REWARD A2 === -0.25763174891471863 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:34:00 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 145 
+10/07/2025 12:34:03 PM: [ BATCH COUNTER: 145  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:34:53 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.57138671875
+10/07/2025 12:34:53 PM: [ Acc === 0.57138671875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25453677773475647
+10/07/2025 12:34:53 PM: [ MEDIAN REWARD A1 === 0.25453677773475647 ]
+INFO:root:MEDIAN REWARD A2 === -0.2577367126941681
+10/07/2025 12:34:53 PM: [ MEDIAN REWARD A2 === -0.2577367126941681 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:34:53 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 146 
+10/07/2025 12:34:55 PM: [ BATCH COUNTER: 146  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:35:44 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.576806640625
+10/07/2025 12:35:44 PM: [ Acc === 0.576806640625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25435367226600647
+10/07/2025 12:35:44 PM: [ MEDIAN REWARD A1 === 0.25435367226600647 ]
+INFO:root:MEDIAN REWARD A2 === -0.257856160402298
+10/07/2025 12:35:44 PM: [ MEDIAN REWARD A2 === -0.257856160402298 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:35:44 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 147 
+10/07/2025 12:35:47 PM: [ BATCH COUNTER: 147  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:36:37 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.586376953125
+10/07/2025 12:36:37 PM: [ Acc === 0.586376953125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25448116660118103
+10/07/2025 12:36:37 PM: [ MEDIAN REWARD A1 === 0.25448116660118103 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576518654823303
+10/07/2025 12:36:37 PM: [ MEDIAN REWARD A2 === -0.2576518654823303 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:36:37 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 148 
+10/07/2025 12:36:38 PM: [ BATCH COUNTER: 148  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:37:28 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55400390625
+10/07/2025 12:37:28 PM: [ Acc === 0.55400390625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2545402944087982
+10/07/2025 12:37:28 PM: [ MEDIAN REWARD A1 === 0.2545402944087982 ]
+INFO:root:MEDIAN REWARD A2 === -0.257744699716568
+10/07/2025 12:37:28 PM: [ MEDIAN REWARD A2 === -0.257744699716568 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:37:28 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 149 
+10/07/2025 12:37:30 PM: [ BATCH COUNTER: 149  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:38:20 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.54775390625
+10/07/2025 12:38:20 PM: [ Acc === 0.54775390625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2543618381023407
+10/07/2025 12:38:20 PM: [ MEDIAN REWARD A1 === 0.2543618381023407 ]
+INFO:root:MEDIAN REWARD A2 === -0.25754979252815247
+10/07/2025 12:38:20 PM: [ MEDIAN REWARD A2 === -0.25754979252815247 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:38:20 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 150 
+10/07/2025 12:38:22 PM: [ BATCH COUNTER: 150  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:39:13 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.547802734375
+10/07/2025 12:39:13 PM: [ Acc === 0.547802734375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25457289814949036
+10/07/2025 12:39:13 PM: [ MEDIAN REWARD A1 === 0.25457289814949036 ]
+INFO:root:MEDIAN REWARD A2 === -0.2577567398548126
+10/07/2025 12:39:13 PM: [ MEDIAN REWARD A2 === -0.2577567398548126 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:39:13 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 151 
+10/07/2025 12:39:14 PM: [ BATCH COUNTER: 151  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:40:05 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.565478515625
+10/07/2025 12:40:05 PM: [ Acc === 0.565478515625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25436246395111084
+10/07/2025 12:40:05 PM: [ MEDIAN REWARD A1 === 0.25436246395111084 ]
+INFO:root:MEDIAN REWARD A2 === -0.25778791308403015
+10/07/2025 12:40:05 PM: [ MEDIAN REWARD A2 === -0.25778791308403015 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:40:05 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 152 
+10/07/2025 12:40:06 PM: [ BATCH COUNTER: 152  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:40:59 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.58642578125
+10/07/2025 12:40:59 PM: [ Acc === 0.58642578125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2544807493686676
+10/07/2025 12:40:59 PM: [ MEDIAN REWARD A1 === 0.2544807493686676 ]
+INFO:root:MEDIAN REWARD A2 === -0.2578689157962799
+10/07/2025 12:40:59 PM: [ MEDIAN REWARD A2 === -0.2578689157962799 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:40:59 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 153 
+10/07/2025 12:41:00 PM: [ BATCH COUNTER: 153  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:41:52 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.563427734375
+10/07/2025 12:41:52 PM: [ Acc === 0.563427734375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2547765076160431
+10/07/2025 12:41:52 PM: [ MEDIAN REWARD A1 === 0.2547765076160431 ]
+INFO:root:MEDIAN REWARD A2 === -0.2577630579471588
+10/07/2025 12:41:52 PM: [ MEDIAN REWARD A2 === -0.2577630579471588 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:41:52 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 154 
+10/07/2025 12:41:54 PM: [ BATCH COUNTER: 154  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:42:44 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.581201171875
+10/07/2025 12:42:44 PM: [ Acc === 0.581201171875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2547883093357086
+10/07/2025 12:42:44 PM: [ MEDIAN REWARD A1 === 0.2547883093357086 ]
+INFO:root:MEDIAN REWARD A2 === -0.2580011487007141
+10/07/2025 12:42:44 PM: [ MEDIAN REWARD A2 === -0.2580011487007141 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:42:44 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 155 
+10/07/2025 12:42:46 PM: [ BATCH COUNTER: 155  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:43:36 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.550146484375
+10/07/2025 12:43:36 PM: [ Acc === 0.550146484375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25461313128471375
+10/07/2025 12:43:36 PM: [ MEDIAN REWARD A1 === 0.25461313128471375 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576988637447357
+10/07/2025 12:43:36 PM: [ MEDIAN REWARD A2 === -0.2576988637447357 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:43:36 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 156 
+10/07/2025 12:43:37 PM: [ BATCH COUNTER: 156  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:44:27 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5529296875
+10/07/2025 12:44:27 PM: [ Acc === 0.5529296875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2550317049026489
+10/07/2025 12:44:27 PM: [ MEDIAN REWARD A1 === 0.2550317049026489 ]
+INFO:root:MEDIAN REWARD A2 === -0.25783029198646545
+10/07/2025 12:44:27 PM: [ MEDIAN REWARD A2 === -0.25783029198646545 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:44:27 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 157 
+10/07/2025 12:44:29 PM: [ BATCH COUNTER: 157  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:45:20 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.557177734375
+10/07/2025 12:45:20 PM: [ Acc === 0.557177734375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2549566328525543
+10/07/2025 12:45:20 PM: [ MEDIAN REWARD A1 === 0.2549566328525543 ]
+INFO:root:MEDIAN REWARD A2 === -0.25789740681648254
+10/07/2025 12:45:20 PM: [ MEDIAN REWARD A2 === -0.25789740681648254 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:45:20 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 158 
+10/07/2025 12:45:21 PM: [ BATCH COUNTER: 158  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:46:12 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55234375
+10/07/2025 12:46:12 PM: [ Acc === 0.55234375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25447896122932434
+10/07/2025 12:46:12 PM: [ MEDIAN REWARD A1 === 0.25447896122932434 ]
+INFO:root:MEDIAN REWARD A2 === -0.2578100860118866
+10/07/2025 12:46:12 PM: [ MEDIAN REWARD A2 === -0.2578100860118866 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:46:12 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 159 
+10/07/2025 12:46:14 PM: [ BATCH COUNTER: 159  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:47:04 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.558056640625
+10/07/2025 12:47:04 PM: [ Acc === 0.558056640625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25456860661506653
+10/07/2025 12:47:04 PM: [ MEDIAN REWARD A1 === 0.25456860661506653 ]
+INFO:root:MEDIAN REWARD A2 === -0.25769028067588806
+10/07/2025 12:47:04 PM: [ MEDIAN REWARD A2 === -0.25769028067588806 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:47:04 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 160 
+10/07/2025 12:47:05 PM: [ BATCH COUNTER: 160  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:47:56 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.558740234375
+10/07/2025 12:47:56 PM: [ Acc === 0.558740234375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2547585666179657
+10/07/2025 12:47:56 PM: [ MEDIAN REWARD A1 === 0.2547585666179657 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576087713241577
+10/07/2025 12:47:56 PM: [ MEDIAN REWARD A2 === -0.2576087713241577 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:47:56 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 161 
+10/07/2025 12:47:57 PM: [ BATCH COUNTER: 161  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:48:48 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5578125
+10/07/2025 12:48:48 PM: [ Acc === 0.5578125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2544735372066498
+10/07/2025 12:48:48 PM: [ MEDIAN REWARD A1 === 0.2544735372066498 ]
+INFO:root:MEDIAN REWARD A2 === -0.2575779855251312
+10/07/2025 12:48:48 PM: [ MEDIAN REWARD A2 === -0.2575779855251312 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:48:48 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 162 
+10/07/2025 12:48:49 PM: [ BATCH COUNTER: 162  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:49:39 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.56728515625
+10/07/2025 12:49:39 PM: [ Acc === 0.56728515625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2546175718307495
+10/07/2025 12:49:39 PM: [ MEDIAN REWARD A1 === 0.2546175718307495 ]
+INFO:root:MEDIAN REWARD A2 === -0.25776973366737366
+10/07/2025 12:49:39 PM: [ MEDIAN REWARD A2 === -0.25776973366737366 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:49:39 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 163 
+10/07/2025 12:49:40 PM: [ BATCH COUNTER: 163  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:50:30 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.558544921875
+10/07/2025 12:50:30 PM: [ Acc === 0.558544921875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2545097768306732
+10/07/2025 12:50:30 PM: [ MEDIAN REWARD A1 === 0.2545097768306732 ]
+INFO:root:MEDIAN REWARD A2 === -0.25783419609069824
+10/07/2025 12:50:30 PM: [ MEDIAN REWARD A2 === -0.25783419609069824 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:50:30 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 164 
+10/07/2025 12:50:32 PM: [ BATCH COUNTER: 164  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:51:24 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.549853515625
+10/07/2025 12:51:24 PM: [ Acc === 0.549853515625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25442570447921753
+10/07/2025 12:51:24 PM: [ MEDIAN REWARD A1 === 0.25442570447921753 ]
+INFO:root:MEDIAN REWARD A2 === -0.25797364115715027
+10/07/2025 12:51:24 PM: [ MEDIAN REWARD A2 === -0.25797364115715027 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:51:24 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 165 
+10/07/2025 12:51:26 PM: [ BATCH COUNTER: 165  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:52:17 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5427734375
+10/07/2025 12:52:17 PM: [ Acc === 0.5427734375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25452256202697754
+10/07/2025 12:52:17 PM: [ MEDIAN REWARD A1 === 0.25452256202697754 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576567828655243
+10/07/2025 12:52:17 PM: [ MEDIAN REWARD A2 === -0.2576567828655243 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:52:17 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 166 
+10/07/2025 12:52:18 PM: [ BATCH COUNTER: 166  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:53:08 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5587890625
+10/07/2025 12:53:08 PM: [ Acc === 0.5587890625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2542841136455536
+10/07/2025 12:53:08 PM: [ MEDIAN REWARD A1 === 0.2542841136455536 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576156258583069
+10/07/2025 12:53:08 PM: [ MEDIAN REWARD A2 === -0.2576156258583069 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:53:08 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 167 
+10/07/2025 12:53:09 PM: [ BATCH COUNTER: 167  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:54:00 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.567138671875
+10/07/2025 12:54:00 PM: [ Acc === 0.567138671875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2547655701637268
+10/07/2025 12:54:00 PM: [ MEDIAN REWARD A1 === 0.2547655701637268 ]
+INFO:root:MEDIAN REWARD A2 === -0.2577221095561981
+10/07/2025 12:54:00 PM: [ MEDIAN REWARD A2 === -0.2577221095561981 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:54:00 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 168 
+10/07/2025 12:54:03 PM: [ BATCH COUNTER: 168  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:54:55 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.578857421875
+10/07/2025 12:54:55 PM: [ Acc === 0.578857421875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2543693482875824
+10/07/2025 12:54:55 PM: [ MEDIAN REWARD A1 === 0.2543693482875824 ]
+INFO:root:MEDIAN REWARD A2 === -0.25763171911239624
+10/07/2025 12:54:55 PM: [ MEDIAN REWARD A2 === -0.25763171911239624 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:54:55 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 169 
+10/07/2025 12:54:56 PM: [ BATCH COUNTER: 169  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:55:47 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.579296875
+10/07/2025 12:55:47 PM: [ Acc === 0.579296875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2544820010662079
+10/07/2025 12:55:47 PM: [ MEDIAN REWARD A1 === 0.2544820010662079 ]
+INFO:root:MEDIAN REWARD A2 === -0.2577212154865265
+10/07/2025 12:55:47 PM: [ MEDIAN REWARD A2 === -0.2577212154865265 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:55:47 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 170 
+10/07/2025 12:55:48 PM: [ BATCH COUNTER: 170  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:56:38 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.568310546875
+10/07/2025 12:56:38 PM: [ Acc === 0.568310546875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2546147406101227
+10/07/2025 12:56:38 PM: [ MEDIAN REWARD A1 === 0.2546147406101227 ]
+INFO:root:MEDIAN REWARD A2 === -0.25774961709976196
+10/07/2025 12:56:38 PM: [ MEDIAN REWARD A2 === -0.25774961709976196 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:56:38 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 171 
+10/07/2025 12:56:41 PM: [ BATCH COUNTER: 171  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:57:32 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5779296875
+10/07/2025 12:57:32 PM: [ Acc === 0.5779296875 ]
+INFO:root:MEDIAN REWARD A1 === 0.254621297121048
+10/07/2025 12:57:32 PM: [ MEDIAN REWARD A1 === 0.254621297121048 ]
+INFO:root:MEDIAN REWARD A2 === -0.2577650249004364
+10/07/2025 12:57:32 PM: [ MEDIAN REWARD A2 === -0.2577650249004364 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:57:32 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 172 
+10/07/2025 12:57:34 PM: [ BATCH COUNTER: 172  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:58:25 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.574365234375
+10/07/2025 12:58:25 PM: [ Acc === 0.574365234375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25454601645469666
+10/07/2025 12:58:25 PM: [ MEDIAN REWARD A1 === 0.25454601645469666 ]
+INFO:root:MEDIAN REWARD A2 === -0.2575180232524872
+10/07/2025 12:58:25 PM: [ MEDIAN REWARD A2 === -0.2575180232524872 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:58:25 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 173 
+10/07/2025 12:58:27 PM: [ BATCH COUNTER: 173  ]
+INFO:root:Mean label === 0.5
+10/07/2025 12:59:19 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.57841796875
+10/07/2025 12:59:19 PM: [ Acc === 0.57841796875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2547793686389923
+10/07/2025 12:59:19 PM: [ MEDIAN REWARD A1 === 0.2547793686389923 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576068937778473
+10/07/2025 12:59:19 PM: [ MEDIAN REWARD A2 === -0.2576068937778473 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 12:59:19 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 174 
+10/07/2025 12:59:20 PM: [ BATCH COUNTER: 174  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:00:12 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.58623046875
+10/07/2025 01:00:12 PM: [ Acc === 0.58623046875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25503063201904297
+10/07/2025 01:00:12 PM: [ MEDIAN REWARD A1 === 0.25503063201904297 ]
+INFO:root:MEDIAN REWARD A2 === -0.25763243436813354
+10/07/2025 01:00:12 PM: [ MEDIAN REWARD A2 === -0.25763243436813354 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 01:00:12 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 175 
+10/07/2025 01:00:14 PM: [ BATCH COUNTER: 175  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:01:04 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.564697265625
+10/07/2025 01:01:04 PM: [ Acc === 0.564697265625 ]
+INFO:root:MEDIAN REWARD A1 === 0.25483182072639465
+10/07/2025 01:01:04 PM: [ MEDIAN REWARD A1 === 0.25483182072639465 ]
+INFO:root:MEDIAN REWARD A2 === -0.2577049434185028
+10/07/2025 01:01:04 PM: [ MEDIAN REWARD A2 === -0.2577049434185028 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 01:01:04 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 176 
+10/07/2025 01:01:06 PM: [ BATCH COUNTER: 176  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:01:56 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.571923828125
+10/07/2025 01:01:56 PM: [ Acc === 0.571923828125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25473183393478394
+10/07/2025 01:01:56 PM: [ MEDIAN REWARD A1 === 0.25473183393478394 ]
+INFO:root:MEDIAN REWARD A2 === -0.25762853026390076
+10/07/2025 01:01:56 PM: [ MEDIAN REWARD A2 === -0.25762853026390076 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 01:01:56 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 177 
+10/07/2025 01:01:58 PM: [ BATCH COUNTER: 177  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:02:48 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.575634765625
+10/07/2025 01:02:48 PM: [ Acc === 0.575634765625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2549276053905487
+10/07/2025 01:02:48 PM: [ MEDIAN REWARD A1 === 0.2549276053905487 ]
+INFO:root:MEDIAN REWARD A2 === -0.25758373737335205
+10/07/2025 01:02:48 PM: [ MEDIAN REWARD A2 === -0.25758373737335205 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 01:02:48 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 178 
+10/07/2025 01:02:49 PM: [ BATCH COUNTER: 178  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:03:41 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.556884765625
+10/07/2025 01:03:41 PM: [ Acc === 0.556884765625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2550153136253357
+10/07/2025 01:03:41 PM: [ MEDIAN REWARD A1 === 0.2550153136253357 ]
+INFO:root:MEDIAN REWARD A2 === -0.25762853026390076
+10/07/2025 01:03:41 PM: [ MEDIAN REWARD A2 === -0.25762853026390076 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 01:03:41 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 179 
+10/07/2025 01:03:43 PM: [ BATCH COUNTER: 179  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:04:34 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.56806640625
+10/07/2025 01:04:34 PM: [ Acc === 0.56806640625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2548544704914093
+10/07/2025 01:04:34 PM: [ MEDIAN REWARD A1 === 0.2548544704914093 ]
+INFO:root:MEDIAN REWARD A2 === -0.2575923502445221
+10/07/2025 01:04:34 PM: [ MEDIAN REWARD A2 === -0.2575923502445221 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 01:04:34 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 180 
+10/07/2025 01:04:35 PM: [ BATCH COUNTER: 180  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:05:26 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.56328125
+10/07/2025 01:05:26 PM: [ Acc === 0.56328125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25501376390457153
+10/07/2025 01:05:26 PM: [ MEDIAN REWARD A1 === 0.25501376390457153 ]
+INFO:root:MEDIAN REWARD A2 === -0.2575625479221344
+10/07/2025 01:05:26 PM: [ MEDIAN REWARD A2 === -0.2575625479221344 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 01:05:26 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 181 
+10/07/2025 01:05:27 PM: [ BATCH COUNTER: 181  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:06:17 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.571435546875
+10/07/2025 01:06:17 PM: [ Acc === 0.571435546875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25515133142471313
+10/07/2025 01:06:17 PM: [ MEDIAN REWARD A1 === 0.25515133142471313 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576330900192261
+10/07/2025 01:06:17 PM: [ MEDIAN REWARD A2 === -0.2576330900192261 ]
+INFO:root:Memory usage : 23601284 (kb)
+10/07/2025 01:06:17 PM: [ Memory usage : 23601284 (kb) ]
+INFO:root:BATCH COUNTER: 182 
+10/07/2025 01:06:19 PM: [ BATCH COUNTER: 182  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:07:10 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5650390625
+10/07/2025 01:07:10 PM: [ Acc === 0.5650390625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2550938129425049
+10/07/2025 01:07:10 PM: [ MEDIAN REWARD A1 === 0.2550938129425049 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576787769794464
+10/07/2025 01:07:10 PM: [ MEDIAN REWARD A2 === -0.2576787769794464 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:07:10 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 183 
+10/07/2025 01:07:11 PM: [ BATCH COUNTER: 183  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:08:02 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.55625
+10/07/2025 01:08:02 PM: [ Acc === 0.55625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2552371025085449
+10/07/2025 01:08:02 PM: [ MEDIAN REWARD A1 === 0.2552371025085449 ]
+INFO:root:MEDIAN REWARD A2 === -0.25777101516723633
+10/07/2025 01:08:02 PM: [ MEDIAN REWARD A2 === -0.25777101516723633 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:08:02 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 184 
+10/07/2025 01:08:04 PM: [ BATCH COUNTER: 184  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:08:54 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5845703125
+10/07/2025 01:08:54 PM: [ Acc === 0.5845703125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25526192784309387
+10/07/2025 01:08:54 PM: [ MEDIAN REWARD A1 === 0.25526192784309387 ]
+INFO:root:MEDIAN REWARD A2 === -0.25761207938194275
+10/07/2025 01:08:54 PM: [ MEDIAN REWARD A2 === -0.25761207938194275 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:08:54 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 185 
+10/07/2025 01:08:56 PM: [ BATCH COUNTER: 185  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:09:46 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.58349609375
+10/07/2025 01:09:46 PM: [ Acc === 0.58349609375 ]
+INFO:root:MEDIAN REWARD A1 === 0.2552570402622223
+10/07/2025 01:09:46 PM: [ MEDIAN REWARD A1 === 0.2552570402622223 ]
+INFO:root:MEDIAN REWARD A2 === -0.2577117085456848
+10/07/2025 01:09:46 PM: [ MEDIAN REWARD A2 === -0.2577117085456848 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:09:46 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 186 
+10/07/2025 01:09:48 PM: [ BATCH COUNTER: 186  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:10:39 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.575537109375
+10/07/2025 01:10:39 PM: [ Acc === 0.575537109375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25528666377067566
+10/07/2025 01:10:39 PM: [ MEDIAN REWARD A1 === 0.25528666377067566 ]
+INFO:root:MEDIAN REWARD A2 === -0.25774896144866943
+10/07/2025 01:10:39 PM: [ MEDIAN REWARD A2 === -0.25774896144866943 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:10:39 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 187 
+10/07/2025 01:10:40 PM: [ BATCH COUNTER: 187  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:11:32 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5826171875
+10/07/2025 01:11:32 PM: [ Acc === 0.5826171875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25520098209381104
+10/07/2025 01:11:32 PM: [ MEDIAN REWARD A1 === 0.25520098209381104 ]
+INFO:root:MEDIAN REWARD A2 === -0.25758615136146545
+10/07/2025 01:11:32 PM: [ MEDIAN REWARD A2 === -0.25758615136146545 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:11:32 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 188 
+10/07/2025 01:11:34 PM: [ BATCH COUNTER: 188  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:12:25 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.562646484375
+10/07/2025 01:12:25 PM: [ Acc === 0.562646484375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25535425543785095
+10/07/2025 01:12:25 PM: [ MEDIAN REWARD A1 === 0.25535425543785095 ]
+INFO:root:MEDIAN REWARD A2 === -0.2576839029788971
+10/07/2025 01:12:25 PM: [ MEDIAN REWARD A2 === -0.2576839029788971 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:12:25 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 189 
+10/07/2025 01:12:26 PM: [ BATCH COUNTER: 189  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:13:19 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.565478515625
+10/07/2025 01:13:19 PM: [ Acc === 0.565478515625 ]
+INFO:root:MEDIAN REWARD A1 === 0.2553381323814392
+10/07/2025 01:13:19 PM: [ MEDIAN REWARD A1 === 0.2553381323814392 ]
+INFO:root:MEDIAN REWARD A2 === -0.25780022144317627
+10/07/2025 01:13:19 PM: [ MEDIAN REWARD A2 === -0.25780022144317627 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:13:19 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 190 
+10/07/2025 01:13:21 PM: [ BATCH COUNTER: 190  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:14:12 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5875
+10/07/2025 01:14:12 PM: [ Acc === 0.5875 ]
+INFO:root:MEDIAN REWARD A1 === 0.25524812936782837
+10/07/2025 01:14:12 PM: [ MEDIAN REWARD A1 === 0.25524812936782837 ]
+INFO:root:MEDIAN REWARD A2 === -0.25755125284194946
+10/07/2025 01:14:12 PM: [ MEDIAN REWARD A2 === -0.25755125284194946 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:14:12 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 191 
+10/07/2025 01:14:14 PM: [ BATCH COUNTER: 191  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:15:04 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.57060546875
+10/07/2025 01:15:04 PM: [ Acc === 0.57060546875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2552469074726105
+10/07/2025 01:15:04 PM: [ MEDIAN REWARD A1 === 0.2552469074726105 ]
+INFO:root:MEDIAN REWARD A2 === -0.25747647881507874
+10/07/2025 01:15:04 PM: [ MEDIAN REWARD A2 === -0.25747647881507874 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:15:04 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 192 
+10/07/2025 01:15:06 PM: [ BATCH COUNTER: 192  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:15:56 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.59013671875
+10/07/2025 01:15:56 PM: [ Acc === 0.59013671875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2554176151752472
+10/07/2025 01:15:56 PM: [ MEDIAN REWARD A1 === 0.2554176151752472 ]
+INFO:root:MEDIAN REWARD A2 === -0.25765272974967957
+10/07/2025 01:15:56 PM: [ MEDIAN REWARD A2 === -0.25765272974967957 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:15:56 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 193 
+10/07/2025 01:15:58 PM: [ BATCH COUNTER: 193  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:16:49 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.60546875
+10/07/2025 01:16:49 PM: [ Acc === 0.60546875 ]
+INFO:root:MEDIAN REWARD A1 === 0.2552378475666046
+10/07/2025 01:16:49 PM: [ MEDIAN REWARD A1 === 0.2552378475666046 ]
+INFO:root:MEDIAN REWARD A2 === -0.2573847472667694
+10/07/2025 01:16:49 PM: [ MEDIAN REWARD A2 === -0.2573847472667694 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:16:49 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 194 
+10/07/2025 01:16:50 PM: [ BATCH COUNTER: 194  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:17:42 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.572802734375
+10/07/2025 01:17:42 PM: [ Acc === 0.572802734375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25528684258461
+10/07/2025 01:17:42 PM: [ MEDIAN REWARD A1 === 0.25528684258461 ]
+INFO:root:MEDIAN REWARD A2 === -0.25751009583473206
+10/07/2025 01:17:42 PM: [ MEDIAN REWARD A2 === -0.25751009583473206 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:17:42 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 195 
+10/07/2025 01:17:43 PM: [ BATCH COUNTER: 195  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:18:33 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5658203125
+10/07/2025 01:18:33 PM: [ Acc === 0.5658203125 ]
+INFO:root:MEDIAN REWARD A1 === 0.2553476095199585
+10/07/2025 01:18:33 PM: [ MEDIAN REWARD A1 === 0.2553476095199585 ]
+INFO:root:MEDIAN REWARD A2 === -0.2577113211154938
+10/07/2025 01:18:33 PM: [ MEDIAN REWARD A2 === -0.2577113211154938 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:18:33 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 196 
+10/07/2025 01:18:35 PM: [ BATCH COUNTER: 196  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:19:25 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.573486328125
+10/07/2025 01:19:25 PM: [ Acc === 0.573486328125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25512734055519104
+10/07/2025 01:19:25 PM: [ MEDIAN REWARD A1 === 0.25512734055519104 ]
+INFO:root:MEDIAN REWARD A2 === -0.25742781162261963
+10/07/2025 01:19:25 PM: [ MEDIAN REWARD A2 === -0.25742781162261963 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:19:25 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 197 
+10/07/2025 01:19:26 PM: [ BATCH COUNTER: 197  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:20:17 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.577392578125
+10/07/2025 01:20:17 PM: [ Acc === 0.577392578125 ]
+INFO:root:MEDIAN REWARD A1 === 0.25515177845954895
+10/07/2025 01:20:17 PM: [ MEDIAN REWARD A1 === 0.25515177845954895 ]
+INFO:root:MEDIAN REWARD A2 === -0.2575935423374176
+10/07/2025 01:20:17 PM: [ MEDIAN REWARD A2 === -0.2575935423374176 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:20:17 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 198 
+10/07/2025 01:20:19 PM: [ BATCH COUNTER: 198  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:21:10 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.588525390625
+10/07/2025 01:21:10 PM: [ Acc === 0.588525390625 ]
+INFO:root:MEDIAN REWARD A1 === 0.255061537027359
+10/07/2025 01:21:10 PM: [ MEDIAN REWARD A1 === 0.255061537027359 ]
+INFO:root:MEDIAN REWARD A2 === -0.25750732421875
+10/07/2025 01:21:10 PM: [ MEDIAN REWARD A2 === -0.25750732421875 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:21:10 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 199 
+10/07/2025 01:21:12 PM: [ BATCH COUNTER: 199  ]
+INFO:root:Mean label === 0.5
+10/07/2025 01:22:02 PM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.59990234375
+10/07/2025 01:22:02 PM: [ Acc === 0.59990234375 ]
+INFO:root:MEDIAN REWARD A1 === 0.25503504276275635
+10/07/2025 01:22:02 PM: [ MEDIAN REWARD A1 === 0.25503504276275635 ]
+INFO:root:MEDIAN REWARD A2 === -0.25733986496925354
+10/07/2025 01:22:02 PM: [ MEDIAN REWARD A2 === -0.25733986496925354 ]
+INFO:root:Memory usage : 23790592 (kb)
+10/07/2025 01:22:02 PM: [ Memory usage : 23790592 (kb) ]
+INFO:root:BATCH COUNTER: 200 
+10/07/2025 01:22:04 PM: [ BATCH COUNTER: 200  ]

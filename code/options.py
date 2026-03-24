@@ -1,11 +1,6 @@
 from __future__ import absolute_import
 from __future__ import division
 import argparse
-import uuid
-import os
-import datetime
-from pprint import pprint
-
 
 def read_options():
     parser = argparse.ArgumentParser()
@@ -44,12 +39,10 @@ def read_options():
     parser.add_argument("--Lambda", default=0.0, type=float, nargs= "+")
     parser.add_argument("--custom_baseline", default=[0], type=int, nargs="+")
 
-
     try:
         parsed = vars(parser.parse_args())
     except IOError as msg:
         parser.error(str(msg))
-
 
     parsed['use_entity_embeddings'] = (parsed['use_entity_embeddings'] == 1)
     parsed['is_use_fixed_false_facts'] = (parsed['is_use_fixed_false_facts'] == 1)

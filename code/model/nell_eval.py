@@ -1,7 +1,5 @@
 from __future__ import division
-import csv
 from collections import defaultdict
-import random
 import numpy as np
 
 def nell_eval(model_answers, correct_answers):

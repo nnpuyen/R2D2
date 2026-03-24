@@ -1,7 +1,7 @@
 import tensorflow as tf
 # TensorFlow 1.x compatibility for newer TensorFlow versions
 if hasattr(tf, 'compat'):
-    tf.compat.v1.disable_v2_behavior()
+    tf.compat.v1.disable_eager_execution()
 import numpy as np
 
 # Compatibility helper for variable_scope
@@ -36,17 +36,23 @@ def tf_get_variable(*args, **kwargs):
     else:
         return tf.get_variable(*args, **kwargs)
 
-# Compatibility helper for layers.dense
-def tf_layers_dense(*args, **kwargs):
-    """Helper function for TensorFlow layers.dense compatibility"""
-    if hasattr(tf, 'compat'):
-        try:
-            return tf.compat.v1.layers.dense(*args, **kwargs)
-        except AttributeError:
-            # Fallback to Keras layers for compatibility with Keras 3
-            return tf.keras.layers.Dense(units=args[1], activation=kwargs.get('activation'), name=kwargs.get('name'))(args[0])
-    else:
-        return tf.layers.dense(*args, **kwargs)
+# Compatibility helper for layers.dense - avoids Keras dependency
+def tf_layers_dense(inputs, units, activation=None, name=None):
+    """Implement dense layer with raw TensorFlow ops to avoid Keras import."""
+    with tf_variable_scope(name or 'dense', reuse=get_auto_reuse()):
+        input_size = int(inputs.shape[-1])
+        w = tf_get_variable('kernel',
+                           shape=[input_size, units],
+                           dtype=tf.float32,
+                           initializer=tf.compat.v1.glorot_uniform_initializer() if hasattr(tf, 'compat') else tf.contrib.layers.xavier_initializer())
+        b = tf_get_variable('bias',
+                           shape=[units],
+                           dtype=tf.float32,
+                           initializer=tf.keras.initializers.Zeros())
+        output = tf.matmul(inputs, w) + b
+        if activation is not None:
+            output = activation(output)
+        return output
 
 class Judge():
     '''
@@ -71,11 +77,11 @@ class Judge():
         if params['use_entity_embeddings']:
             # Use compatibility layer for TensorFlow 2.x
             if hasattr(tf, 'compat'):
-                self.entity_initializer = tf.compat.v1.keras.initializers.glorot_uniform()
+                self.entity_initializer = tf.compat.v1.glorot_uniform_initializer()
             else:
                 self.entity_initializer = tf.contrib.layers.xavier_initializer()
         else:
-            self.entity_initializer = tf.zeros_initializer()
+            self.entity_initializer = tf.keras.initializers.Zeros()
         self.train_entities = params['train_entity_embeddings']
         self.train_relations = params['train_relation_embeddings']
         self.hidden_layers = params['layers_judge']
@@ -99,7 +105,7 @@ class Judge():
 
             # Use compatibility layer for TensorFlow 2.x
             if hasattr(tf, 'compat'):
-                xavier_init = tf.compat.v1.keras.initializers.glorot_uniform()
+                xavier_init = tf.compat.v1.glorot_uniform_initializer()
             else:
                 xavier_init = tf.contrib.layers.xavier_initializer()
                 

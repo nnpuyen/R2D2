@@ -1,0 +1,13 @@
+03/23/2026 06:22:49 PM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+03/23/2026 06:22:49 PM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+03/23/2026 06:22:49 PM: [ KG constructed ]
+03/23/2026 06:22:50 PM: [ KG constructed ]
+03/23/2026 06:22:51 PM: [ KG constructed ]
+03/23/2026 06:22:51 PM: [ Creating TF graph... ]
+03/23/2026 06:22:51 PM: [ From /home/bn/R2D2/.venv/lib/python3.12/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:988: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor ]
+03/23/2026 06:22:51 PM: [ From /home/bn/R2D2/.venv/lib/python3.12/site-packages/tensorflow/python/util/dispatch.py:1260: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.random.categorical` instead. ]
+03/23/2026 06:22:51 PM: [ Your environment has TF_USE_LEGACY_KERAS set to True, but you do not have the tf_keras package installed. You must install it in order to use the legacy tf.keras. Install it via: `pip install tf_keras` ]

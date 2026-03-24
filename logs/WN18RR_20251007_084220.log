@@ -1,0 +1,317 @@
+2025-10-07 08:42:21.104659: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2025-10-07 08:42:21.186445: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-10-07 08:42:23.553121: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+WARNING:tensorflow:From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/compat/v2_compat.py:98: disable_resource_variables (from tensorflow.python.ops.resource_variables_toggle) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Arguments:
+	                      Lambda : [0.02]
+	             base_output_dir : output/WN18RR/
+	                  batch_size : [512]
+	                        beta : [0.02]
+	             custom_baseline : [False]
+	              data_input_dir : datasets/WN18RR/
+	              embedding_size : [256]
+	                  eval_every : 4000
+	           false_facts_train : 1
+	                       gamma : 1
+	              grad_clip_norm : 5
+	                 hidden_size : [64]
+	    is_use_fixed_false_facts : True
+	                layers_agent : [1]
+	                layers_judge : [1]
+	        learning_rate_agents : [0.0001]
+	         learning_rate_judge : [0.0001]
+	                  load_model : 0
+	             max_num_actions : 200
+	              model_load_dir : 
+	                num_rollouts : [20]
+	            number_arguments : [3]
+	                 path_length : [3]
+	pretrained_embeddings_action : 0
+	pretrained_embeddings_entity : 0
+	  pretrained_embeddings_path : 0
+	         rounds_sub_training : [2000]
+	           save_debate_every : 1000
+	                        seed : [42]
+	               test_rollouts : [50]
+	            total_iterations : [4000]
+	     train_entity_embeddings : [1]
+	           train_judge_every : [200]
+	   train_relation_embeddings : [1]
+	       use_entity_embeddings : True
+	                   vocab_dir : datasets/WN18RR/vocab
+INFO:root:reading vocab files...
+10/07/2025 08:42:24 AM: [ reading vocab files... ]
+INFO:root:Reading mid to name map
+10/07/2025 08:42:24 AM: [ Reading mid to name map ]
+INFO:root:Done..
+10/07/2025 08:42:24 AM: [ Done.. ]
+INFO:root:Total number of entities 40946
+10/07/2025 08:42:24 AM: [ Total number of entities 40946 ]
+INFO:root:Total number of relations 27
+10/07/2025 08:42:24 AM: [ Total number of relations 27 ]
+/home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:709: UserWarning: `tf.nn.rnn_cell.BasicLSTMCell` is deprecated and will be removed in a future version. This class is equivalent as `tf.keras.layers.LSTMCell`, and will be replaced by that in Tensorflow 2.0.
+  warnings.warn("`tf.nn.rnn_cell.BasicLSTMCell` is deprecated and will be "
+WARNING:tensorflow:`tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0.
+Arguments:
+	                      Lambda : 0.02
+	             base_output_dir : output/WN18RR/
+	                  batch_size : 512
+	                        beta : 0.02
+	             custom_baseline : False
+	              data_input_dir : datasets/WN18RR/
+	              embedding_size : 256
+	                  eval_every : 4000
+	           false_facts_train : 1
+	                       gamma : 1
+	              grad_clip_norm : 5
+	                 hidden_size : 64
+	    is_use_fixed_false_facts : True
+	                layers_agent : 1
+	                layers_judge : 1
+	        learning_rate_agents : 0.0001
+	         learning_rate_judge : 0.0001
+	                  load_model : False
+	             max_num_actions : 200
+	                   model_dir : output/WN18RR//25_Oct_07__08_42_24__b4d7_3_0.02_50_0.02/model/
+	              model_load_dir : 
+	                num_rollouts : 20
+	            number_arguments : 3
+	                  output_dir : output/WN18RR//25_Oct_07__08_42_24__b4d7_3_0.02_50_0.02
+	                 path_length : 3
+	pretrained_embeddings_action : 0
+	pretrained_embeddings_entity : 0
+	  pretrained_embeddings_path : 0
+	         rounds_sub_training : 2000
+	           save_debate_every : 1000
+	                        seed : 42
+	               test_rollouts : 50
+	            total_iterations : 4000
+	     train_entity_embeddings : 1
+	           train_judge_every : 200
+	   train_relation_embeddings : 1
+	       use_entity_embeddings : True
+	                   vocab_dir : datasets/WN18RR/vocab
+WARNING:tensorflow:`tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0.
+10/07/2025 08:42:24 AM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+WARNING:tensorflow:`tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:`tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0.
+10/07/2025 08:42:24 AM: [ `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0. ]
+INFO:code.data.grapher:KG constructed
+10/07/2025 08:42:28 AM: [ KG constructed ]
+INFO:code.data.grapher:KG constructed
+10/07/2025 08:42:29 AM: [ KG constructed ]
+INFO:code.data.grapher:KG constructed
+10/07/2025 08:42:32 AM: [ KG constructed ]
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1759826552.784801    3637 cuda_executor.cc:1309] INTERNAL: CUDA Runtime error: Failed call to cudaGetRuntimeVersion: Error loading CUDA libraries. GPU will not be used.: Error loading CUDA libraries. GPU will not be used.
+W0000 00:00:1759826552.843450    3637 gpu_device.cc:2342] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+INFO:root:Creating TF graph...
+10/07/2025 08:42:32 AM: [ Creating TF graph... ]
+/home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/keras/engine/base_layer_v1.py:1702: UserWarning: `layer.add_variable` is deprecated and will be removed in a future version. Please use `layer.add_weight` method instead.
+  warnings.warn('`layer.add_variable` is deprecated and '
+WARNING:tensorflow:From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:760: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:760: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+10/07/2025 08:42:33 AM: [ From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:760: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor ]
+WARNING:tensorflow:From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/util/dispatch.py:1264: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.random.categorical` instead.
+WARNING:tensorflow:From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/util/dispatch.py:1264: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.random.categorical` instead.
+10/07/2025 08:42:33 AM: [ From /home/bn/miniconda3/lib/python3.12/site-packages/tensorflow/python/util/dispatch.py:1264: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.random.categorical` instead. ]
+INFO:root:TF Graph creation done..
+10/07/2025 08:42:45 AM: [ TF Graph creation done.. ]
+I0000 00:00:1759826566.696518    3637 mlir_graph_optimization_pass.cc:437] MLIR V1 optimization pass is not enabled
+INFO:root:BATCH COUNTER: 0 
+10/07/2025 08:42:50 AM: [ BATCH COUNTER: 0  ]
+WARNING:tensorflow:From /home/bn/R2D2/code/model/trainer.py:586: BaseSession.partial_run_setup (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function.
+WARNING:tensorflow:From /home/bn/R2D2/code/model/trainer.py:586: BaseSession.partial_run_setup (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function.
+10/07/2025 08:42:51 AM: [ From /home/bn/R2D2/code/model/trainer.py:586: BaseSession.partial_run_setup (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function. ]
+WARNING:tensorflow:From /home/bn/R2D2/code/model/trainer.py:598: BaseSession.partial_run (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function.
+WARNING:tensorflow:From /home/bn/R2D2/code/model/trainer.py:598: BaseSession.partial_run (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function.
+10/07/2025 08:42:54 AM: [ From /home/bn/R2D2/code/model/trainer.py:598: BaseSession.partial_run (from tensorflow.python.client.session) is deprecated and will be removed after 2023-06-01.
+Instructions for updating:
+This function is deprecated and we do not expect adding newfunctionality to it. Please do not have your code dependingon this function. ]
+2025-10-07 08:42:54.617947: W external/local_xla/xla/tsl/framework/cpu_allocator_impl.cc:84] Allocation of 4194304000 exceeds 10% of free system memory.
+2025-10-07 08:42:54.624508: W external/local_xla/xla/tsl/framework/cpu_allocator_impl.cc:84] Allocation of 4194304000 exceeds 10% of free system memory.
+2025-10-07 08:42:55.207845: W external/local_xla/xla/tsl/framework/cpu_allocator_impl.cc:84] Allocation of 8388608000 exceeds 10% of free system memory.
+2025-10-07 08:42:58.496903: W external/local_xla/xla/tsl/framework/cpu_allocator_impl.cc:84] Allocation of 4194304000 exceeds 10% of free system memory.
+2025-10-07 08:42:58.497081: W external/local_xla/xla/tsl/framework/cpu_allocator_impl.cc:84] Allocation of 4194304000 exceeds 10% of free system memory.
+INFO:root:Mean label === 0.5
+10/07/2025 08:44:06 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.486669921875
+10/07/2025 08:44:06 AM: [ Acc === 0.486669921875 ]
+INFO:root:MEDIAN REWARD A1 === 0.16757634282112122
+10/07/2025 08:44:06 AM: [ MEDIAN REWARD A1 === 0.16757634282112122 ]
+INFO:root:MEDIAN REWARD A2 === -0.16991384327411652
+10/07/2025 08:44:06 AM: [ MEDIAN REWARD A2 === -0.16991384327411652 ]
+INFO:root:Memory usage : 23733064 (kb)
+10/07/2025 08:44:06 AM: [ Memory usage : 23733064 (kb) ]
+INFO:root:BATCH COUNTER: 1 
+10/07/2025 08:44:08 AM: [ BATCH COUNTER: 1  ]
+INFO:root:Mean label === 0.5
+10/07/2025 08:45:22 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.4921875
+10/07/2025 08:45:22 AM: [ Acc === 0.4921875 ]
+INFO:root:MEDIAN REWARD A1 === 0.1677599549293518
+10/07/2025 08:45:22 AM: [ MEDIAN REWARD A1 === 0.1677599549293518 ]
+INFO:root:MEDIAN REWARD A2 === -0.16987761855125427
+10/07/2025 08:45:22 AM: [ MEDIAN REWARD A2 === -0.16987761855125427 ]
+INFO:root:Memory usage : 23884920 (kb)
+10/07/2025 08:45:22 AM: [ Memory usage : 23884920 (kb) ]
+INFO:root:BATCH COUNTER: 2 
+10/07/2025 08:45:24 AM: [ BATCH COUNTER: 2  ]
+INFO:root:Mean label === 0.5
+10/07/2025 08:46:37 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5044921875
+10/07/2025 08:46:37 AM: [ Acc === 0.5044921875 ]
+INFO:root:MEDIAN REWARD A1 === 0.16790986061096191
+10/07/2025 08:46:37 AM: [ MEDIAN REWARD A1 === 0.16790986061096191 ]
+INFO:root:MEDIAN REWARD A2 === -0.16984890401363373
+10/07/2025 08:46:37 AM: [ MEDIAN REWARD A2 === -0.16984890401363373 ]
+INFO:root:Memory usage : 23967204 (kb)
+10/07/2025 08:46:37 AM: [ Memory usage : 23967204 (kb) ]
+INFO:root:BATCH COUNTER: 3 
+10/07/2025 08:46:39 AM: [ BATCH COUNTER: 3  ]
+INFO:root:Mean label === 0.5
+10/07/2025 08:47:54 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5083984375
+10/07/2025 08:47:54 AM: [ Acc === 0.5083984375 ]
+INFO:root:MEDIAN REWARD A1 === 0.16803358495235443
+10/07/2025 08:47:54 AM: [ MEDIAN REWARD A1 === 0.16803358495235443 ]
+INFO:root:MEDIAN REWARD A2 === -0.16991756856441498
+10/07/2025 08:47:54 AM: [ MEDIAN REWARD A2 === -0.16991756856441498 ]
+INFO:root:Memory usage : 23967204 (kb)
+10/07/2025 08:47:54 AM: [ Memory usage : 23967204 (kb) ]
+INFO:root:BATCH COUNTER: 4 
+10/07/2025 08:47:55 AM: [ BATCH COUNTER: 4  ]
+INFO:root:Mean label === 0.5
+10/07/2025 08:49:10 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.50986328125
+10/07/2025 08:49:10 AM: [ Acc === 0.50986328125 ]
+INFO:root:MEDIAN REWARD A1 === 0.1681293547153473
+10/07/2025 08:49:10 AM: [ MEDIAN REWARD A1 === 0.1681293547153473 ]
+INFO:root:MEDIAN REWARD A2 === -0.16988293826580048
+10/07/2025 08:49:10 AM: [ MEDIAN REWARD A2 === -0.16988293826580048 ]
+INFO:root:Memory usage : 23974864 (kb)
+10/07/2025 08:49:10 AM: [ Memory usage : 23974864 (kb) ]
+INFO:root:BATCH COUNTER: 5 
+10/07/2025 08:49:12 AM: [ BATCH COUNTER: 5  ]
+INFO:root:Mean label === 0.5
+10/07/2025 08:50:26 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.50830078125
+10/07/2025 08:50:26 AM: [ Acc === 0.50830078125 ]
+INFO:root:MEDIAN REWARD A1 === 0.16814669966697693
+10/07/2025 08:50:26 AM: [ MEDIAN REWARD A1 === 0.16814669966697693 ]
+INFO:root:MEDIAN REWARD A2 === -0.16996371746063232
+10/07/2025 08:50:26 AM: [ MEDIAN REWARD A2 === -0.16996371746063232 ]
+INFO:root:Memory usage : 23980040 (kb)
+10/07/2025 08:50:26 AM: [ Memory usage : 23980040 (kb) ]
+INFO:root:BATCH COUNTER: 6 
+10/07/2025 08:50:28 AM: [ BATCH COUNTER: 6  ]
+INFO:root:Mean label === 0.5
+10/07/2025 08:51:42 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.533837890625
+10/07/2025 08:51:42 AM: [ Acc === 0.533837890625 ]
+INFO:root:MEDIAN REWARD A1 === 0.1682680994272232
+10/07/2025 08:51:42 AM: [ MEDIAN REWARD A1 === 0.1682680994272232 ]
+INFO:root:MEDIAN REWARD A2 === -0.17003318667411804
+10/07/2025 08:51:42 AM: [ MEDIAN REWARD A2 === -0.17003318667411804 ]
+INFO:root:Memory usage : 24030400 (kb)
+10/07/2025 08:51:42 AM: [ Memory usage : 24030400 (kb) ]
+INFO:root:BATCH COUNTER: 7 
+10/07/2025 08:51:44 AM: [ BATCH COUNTER: 7  ]
+INFO:root:Mean label === 0.5
+10/07/2025 08:52:59 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.528857421875
+10/07/2025 08:52:59 AM: [ Acc === 0.528857421875 ]
+INFO:root:MEDIAN REWARD A1 === 0.16839870810508728
+10/07/2025 08:52:59 AM: [ MEDIAN REWARD A1 === 0.16839870810508728 ]
+INFO:root:MEDIAN REWARD A2 === -0.17006006836891174
+10/07/2025 08:52:59 AM: [ MEDIAN REWARD A2 === -0.17006006836891174 ]
+INFO:root:Memory usage : 24320208 (kb)
+10/07/2025 08:52:59 AM: [ Memory usage : 24320208 (kb) ]
+INFO:root:BATCH COUNTER: 8 
+10/07/2025 08:53:01 AM: [ BATCH COUNTER: 8  ]
+INFO:root:Mean label === 0.5
+10/07/2025 08:54:15 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.517822265625
+10/07/2025 08:54:15 AM: [ Acc === 0.517822265625 ]
+INFO:root:MEDIAN REWARD A1 === 0.16826483607292175
+10/07/2025 08:54:15 AM: [ MEDIAN REWARD A1 === 0.16826483607292175 ]
+INFO:root:MEDIAN REWARD A2 === -0.17004987597465515
+10/07/2025 08:54:15 AM: [ MEDIAN REWARD A2 === -0.17004987597465515 ]
+INFO:root:Memory usage : 24320208 (kb)
+10/07/2025 08:54:15 AM: [ Memory usage : 24320208 (kb) ]
+INFO:root:BATCH COUNTER: 9 
+10/07/2025 08:54:16 AM: [ BATCH COUNTER: 9  ]
+INFO:root:Mean label === 0.5
+10/07/2025 08:55:31 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.52763671875
+10/07/2025 08:55:31 AM: [ Acc === 0.52763671875 ]
+INFO:root:MEDIAN REWARD A1 === 0.16848307847976685
+10/07/2025 08:55:31 AM: [ MEDIAN REWARD A1 === 0.16848307847976685 ]
+INFO:root:MEDIAN REWARD A2 === -0.1699967235326767
+10/07/2025 08:55:31 AM: [ MEDIAN REWARD A2 === -0.1699967235326767 ]
+INFO:root:Memory usage : 24320208 (kb)
+10/07/2025 08:55:31 AM: [ Memory usage : 24320208 (kb) ]
+INFO:root:BATCH COUNTER: 10 
+10/07/2025 08:55:33 AM: [ BATCH COUNTER: 10  ]
+INFO:root:Mean label === 0.5
+10/07/2025 08:56:48 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.530322265625
+10/07/2025 08:56:48 AM: [ Acc === 0.530322265625 ]
+INFO:root:MEDIAN REWARD A1 === 0.16843463480472565
+10/07/2025 08:56:48 AM: [ MEDIAN REWARD A1 === 0.16843463480472565 ]
+INFO:root:MEDIAN REWARD A2 === -0.1700523942708969
+10/07/2025 08:56:48 AM: [ MEDIAN REWARD A2 === -0.1700523942708969 ]
+INFO:root:Memory usage : 24320208 (kb)
+10/07/2025 08:56:48 AM: [ Memory usage : 24320208 (kb) ]
+INFO:root:BATCH COUNTER: 11 
+10/07/2025 08:56:50 AM: [ BATCH COUNTER: 11  ]
+INFO:root:Mean label === 0.5
+10/07/2025 08:58:06 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.545068359375
+10/07/2025 08:58:06 AM: [ Acc === 0.545068359375 ]
+INFO:root:MEDIAN REWARD A1 === 0.16838300228118896
+10/07/2025 08:58:06 AM: [ MEDIAN REWARD A1 === 0.16838300228118896 ]
+INFO:root:MEDIAN REWARD A2 === -0.170132115483284
+10/07/2025 08:58:06 AM: [ MEDIAN REWARD A2 === -0.170132115483284 ]
+INFO:root:Memory usage : 24320208 (kb)
+10/07/2025 08:58:06 AM: [ Memory usage : 24320208 (kb) ]
+INFO:root:BATCH COUNTER: 12 
+10/07/2025 08:58:07 AM: [ BATCH COUNTER: 12  ]
+INFO:root:Mean label === 0.5
+10/07/2025 08:59:22 AM: [ Mean label === 0.5 ]
+INFO:root:Acc === 0.5236328125
+10/07/2025 08:59:22 AM: [ Acc === 0.5236328125 ]
+INFO:root:MEDIAN REWARD A1 === 0.16854070127010345
+10/07/2025 08:59:22 AM: [ MEDIAN REWARD A1 === 0.16854070127010345 ]
+INFO:root:MEDIAN REWARD A2 === -0.1702282726764679
+10/07/2025 08:59:22 AM: [ MEDIAN REWARD A2 === -0.1702282726764679 ]
+INFO:root:Memory usage : 24320208 (kb)
+10/07/2025 08:59:22 AM: [ Memory usage : 24320208 (kb) ]
+INFO:root:BATCH COUNTER: 13 
+10/07/2025 08:59:25 AM: [ BATCH COUNTER: 13  ]

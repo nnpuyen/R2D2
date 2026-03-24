@@ -1,18 +1,66 @@
+import os
+
+# Set TensorFlow runtime defaults before importing TensorFlow.
+os.environ.setdefault('TF_CPP_MIN_LOG_LEVEL', '3')
+if os.environ.get('CUDA_VISIBLE_DEVICES', None) in ('', '-1'):
+    os.environ.setdefault('TF_DISABLE_CUDA', '1')
+
 import tensorflow as tf
 # TensorFlow 1.x compatibility for newer TensorFlow versions
 if hasattr(tf, 'compat'):
-    tf.compat.v1.disable_v2_behavior()
+    tf.compat.v1.disable_eager_execution()
 from code.model.environment import env
 from code.options import read_options
 import logging
 import json
 import datetime
-import os
 import uuid
 from pprint import pprint
 from code.model.trainer import create_permutations
 import numpy as np
 logger = logging.getLogger()
+
+
+def tf_variable_scope(*args, **kwargs):
+    if hasattr(tf, 'compat'):
+        return tf.compat.v1.variable_scope(*args, **kwargs)
+    return tf.variable_scope(*args, **kwargs)
+
+
+def tf_placeholder(*args, **kwargs):
+    if hasattr(tf, 'compat'):
+        return tf.compat.v1.placeholder(*args, **kwargs)
+    return tf.placeholder(*args, **kwargs)
+
+
+def tf_get_variable(*args, **kwargs):
+    if hasattr(tf, 'compat'):
+        return tf.compat.v1.get_variable(*args, **kwargs)
+    return tf.get_variable(*args, **kwargs)
+
+
+def tf_layers_dense(inputs, units, activation=None, name=None):
+    """Implement dense layer with raw TensorFlow ops to avoid Keras import."""
+    with tf_variable_scope(name or 'dense', reuse=tf.compat.v1.AUTO_REUSE if hasattr(tf, 'compat') else None):
+        input_size = int(inputs.shape[-1])
+        w = tf_get_variable('kernel',
+                           shape=[input_size, units],
+                           dtype=tf.float32,
+                           initializer=tf.compat.v1.glorot_uniform_initializer() if hasattr(tf, 'compat') else tf.contrib.layers.xavier_initializer())
+        b = tf_get_variable('bias',
+                           shape=[units],
+                           dtype=tf.float32,
+                           initializer=tf.keras.initializers.Zeros())
+        output = tf.matmul(inputs, w) + b
+        if activation is not None:
+            output = activation(output)
+        return output
+
+
+def tf_adam_optimizer(*args, **kwargs):
+    if hasattr(tf, 'compat'):
+        return tf.compat.v1.train.AdamOptimizer(*args, **kwargs)
+    return tf.train.AdamOptimizer(*args, **kwargs)
 
 class SimpleClassifier():
     """
@@ -31,46 +79,46 @@ class SimpleClassifier():
         self.eval_every = params['eval_every']
         self.learning_rate = params['learning_rate_judge']
         self.total_iteration = params['total_iterations']
-        self.optimizer = tf.train.AdamOptimizer(self.learning_rate)
+        self.optimizer = tf_adam_optimizer(self.learning_rate)
 
     def construct_graph(self):
         logger.info("CONSTRUCTING GRAPH")
-        with tf.variable_scope("relation"):
-            self.query_relation = tf.placeholder(tf.int32, [None], name="query_relation")
-            self.action_embedding_placeholder = tf.placeholder(tf.float32,
+        with tf_variable_scope("relation"):
+            self.query_relation = tf_placeholder(tf.int32, [None], name="query_relation")
+            self.action_embedding_placeholder = tf_placeholder(tf.float32,
                                                                [self.action_vocab_size, 2 * self.embedding_size])
 
             # Use compatibility layer for TensorFlow 2.x
             if hasattr(tf, 'compat'):
-                xavier_init_rel = tf.compat.v1.keras.initializers.glorot_uniform()
+                xavier_init_rel = tf.compat.v1.glorot_uniform_initializer()
             else:
                 xavier_init_rel = tf.contrib.layers.xavier_initializer()
 
-            self.relation_lookup_table = tf.get_variable("relation_lookup_table",
+            self.relation_lookup_table = tf_get_variable("relation_lookup_table",
                                                          shape=[self.action_vocab_size, 2 * self.embedding_size],
                                                          dtype=tf.float32,
                                                          initializer=xavier_init_rel,
                                                          trainable=True)
             self.relation_embedding_init = self.relation_lookup_table.assign(self.action_embedding_placeholder)
 
-        with tf.variable_scope("object"):
-            self.query_object = tf.placeholder(tf.int32, [None], name='query_object')
-            self.entity_embedding_placeholder = tf.placeholder(tf.float32,
+        with tf_variable_scope("object"):
+            self.query_object = tf_placeholder(tf.int32, [None], name='query_object')
+            self.entity_embedding_placeholder = tf_placeholder(tf.float32,
                                                                [self.entity_vocab_size, 2 * self.embedding_size])
             # Use compatibility layer for TensorFlow 2.x  
             if hasattr(tf, 'compat'):
-                xavier_init_ent = tf.compat.v1.keras.initializers.glorot_uniform()
+                xavier_init_ent = tf.compat.v1.glorot_uniform_initializer()
             else:
                 xavier_init_ent = tf.contrib.layers.xavier_initializer()
 
-            self.entity_lookup_table = tf.get_variable("entity_lookup_table",
+            self.entity_lookup_table = tf_get_variable("entity_lookup_table",
                                                        shape=[self.entity_vocab_size, 2 * self.embedding_size],
                                                        dtype=tf.float32,
                                                        initializer=xavier_init_ent,
                                                        trainable=True)
             self.entity_embedding_init = self.entity_lookup_table.assign(self.entity_embedding_placeholder)
 
-        self.labels = tf.placeholder(tf.float32, [None,1],name="labels")
+        self.labels = tf_placeholder(tf.float32, [None,1],name="labels")
 
         self.logits_judge = self.classify(self.query_relation,self.query_object)
         self.loss_judge = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels= self.labels, logits= self.logits_judge))  # tf.reduce_mean(tf.square(self.logits_judge - self.labels))
@@ -81,7 +129,7 @@ class SimpleClassifier():
         self.query_relation_embedding = tf.nn.embedding_lookup(self.relation_lookup_table, query_relation)
         self.query_object_embedding = tf.nn.embedding_lookup(self.entity_lookup_table, query_object)
         query_concat = tf.concat([self.query_relation_embedding, self.query_object_embedding],axis=-1)
-        output = tf.layers.dense(query_concat,1,name="classyfier")
+        output = tf_layers_dense(query_concat, 1, name="classyfier")
         return output
 
 
