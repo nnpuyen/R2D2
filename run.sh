@@ -57,6 +57,17 @@ def main() -> int:
     env = os.environ.copy()
     env["PYTHONPATH"] = "."
 
+    # Kaggle images can expose CUDA libraries that trigger noisy XLA plugin
+    # registration errors with some TensorFlow builds. Default to CPU there,
+    # unless the user explicitly opts in via FORCE_TF_GPU=1.
+    is_kaggle = bool(env.get("KAGGLE_URL_BASE") or env.get("KAGGLE_KERNEL_RUN_TYPE"))
+    force_gpu = env.get("FORCE_TF_GPU") == "1"
+
+    if is_kaggle and not force_gpu and "CUDA_VISIBLE_DEVICES" not in env:
+        env["CUDA_VISIBLE_DEVICES"] = "-1"
+        env["TF_DISABLE_CUDA"] = "1"
+        print("Kaggle environment detected. Using CPU mode by default.")
+
     # If user did not provide CUDA_VISIBLE_DEVICES externally, auto-detect GPU support.
     if "CUDA_VISIBLE_DEVICES" not in env:
         if detect_gpu():

@@ -15,6 +15,13 @@ from scipy.special import expit as sig
 
 # Set TensorFlow runtime defaults before importing TensorFlow.
 os.environ.setdefault('TF_CPP_MIN_LOG_LEVEL', '3')
+
+# Kaggle-specific default: avoid CUDA/XLA init unless explicitly requested.
+if (os.environ.get('KAGGLE_URL_BASE') or os.environ.get('KAGGLE_KERNEL_RUN_TYPE')) and \
+        os.environ.get('FORCE_TF_GPU') != '1' and 'CUDA_VISIBLE_DEVICES' not in os.environ:
+    os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+    os.environ.setdefault('TF_DISABLE_CUDA', '1')
+
 if os.environ.get('CUDA_VISIBLE_DEVICES', None) in ('', '-1'):
     os.environ.setdefault('TF_DISABLE_CUDA', '1')
 
