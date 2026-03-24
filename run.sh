@@ -63,7 +63,7 @@ def main() -> int:
     is_kaggle = bool(env.get("KAGGLE_URL_BASE") or env.get("KAGGLE_KERNEL_RUN_TYPE"))
     force_gpu = env.get("FORCE_TF_GPU") == "1"
 
-    if is_kaggle and not force_gpu and "CUDA_VISIBLE_DEVICES" not in env:
+    if is_kaggle and not force_gpu:
         env["CUDA_VISIBLE_DEVICES"] = "-1"
         env["TF_DISABLE_CUDA"] = "1"
         print("Kaggle environment detected. Using CPU mode by default.")
