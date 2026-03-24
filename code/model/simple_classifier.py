@@ -208,7 +208,15 @@ def main():
         config = tf.compat.v1.ConfigProto()
     else:
         config = tf.ConfigProto()
-    config.gpu_options.allow_growth = False
+
+    gpu_disabled = os.environ.get('CUDA_VISIBLE_DEVICES', None) in ('', '-1') or os.environ.get('TF_DISABLE_CUDA') == '1'
+    if gpu_disabled:
+        # Hard-disable GPU at session level to avoid cuInit calls on CPU-only hosts.
+        config.device_count['GPU'] = 0
+        config.gpu_options.visible_device_list = ''
+    else:
+        config.gpu_options.allow_growth = False
+
     config.log_device_placement = False
 
     best_permutation = None
@@ -251,11 +259,11 @@ def main():
         judge.construct_graph()
         # Use compatibility layer for TensorFlow 2.x
         if hasattr(tf, 'compat'):
-            with tf.compat.v1.Session() as sess:
+            with tf.compat.v1.Session(config=config) as sess:
                 sess.run(tf.compat.v1.global_variables_initializer())
                 judge.train(sess)
         else:
-            with tf.Session() as sess:
+            with tf.Session(config=config) as sess:
                 sess.run(tf.global_variables_initializer())
                 judge.train(sess)
 

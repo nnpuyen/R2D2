@@ -1016,7 +1016,15 @@ def main():
         config = tf.compat.v1.ConfigProto()
     else:
         config = tf.ConfigProto()
-    config.gpu_options.allow_growth = False
+
+    gpu_disabled = os.environ.get('CUDA_VISIBLE_DEVICES', None) in ('', '-1') or os.environ.get('TF_DISABLE_CUDA') == '1'
+    if gpu_disabled:
+        # Hard-disable GPU at session level to avoid cuInit calls on CPU-only hosts.
+        config.device_count['GPU'] = 0
+        config.gpu_options.visible_device_list = ''
+    else:
+        config.gpu_options.allow_growth = False
+
     config.log_device_placement = False
 
     if not option['load_model']:
